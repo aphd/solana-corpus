@@ -1,0 +1,11 @@
+{
+  "name": "solana-corpus",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:aphd/solana-corpus.git",
+  "author": "Antonio Pierro <antonio.pierro@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "package.json": "^2.0.1"
+  }
+}
