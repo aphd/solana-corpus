@@ -1,7 +1,7 @@
 import axios from 'axios';
 import solanaWeb3 from '@solana/web3.js';
 import { execa } from 'execa';
-import { uniq, doesExist } from './utils.js';
+import { uniq, doesExist, json2csv, getCSVfromJson } from './utils.js';
 import { config } from './config.js';
 
 const urls = {
@@ -23,14 +23,19 @@ export const getTokens = async () => {
     console.log(addresses);
 };
 
-export const getProgramsFromBlock = async (slot = 107346614) => {
-    var connection = new solanaWeb3.Connection(
+const getProgramsFromBlock = async (slot) => {
+    const connection = new solanaWeb3.Connection(
         solanaWeb3.clusterApiUrl('mainnet-beta'),
         'confirmed'
     );
-    const block = await connection.getBlock(slot);
-    const programs = JSON.stringify(block).match(/Program (\w{44})/g);
-    return uniq(programs.map((e) => e.replace('Program ', '')));
+    try {
+        const block = await connection.getBlock(slot);
+        const programs = JSON.stringify(block).match(/Program (\w{44})/g);
+        return uniq(programs.map((e) => e.replace('Program ', '')));
+    } catch (error) {
+        console.log('error in block: ', slot);
+        return [];
+    }
 };
 
 export const getProgramInfo = async (id) => {
@@ -46,3 +51,17 @@ export const storeProgram = async (id) => {
     const { stdout } = await execa('solana', params);
     console.log(stdout);
 };
+
+export const storeProgramIds = async (slot, length = 1) => {
+    const programs = [];
+    const blocks = Array.from({ length }, (_, i) => i + slot);
+
+    const promises = blocks.map(async (e) => {
+        const items = await getProgramsFromBlock(e);
+        console.log('block number:', e);
+        programs.push(...items);
+    });
+    await Promise.all(promises);
+    const prev = await getCSVfromJson();
+    json2csv(uniq([...prev, ...programs]).map((e) => [e]));
+}; 

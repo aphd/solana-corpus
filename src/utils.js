@@ -6,32 +6,18 @@ export const uniq = (arr) => [...new Set(arr)];
 
 export const doesExist = (path) => fs.existsSync(path);
 
-export const json2csv = () => {
-    var csv = Papa.unparse([
-        {
-            column_1: 'abc',
-            column_2: 'def',
-        },
-        {
-            column_1: 'abc',
-            column_2: 'def',
-        },
-    ]);
-    fs.writeFileSync(config.program_fn, csv);
+export const json2csv = (data) => {
+    const csv = Papa.unparse(data);
+    fs.appendFileSync(config.program_fn, `${csv}`);
+    console.log('result write on', config.program_fn);
 };
 
-export const csv2json = () => {
-    var buffer = [];
-    const step = (row) => {
-        buffer.push(row.data);
-    };
-    const complete = () => console.log('buffer: ', buffer);
-    const config = {
-        delimiter: ',',
-        header: true,
-        worker: true,
-        step,
-        complete,
-    };
-    Papa.parse(fs.createReadStream(config.program_fn), config);
+export const getCSVfromJson = () => {
+    const file = fs.createReadStream(config.program_fn);
+    const pConfig = { header: false };
+    return new Promise((resolve) => {
+        const complete = (results) => resolve(results.data.flat());
+        Papa.parse(file, { ...pConfig, complete });
+    });
 };
+
