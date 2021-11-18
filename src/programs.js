@@ -44,7 +44,13 @@ export const getProgramInfo = async (id) => {
     console.log(stdout);
 };
 
-export const storeProgram = async (id) => {
+export const storeBytecodes = async () => {
+    const programIds = await getCSVfromJson();
+    const promises = programIds.map((id) => storeBytecode(id));
+    await Promise.all(promises);
+};
+
+const storeBytecode = async (id) => {
     const path = `${config.bytecode_path}/${id}.bytecode`;
     if (doesExist(path)) return null;
     const params = ['program', 'dump', id, path];
