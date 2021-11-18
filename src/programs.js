@@ -2,7 +2,7 @@ import axios from 'axios';
 import solanaWeb3 from '@solana/web3.js';
 import { execa } from 'execa';
 import { uniq, doesExist } from './utils.js';
-import fs from 'fs';
+import { config } from './config.js';
 
 const urls = {
     tokens: 'solana-labs/token-list/main/src/tokens/solana.tokenlist.json',
@@ -40,7 +40,7 @@ export const getProgramInfo = async (id) => {
 };
 
 export const storeProgram = async (id) => {
-    const path = `./data/${id}.bytecode`;
+    const path = `${config.bytecode_path}/${id}.bytecode`;
     if (doesExist(path)) return null;
     const params = ['program', 'dump', id, path];
     const { stdout } = await execa('solana', params);
