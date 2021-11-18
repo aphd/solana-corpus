@@ -1,7 +1,7 @@
 import axios from 'axios';
 import solanaWeb3 from '@solana/web3.js';
 import { execa } from 'execa';
-import { uniq } from './utils.js';
+import { uniq, doesExist } from './utils.js';
 import fs from 'fs';
 
 const urls = {
@@ -40,7 +40,9 @@ export const getProgramInfo = async (id) => {
 };
 
 export const storeProgram = async (id) => {
-    const params = ['program', 'dump', id, `/tmp/${id}.bytecode`];
+    const path = `./data/${id}.bytecode`;
+    if (doesExist(path)) return null;
+    const params = ['program', 'dump', id, path];
     const { stdout } = await execa('solana', params);
     console.log(stdout);
 };

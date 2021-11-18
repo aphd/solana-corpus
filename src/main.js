@@ -7,6 +7,8 @@ import {
 import { uniq } from './utils.js';
 
 (async () => {
+    storeProgram('9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin');
+    return null;
     const START = 107353000;
     const programs = [];
     const blocks = Array.from({ length: 1 }, (_, i) => i + START);
@@ -20,8 +22,7 @@ import { uniq } from './utils.js';
 
     console.log('programs....', uniq(programs));
 
-    return null;
-    storeProgram('9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin');
+
     getProgramInfo('9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin');
     getTokens();
 })();
