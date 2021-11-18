@@ -5,9 +5,12 @@
     "repository": "git@github.com:aphd/solana-corpus.git",
     "author": "Antonio Pierro <antonio.pierro@gmail.com>",
     "license": "MIT",
+    "type": "module",
     "dependencies": {
         "@solana/web3.js": "^1.30.2",
         "axios": "^0.24.0",
-        "package.json": "^2.0.1"
+        "execa": "^6.0.0",
+        "package.json": "^2.0.1",
+        "papaparse": "^5.3.1"
     }
 }
