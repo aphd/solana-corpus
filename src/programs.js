@@ -16,7 +16,7 @@ const getPrograms = async () => {
     console.log(programs);
 };
 
-export const getTokens = async () => {
+const getTokens = async () => {
     const url = `https://raw.githubusercontent.com/${urls.tokens}`;
     const { data } = await axios.get(url);
     const addresses = Array.from(new Set(data.tokens.map((e) => e.address)));

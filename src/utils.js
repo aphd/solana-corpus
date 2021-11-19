@@ -8,7 +8,7 @@ export const doesExist = (path) => fs.existsSync(path);
 
 export const json2csv = (data) => {
     const csv = Papa.unparse(data);
-    fs.appendFileSync(config.program_fn, `${csv}`);
+    fs.writeFileSync(config.program_fn, `${csv}`);
     console.log('result write on', config.program_fn);
 };
 
