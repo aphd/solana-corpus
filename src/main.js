@@ -1,10 +1,14 @@
-import { storeBytecodes, getProgramInfo, storeProgramIds } from './programs.js';
-import { uniq, json2csv, getCSVfromJson } from './utils.js';
+import {
+    storeBytecodes,
+    storeProgramsInfo,
+    storeProgramIds,
+} from './programs.js';
+import { uniq, json2csv, getProgramsId } from './utils.js';
 
 (async () => {
-    storeProgramIds(107_300_025, 5);
+    storeProgramsInfo();
     return null;
     storeBytecodes();
-
-    getProgramInfo('9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin');
+    return null;
+    storeProgramIds(107_300_025, 5);
 })();

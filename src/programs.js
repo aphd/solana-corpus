@@ -1,27 +1,15 @@
-import axios from 'axios';
 import solanaWeb3 from '@solana/web3.js';
 import { execa } from 'execa';
-import { uniq, doesExist, json2csv, getCSVfromJson } from './utils.js';
+import {
+    uniq,
+    doesExist,
+    json2csv,
+    getProgramsId,
+    doesFileHasString,
+    appendDataToCSV,
+    str2json,
+} from './utils.js';
 import { config } from './config.js';
-
-const urls = {
-    tokens: 'solana-labs/token-list/main/src/tokens/solana.tokenlist.json',
-    programs: 'project-serum/serum-ts/master/packages/serum/src/markets.json',
-};
-
-const getPrograms = async () => {
-    const url = `https://raw.githubusercontent.com/${urls.programs}`;
-    const { data } = await axios.get(url);
-    const programs = Array.from(new Set(data.map((e) => e.programId)));
-    console.log(programs);
-};
-
-const getTokens = async () => {
-    const url = `https://raw.githubusercontent.com/${urls.tokens}`;
-    const { data } = await axios.get(url);
-    const addresses = Array.from(new Set(data.tokens.map((e) => e.address)));
-    console.log(addresses);
-};
 
 const getProgramsFromBlock = async (slot) => {
     const connection = new solanaWeb3.Connection(
@@ -38,14 +26,38 @@ const getProgramsFromBlock = async (slot) => {
     }
 };
 
-export const getProgramInfo = async (id) => {
+const getProgramInfo = async (id) => {
     const params = ['program', 'show', id];
     const { stdout } = await execa('solana', params);
-    console.log(stdout);
+    return stdout;
+};
+
+const cleanProgramInfo = async (data) => {
+    const { stdout } = await execa('head', ['-n', '1', config.programInfoFn]);
+    const programInfoHeader = stdout.split(',');
+    return programInfoHeader.reduce((a, c) => {
+        return { ...a, [c]: data[c] || 'n/a' };
+    }, {});
+};
+
+export const storeProgramsInfo = async () => {
+    const programsId = await getProgramsId();
+    const { programInfoFn } = config;
+    const programsInfo = [];
+    const promises = programsId.slice(0, 7).map(async (id) => {
+        const doesExist = await doesFileHasString(programInfoFn, id);
+        if (doesExist) return null;
+        const programInfo = await getProgramInfo(id);
+        const programInfoClean = await cleanProgramInfo(str2json(programInfo));
+        programsInfo.push(programInfoClean);
+    });
+
+    await Promise.all(promises);
+    appendDataToCSV(programInfoFn, programsInfo);
 };
 
 export const storeBytecodes = async () => {
-    const programIds = await getCSVfromJson();
+    const programIds = await getProgramsId();
     const promises = programIds.map((id) => storeBytecode(id));
     await Promise.all(promises);
 };
@@ -59,15 +71,15 @@ const storeBytecode = async (id) => {
 };
 
 export const storeProgramIds = async (slot, length = 1) => {
-    const programs = [];
+    const new_programs = [];
     const blocks = Array.from({ length }, (_, i) => i + slot);
-
     const promises = blocks.map(async (e) => {
-        const items = await getProgramsFromBlock(e);
+        const programs = await getProgramsFromBlock(e);
         console.log('block number:', e);
-        programs.push(...items);
+        new_programs.push(...programs);
     });
+
     await Promise.all(promises);
-    const prev = await getCSVfromJson();
-    json2csv(uniq([...prev, ...programs]).map((e) => [e]));
-}; 
+    const old_programs = await getProgramsId();
+    json2csv(uniq([...old_programs, ...new_programs]).map((e) => [e]));
+};
