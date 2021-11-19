@@ -1,6 +1,6 @@
 import solanaWeb3 from '@solana/web3.js';
 import { execa } from 'execa';
-import { uniq, doesExist, json2csv, getProgramsId } from './utils.js';
+import { uniq, doesExist } from './utils.js';
 import { config } from './config.js';
 
 const connection = new solanaWeb3.Connection(
