@@ -1,14 +1,6 @@
 import solanaWeb3 from '@solana/web3.js';
 import { execa } from 'execa';
-import {
-    uniq,
-    doesExist,
-    json2csv,
-    getProgramsId,
-    doesFileHasString,
-    appendDataToCSV,
-    str2json,
-} from './utils.js';
+import { uniq, doesExist, json2csv, getProgramsId } from './utils.js';
 import { config } from './config.js';
 
 const getProgramsFromBlock = async (slot) => {
@@ -26,34 +18,18 @@ const getProgramsFromBlock = async (slot) => {
     }
 };
 
-const getProgramInfo = async (id) => {
+export const getProgramInfo = async (id) => {
     const params = ['program', 'show', id];
     const { stdout } = await execa('solana', params);
     return stdout;
 };
 
-const cleanProgramInfo = async (data) => {
+export const cleanProgramInfo = async (data) => {
     const { stdout } = await execa('head', ['-n', '1', config.programInfoFn]);
     const programInfoHeader = stdout.split(',');
     return programInfoHeader.reduce((a, c) => {
         return { ...a, [c]: data[c] || 'n/a' };
     }, {});
-};
-
-export const storeProgramsInfo = async () => {
-    const programsId = await getProgramsId();
-    const { programInfoFn } = config;
-    const programsInfo = [];
-    const promises = programsId.slice(0, 7).map(async (id) => {
-        const doesExist = await doesFileHasString(programInfoFn, id);
-        if (doesExist) return null;
-        const programInfo = await getProgramInfo(id);
-        const programInfoClean = await cleanProgramInfo(str2json(programInfo));
-        programsInfo.push(programInfoClean);
-    });
-
-    await Promise.all(promises);
-    appendDataToCSV(programInfoFn, programsInfo);
 };
 
 export const storeBytecodes = async () => {
