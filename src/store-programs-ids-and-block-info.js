@@ -9,7 +9,6 @@ const storeProgramIdsAndBlockInfo = async (slot, length = 1) => {
     const prevBlocks = await getBlocksIds();
     blocks.forEach(async (blockId) => {
         if (prevBlocks.indexOf(blockId) === -1) {
-            console.log(' a new block :', blockId);
             queue.push(blockId);
         }
     });
@@ -32,4 +31,4 @@ queue.drain(async function () {
 // 90_000_000 -> 90_000_500
 // 100_000_000-> 100_000_500
 // 107_300_000->107_300_500
-storeProgramIdsAndBlockInfo(107300500, 20);
+storeProgramIdsAndBlockInfo(107300500, 50);

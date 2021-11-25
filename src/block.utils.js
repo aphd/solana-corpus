@@ -10,6 +10,14 @@ const connection = new solanaWeb3.Connection(
     'confirmed'
 );
 
+const keys = [
+    'blockHeight',
+    'blockTime',
+    'parentSlot',
+    'blockhash',
+    'previousBlockhash',
+];
+
 export const getBlockData = async (slot) => {
     try {
         const block = await connection.getBlock(slot);
@@ -46,21 +54,11 @@ export const storeBytecode = async (id) => {
 };
 
 export const storeBlockInfo = async (block, blockId) => {
-    console.log('block, blockId:', block, blockId);
-    console.log('storeBlockInfo--', Object.keys(block));
-    const keys = [
-        'blockHeight',
-        'blockTime',
-        'blockhash',
-        'parentSlot',
-        'previousBlockhash',
-    ];
-    const blockInfo = keys.reduce((a, c) => {
-        return { ...a, [c]: block[c] || 'n/a' };
-    }, {});
+    const blockInfo = keys.reduce(
+        (a, c) => ({ ...a, [c]: block[c] || 'n/a' }),
+        { blockId }
+    );
     blockInfo['transactions'] = block?.transactions?.length || 'n/a';
-    blockInfo['blockId'] = blockId;
-    console.log('blockInfo:', blockInfo);
     appendDataToCSV(config.block_info_fn, [blockInfo], false);
 };
 
