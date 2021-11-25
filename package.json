@@ -7,7 +7,7 @@
     "license": "MIT",
     "type": "module",
     "scripts": {
-        "store:programs:id": "node src/store-programs-id.js",
+        "store:programs-ids-and-block-info": "node src/store-programs-ids-and-block-info.js",
         "store:programs:info": "node src/store-programs-info.js",
         "store:bytecodes": "node src/store-bytecodes.js"
     },

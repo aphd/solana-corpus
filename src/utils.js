@@ -17,9 +17,9 @@ export const json2csv = (data) => {
     console.log('result write on', config.program_fn);
 };
 
-export const appendDataToCSV = (fileName, data) => {
-    const csv = Papa.unparse(data, { header: false });
-    fs.appendFileSync(fileName, `${csv}`);
+export const appendDataToCSV = (fileName, data, header = false) => {
+    const csv = Papa.unparse(data, { header });
+    fs.appendFileSync(fileName, `\n${csv}`);
     console.log('result write on', fileName);
 };
 
