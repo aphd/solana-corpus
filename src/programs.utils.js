@@ -11,6 +11,9 @@ const connection = new solanaWeb3.Connection(
 export const getProgramsFromBlock = async (slot) => {
     try {
         const block = await connection.getBlock(slot);
+
+        console.log(Object.keys(block));
+
         const programs = JSON.stringify(block).match(/Program (\w{44})/g);
         return uniq(programs.map((e) => e.replace('Program ', '')));
     } catch (error) {
