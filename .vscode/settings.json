@@ -3,5 +3,34 @@
     "activityBar.background": "#560453",
     "titleBar.activeBackground": "#790575",
     "titleBar.activeForeground": "#FFF9FE"
-  }
+  },
+  "files.exclude": {
+    "**/.git": true,
+    "**/.svn": true,
+    "**/.hg": true,
+    "**/CVS": true,
+    "**/.DS_Store": true,
+    "**/Thumbs.db": true,
+    ".*csv": true
+  },
+  "restoreTerminals.terminals": [
+    {
+      "splitTerminals": [
+        {
+          "name": "server",
+          "commands": []
+        }
+      ]
+    },
+    {
+      "splitTerminals": [
+        {
+          "name": "data",
+          "commands": [
+            "cd data"
+          ]
+        }
+      ]
+    }
+  ],
 }

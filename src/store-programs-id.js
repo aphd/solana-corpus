@@ -22,5 +22,7 @@ queue.drain(async function () {
     json2csv(uniq([...old_programs, ...new_programs]).map((e) => [e]));
 });
 
+// 90_000_000 -> 90_000_500
+// 100_000_000-> 100_000_500
 // 107_300_000->107_300_500
-storeProgramIds(107_300_400, 100);
+storeProgramIds(90_000_500, 500);
