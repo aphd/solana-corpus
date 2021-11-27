@@ -43,7 +43,7 @@ queue.drain(async function () {
     // 90_000_000 -> 90_000_500
     // 100_000_000-> 100_000_500
     // 107_300_000->107_300_500
-    storeProgramIdsAndBlockInfo(101_000_000, 200);
+    storeProgramIdsAndBlockInfo(101_000_000, 2_000);
 })();
 
 
