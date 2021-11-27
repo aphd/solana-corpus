@@ -14,6 +14,7 @@ const callbackBlock = async (blockId) => {
 
 const callbackProgam = async (newProgram) => {
     if (prevPrograms.indexOf(newProgram) !== -1) return null;
+    console.log('newProgram: ', newProgram);
     stream.write(`${newProgram}\n`);
     prevPrograms.push(newProgram);
 };
@@ -28,6 +29,7 @@ const queue = async.queue(async (blockId) => {
     const { programs, block } = await getBlockData(blockId);
     storeBlockInfo(block, blockId);
     console.log(`finished processing block ${blockId}`);
+    await new Promise((resolve) => setTimeout(resolve, 200));
     programs.forEach((e) => callbackProgam(e));
 }, 1);
 
@@ -36,14 +38,14 @@ queue.drain(async function () {
     stream.end();
 });
 
-(async () => {
+(async function () {
     prevBlocks = await getBlocksIds();
     prevPrograms = await getProgramsId();
     stream = fs.createWriteStream(config.program_fn, { flags: 'a' });
-    // 90_000_000 -> 90_000_500
-    // 100_000_000-> 100_000_500
-    // 107_300_000->107_300_500
-    storeProgramIdsAndBlockInfo(101_000_000, 2_000);
+    // // 90_000_000 -> 90_000_500
+    // // 100_000_000-> 100_000_500
+    // // 107_300_000->107_300_500
+    storeProgramIdsAndBlockInfo(101_000_000, 2_300);
 })();
 
 
