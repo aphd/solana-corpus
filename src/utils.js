@@ -24,12 +24,8 @@ export const appendDataToCSV = (fileName, data, header = false) => {
 };
 
 export const getProgramsId = () => {
-    const file = fs.createReadStream(config.program_fn);
-    const pConfig = { header: false };
-    return new Promise((resolve) => {
-        const complete = (results) => resolve(results.data.flat());
-        Papa.parse(file, { ...pConfig, complete });
-    });
+    const programsIds = fs.readFileSync(config.program_fn, 'utf8').split('\n');
+    return programsIds.map((e) => e.trim()).filter((e) => e !== '');
 };
 
 export const str2json = (str) => {
