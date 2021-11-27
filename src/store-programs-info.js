@@ -1,5 +1,5 @@
 import * as utils from './utils.js';
-import { getProgramInfo, cleanProgramInfo } from './programs.utils.js';
+import { getProgramInfo, cleanProgramInfo } from './block.utils.js';
 import { config } from './config.js';
 
 const storeProgramsInfo = async () => {

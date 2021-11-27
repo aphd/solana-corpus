@@ -13,6 +13,11 @@
     "**/Thumbs.db": true,
     ".*csv": true
   },
+  "[javascript]": {
+    "editor.rulers": [
+      150
+    ],
+  },
   "restoreTerminals.terminals": [
     {
       "splitTerminals": [
