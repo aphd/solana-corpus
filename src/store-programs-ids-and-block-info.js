@@ -29,7 +29,7 @@ const queue = async.queue(async (blockId) => {
     const { programs, block } = await getBlockData(blockId);
     storeBlockInfo(block, blockId);
     console.log(`finished processing block ${blockId}`);
-    await new Promise((resolve) => setTimeout(resolve, 200));
+    await new Promise((resolve) => setTimeout(resolve, 500));
     programs.forEach((e) => callbackProgam(e));
 }, 1);
 
@@ -42,11 +42,9 @@ queue.drain(async function () {
     prevBlocks = await getBlocksIds();
     prevPrograms = await getProgramsId();
     stream = fs.createWriteStream(config.program_fn, { flags: 'a' });
-    // // 90_000_000 -> 90_000_500
-    // // 100_000_000-> 100_000_500
-    // // 107_300_000->107_300_500
-    storeProgramIdsAndBlockInfo(101_000_000, 2_300);
+    // 90_000_000 -> 90_005_000
+    // 100_000_000-> 100_000_500
+    // 101_000_000, 5_000
+    // 107_300_000->107_300_500
+    storeProgramIdsAndBlockInfo(107_000_000, 100_000);
 })();
-
-
-
