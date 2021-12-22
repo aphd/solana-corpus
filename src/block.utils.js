@@ -33,7 +33,7 @@ export const getBlockData = async (slot) => {
 
 export const getProgramInfo = async (id) => {
     const params = ['program', 'show', id];
-    const { stdout } = await execa('solana', params);
+    const { stdout } = await execa('solana', params).catch(() => ({ stdout: false }));
     return stdout;
 };
 
@@ -41,7 +41,7 @@ export const cleanProgramInfo = async (data) => {
     const { stdout } = await execa('head', ['-n', '1', config.programInfoFn]);
     const programInfoHeader = stdout.split(',');
     return programInfoHeader.reduce((a, c) => {
-        return { ...a, [c]: data[c] || 'n/a' };
+        return { ...a, [c]: data[c] || 'NA' };
     }, {});
 };
 
@@ -54,11 +54,8 @@ export const storeBytecode = async (id) => {
 };
 
 export const storeBlockInfo = async (block, blockId) => {
-    const blockInfo = keys.reduce(
-        (a, c) => ({ ...a, [c]: block[c] || 'n/a' }),
-        { blockId }
-    );
-    blockInfo['transactions'] = block?.transactions?.length || 'n/a';
+    const blockInfo = keys.reduce((a, c) => ({ ...a, [c]: block[c] || 'NA' }), { blockId });
+    blockInfo['transactions'] = block?.transactions?.length || 'NA';
     appendDataToCSV(config.block_info_fn, [blockInfo], false);
 };
 
