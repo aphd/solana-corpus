@@ -30,16 +30,14 @@ export const getProgramInfo = async (id) => {
 export const cleanProgramInfo = async (data) => {
     const { stdout } = await execa('head', ['-n', '1', config.programInfoFn]);
     const programInfoHeader = stdout.split(',');
-    return programInfoHeader.reduce((a, c) => {
-        return { ...a, [c]: data[c] || 'NA' };
-    }, {});
+    return programInfoHeader.reduce((a, c) => ({ ...a, [c]: data[c] || 'NA' }), {});
 };
 
 export const storeBytecode = async (id) => {
     const path = `${config.bytecode_path}/${id}.bytecode`;
     if (doesExist(path)) return null;
     const params = ['program', 'dump', id, path];
-    const { stdout } = await execa('solana', params);
+    const { stdout } = await execa('solana', params).catch(() => ({ stdout: false }));
     console.log(stdout);
 };
 
