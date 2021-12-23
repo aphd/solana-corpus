@@ -21,7 +21,6 @@ const keys = [
 export const getBlockData = async (slot) => {
     try {
         const block = await connection.getBlock(slot);
-
         const progMatch = JSON.stringify(block).match(/Program (\w{44})/g);
         const programs = uniq(progMatch.map((e) => e.replace('Program ', '')));
         return { programs, block };
