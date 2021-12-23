@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.2.0](https://github.com/aphd/solana-corpus/compare/v1.1.0...v1.2.0) (2021-12-23)
+
+
+### Features
+
+* add R script for solana smart contracts ([4f321b6](https://github.com/aphd/solana-corpus/commit/4f321b68a50e7be5ef4e3a2fe171e8f4e447c9f9))
+* update data/csv/programsInfo.csv ([27f4542](https://github.com/aphd/solana-corpus/commit/27f4542f06f5048a390b25ddb8a6cdfaf7523224))
+* update settings ([a9d234a](https://github.com/aphd/solana-corpus/commit/a9d234a2ed2828fe6189f6da572389f6c8e954cc))
+
+
+### Bug Fixes
+
+* add catch block to getProgramInfo function ([31e9e65](https://github.com/aphd/solana-corpus/commit/31e9e6511c00245ac733273b5273bfccdc20fe36))
+
 ## 1.1.0 (2021-12-21)
 
 

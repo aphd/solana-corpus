@@ -20,8 +20,6 @@ library(ggplot2)
 ggplot(df, aes(x=delta))+ geom_histogram() + stat_bin(aes(y=..count.., label=..count..), binwidth=100) + xlab("block time [ms]")
 
 #cumulative density of block time (CDF of blocktimes)
-
-
 dff <- filter(df, df$deltaBlockTime > -1 & df$deltaBlockTime < 1500)
 dff$ID <- seq.int(nrow(dff))
 dff$blockTime <- as.numeric(as.character(dff[,1]))

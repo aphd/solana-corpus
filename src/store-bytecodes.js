@@ -1,5 +1,5 @@
 import * as utils from './utils.js';
-import { storeBytecode } from './programs.utils.js';
+import { storeBytecode } from './block.utils.js';
 
 const storeBytecodes = async () => {
     const programIds = await utils.getProgramsId();

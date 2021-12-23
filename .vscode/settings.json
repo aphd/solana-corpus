@@ -4,6 +4,7 @@
     "titleBar.activeBackground": "#23830b",
     "titleBar.activeForeground": "#FFF9FE"
   },
+  "editor.formatOnSave": true,
   "files.exclude": {
     "**/.git": true,
     "**/.svn": true,
@@ -12,6 +13,12 @@
     "**/.DS_Store": true,
     "**/Thumbs.db": true,
     ".*csv": true
+  },
+  "prettier": {
+    "printWidth": 120,
+    "semi": true,
+    "singleQuote": true,
+    "tabWidth": 4,
   },
   "[javascript]": {
     "editor.rulers": [
