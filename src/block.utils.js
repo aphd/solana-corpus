@@ -5,22 +5,13 @@ import { config } from './config.js';
 import fs from 'fs';
 import Papa from 'papaparse';
 
-const connection = new solanaWeb3.Connection(
-    solanaWeb3.clusterApiUrl('mainnet-beta'),
-    'confirmed'
-);
+const getConnection = () => new solanaWeb3.Connection(solanaWeb3.clusterApiUrl('mainnet-beta'), 'confirmed');
 
-const keys = [
-    'blockHeight',
-    'blockTime',
-    'parentSlot',
-    'blockhash',
-    'previousBlockhash',
-];
+const getKeys = () => ['blockHeight', 'blockTime', 'parentSlot', 'blockhash', 'previousBlockhash'];
 
 export const getBlockData = async (slot) => {
     try {
-        const block = await connection.getBlock(slot);
+        const block = await getConnection().getBlock(slot);
         const progMatch = JSON.stringify(block).match(/Program (\w{44})/g);
         const programs = uniq(progMatch.map((e) => e.replace('Program ', '')));
         return { programs, block };
@@ -53,7 +44,7 @@ export const storeBytecode = async (id) => {
 };
 
 export const storeBlockInfo = async (block, blockId) => {
-    const blockInfo = keys.reduce((a, c) => ({ ...a, [c]: block[c] || 'NA' }), { blockId });
+    const blockInfo = getKeys().reduce((a, c) => ({ ...a, [c]: block[c] || 'NA' }), { blockId });
     blockInfo['transactions'] = block?.transactions?.length || 'NA';
     appendDataToCSV(config.block_info_fn, [blockInfo], false);
 };
