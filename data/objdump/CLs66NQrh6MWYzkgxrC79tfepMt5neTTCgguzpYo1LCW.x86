@@ -1,0 +1,3099 @@
+
+data/bytecode/CLs66NQrh6MWYzkgxrC79tfepMt5neTTCgguzpYo1LCW.bytecode:	file format elf64-bpf
+
+architecture: bpfel
+start address: 0x00000000000000e8
+
+Program Header:
+    LOAD off    0x00000000000000e8 vaddr 0x00000000000000e8 paddr 0x00000000000000e8 align 2**12
+         filesz 0x0000000000001d00 memsz 0x0000000000001d00 flags r-x
+    LOAD off    0x0000000000001de8 vaddr 0x0000000000001de8 paddr 0x0000000000001de8 align 2**12
+         filesz 0x00000000000000e0 memsz 0x00000000000000e0 flags r--
+ DYNAMIC off    0x0000000000001ec8 vaddr 0x0000000000001ec8 paddr 0x0000000000001ec8 align 2**3
+         filesz 0x00000000000000d0 memsz 0x00000000000000d0 flags rw-
+
+Dynamic Section:
+  FLAGS    0x0000000000000004
+  REL      0x0000000000001d88
+  RELSZ    0x0000000000000060
+  RELENT   0x0000000000000010
+  RELCOUNT 0x0000000000000005
+  SYMTAB   0x0000000000001ca8
+  SYMENT   0x0000000000000018
+  STRTAB   0x0000000000001d54
+  STRSZ    0x000000000000002d
+  TEXTREL  0x0000000000000000
+  GNU_HASH 0x0000000000001d08
+  HASH     0x0000000000001d2c
+Sections:
+Idx Name          Size     VMA              Type
+  0               00000000 0000000000000000 
+  1 .text         00001bc0 00000000000000e8 TEXT
+  2 .dynsym       00000060 0000000000001ca8 
+  3 .gnu.hash     00000024 0000000000001d08 
+  4 .hash         00000028 0000000000001d2c 
+  5 .dynstr       0000002d 0000000000001d54 
+  6 .rel.dyn      00000060 0000000000001d88 
+  7 .rodata       000000e0 0000000000001de8 DATA
+  8 .dynamic      000000d0 0000000000001ec8 
+  9 .comment      0000006e 0000000000000000 
+ 10 .symtab       00000678 0000000000000000 
+ 11 .shstrtab     00000064 0000000000000000 
+ 12 .strtab       0000025a 0000000000000000 
+
+SYMBOL TABLE:
+0000000000000000 l    df *ABS*	0000000000000000 serum-pyth.c
+0000000000001090 l       .text	0000000000000000 LBB0_100
+0000000000001128 l       .text	0000000000000000 LBB0_103
+0000000000001138 l       .text	0000000000000000 LBB0_104
+0000000000001170 l       .text	0000000000000000 LBB0_105
+00000000000001a0 l       .text	0000000000000000 LBB0_11
+0000000000001218 l       .text	0000000000000000 LBB0_116
+00000000000013a0 l       .text	0000000000000000 LBB0_120
+00000000000014b0 l       .text	0000000000000000 LBB0_127
+00000000000014f8 l       .text	0000000000000000 LBB0_129
+00000000000001c0 l       .text	0000000000000000 LBB0_13
+0000000000001520 l       .text	0000000000000000 LBB0_130
+0000000000001538 l       .text	0000000000000000 LBB0_131
+0000000000001598 l       .text	0000000000000000 LBB0_133
+00000000000015a8 l       .text	0000000000000000 LBB0_134
+00000000000015e0 l       .text	0000000000000000 LBB0_135
+0000000000000270 l       .text	0000000000000000 LBB0_14
+0000000000001690 l       .text	0000000000000000 LBB0_146
+0000000000000320 l       .text	0000000000000000 LBB0_15
+0000000000001830 l       .text	0000000000000000 LBB0_150
+0000000000001960 l       .text	0000000000000000 LBB0_157
+00000000000019a8 l       .text	0000000000000000 LBB0_159
+00000000000019d0 l       .text	0000000000000000 LBB0_160
+0000000000001b10 l       .text	0000000000000000 LBB0_162
+0000000000001b80 l       .text	0000000000000000 LBB0_164
+00000000000004e0 l       .text	0000000000000000 LBB0_165
+0000000000000458 l       .text	0000000000000000 LBB0_21
+0000000000000468 l       .text	0000000000000000 LBB0_22
+00000000000004a8 l       .text	0000000000000000 LBB0_23
+00000000000004e0 l       .text	0000000000000000 LBB0_25
+00000000000004e8 l       .text	0000000000000000 LBB0_26
+0000000000000400 l       .text	0000000000000000 LBB0_3
+0000000000000578 l       .text	0000000000000000 LBB0_30
+0000000000000588 l       .text	0000000000000000 LBB0_31
+00000000000005c0 l       .text	0000000000000000 LBB0_32
+0000000000000738 l       .text	0000000000000000 LBB0_42
+0000000000000748 l       .text	0000000000000000 LBB0_43
+0000000000000788 l       .text	0000000000000000 LBB0_44
+0000000000000848 l       .text	0000000000000000 LBB0_49
+0000000000000858 l       .text	0000000000000000 LBB0_50
+0000000000000898 l       .text	0000000000000000 LBB0_51
+0000000000000988 l       .text	0000000000000000 LBB0_56
+0000000000000998 l       .text	0000000000000000 LBB0_57
+00000000000009d0 l       .text	0000000000000000 LBB0_58
+0000000000000148 l       .text	0000000000000000 LBB0_6
+0000000000000a70 l       .text	0000000000000000 LBB0_69
+0000000000000bf8 l       .text	0000000000000000 LBB0_73
+0000000000000ce8 l       .text	0000000000000000 LBB0_78
+0000000000000cf8 l       .text	0000000000000000 LBB0_79
+0000000000000d30 l       .text	0000000000000000 LBB0_80
+0000000000000dc0 l       .text	0000000000000000 LBB0_83
+0000000000000dd0 l       .text	0000000000000000 LBB0_84
+0000000000000e08 l       .text	0000000000000000 LBB0_85
+0000000000000e98 l       .text	0000000000000000 LBB0_88
+0000000000000ea8 l       .text	0000000000000000 LBB0_89
+0000000000000178 l       .text	0000000000000000 LBB0_9
+0000000000000ee0 l       .text	0000000000000000 LBB0_90
+0000000000000f70 l       .text	0000000000000000 LBB0_93
+0000000000000f80 l       .text	0000000000000000 LBB0_94
+0000000000000fb8 l       .text	0000000000000000 LBB0_95
+0000000000001048 l       .text	0000000000000000 LBB0_98
+0000000000001058 l       .text	0000000000000000 LBB0_99
+0000000000001ea8 l     O .rodata	0000000000000020 SPL_TOKEN_PROGRAM
+0000000000001e08 l     O .rodata	00000000000000a0 TEN_TO_THE
+0000000000001ec8 l       .dynamic	0000000000000000 .hidden _DYNAMIC
+00000000000000e8 g     F .text	0000000000001bc0 entrypoint
+0000000000000000         *UND*	0000000000000000 sol_invoke_signed_c
+0000000000001de8 g     O .rodata	0000000000000020 sysvar_clock
+
+Disassembly of section .text:
+
+00000000000000e8 <entrypoint>:
+      e8: 18 00                        	sbbb	%al, (%eax)
+		...
+      f2: 00 00                        	addb	%al, (%eax)
+      f4: 02 00                        	addb	(%eax), %al
+      f6: 00 00                        	addb	%al, (%eax)
+      f8: 15 01 7c 00 00               	adcl	$31745, %eax
+      fd: 00 00                        	addb	%al, (%eax)
+      ff: 00 18                        	addb	%bl, (%eax)
+		...
+     109: 00 00                        	addb	%al, (%eax)
+     10b: 00 0b                        	addb	%cl, (%ebx)
+     10d: 00 00                        	addb	%al, (%eax)
+     10f: 00 79 12                     	addb	%bh, 18(%ecx)
+     112: 00 00                        	addb	%al, (%eax)
+     114: 00 00                        	addb	%al, (%eax)
+     116: 00 00                        	addb	%al, (%eax)
+     118: 15 02 78 00 00               	adcl	$30722, %eax
+     11d: 00 00                        	addb	%al, (%eax)
+     11f: 00 b7 03 00 00 00            	addb	%dh, 3(%edi)
+     125: 00 00                        	addb	%al, (%eax)
+     127: 00 bf a4 00 00 00            	addb	%bh, 164(%edi)
+     12d: 00 00                        	addb	%al, (%eax)
+     12f: 00 07                        	addb	%al, (%edi)
+     131: 04 00                        	addb	$0, %al
+     133: 00 f2                        	addb	%dh, %dl
+     135: fd                           	std
+     136: ff ff                        	<unknown>
+     138: b7 05                        	movb	$5, %bh
+     13a: 00 00                        	addb	%al, (%eax)
+     13c: 0a 00                        	orb	(%eax), %al
+     13e: 00 00                        	addb	%al, (%eax)
+     140: 05 00 57 00 00               	addl	$22272, %eax
+     145: 00 00                        	addb	%al, (%eax)
+     147: 00 55 07                     	addb	%dl, 7(%ebp)
+
+0000000000000148 <LBB0_6>:
+     148: 55                           	pushl	%ebp
+     149: 07                           	popl	%es
+     14a: 24 00                        	andb	$0, %al
+     14c: ff 00                        	incl	(%eax)
+     14e: 00 00                        	addb	%al, (%eax)
+     150: 71 68                        	jno	0x1ba <LBB0_11+0x1a>
+     152: 09 00                        	orl	%eax, (%eax)
+     154: 00 00                        	addb	%al, (%eax)
+     156: 00 00                        	addb	%al, (%eax)
+     158: b7 01                        	movb	$1, %bh
+     15a: 00 00                        	addb	%al, (%eax)
+     15c: 01 00                        	addl	%eax, (%eax)
+     15e: 00 00                        	addb	%al, (%eax)
+     160: b7 07                        	movb	$7, %bh
+     162: 00 00                        	addb	%al, (%eax)
+     164: 01 00                        	addl	%eax, (%eax)
+     166: 00 00                        	addb	%al, (%eax)
+     168: 55                           	pushl	%ebp
+     169: 08 01                        	orb	%al, (%ecx)
+     16b: 00 00                        	addb	%al, (%eax)
+     16d: 00 00                        	addb	%al, (%eax)
+     16f: 00 b7 07 00 00 00            	addb	%dh, 7(%edi)
+     175: 00 00                        	addb	%al, (%eax)
+     177: 00 73 74                     	addb	%dh, 116(%ebx)
+
+0000000000000178 <LBB0_9>:
+     178: 73 74                        	jae	0x1ee <LBB0_13+0x2e>
+     17a: fe ff                        	<unknown>
+     17c: 00 00                        	addb	%al, (%eax)
+     17e: 00 00                        	addb	%al, (%eax)
+     180: 71 68                        	jno	0x1ea <LBB0_13+0x2a>
+     182: 0a 00                        	orb	(%eax), %al
+     184: 00 00                        	addb	%al, (%eax)
+     186: 00 00                        	addb	%al, (%eax)
+     188: b7 07                        	movb	$7, %bh
+     18a: 00 00                        	addb	%al, (%eax)
+     18c: 01 00                        	addl	%eax, (%eax)
+     18e: 00 00                        	addb	%al, (%eax)
+     190: 55                           	pushl	%ebp
+     191: 08 01                        	orb	%al, (%ecx)
+     193: 00 00                        	addb	%al, (%eax)
+     195: 00 00                        	addb	%al, (%eax)
+     197: 00 b7 07 00 00 00            	addb	%dh, 7(%edi)
+     19d: 00 00                        	addb	%al, (%eax)
+     19f: 00 73 74                     	addb	%dh, 116(%ebx)
+
+00000000000001a0 <LBB0_11>:
+     1a0: 73 74                        	jae	0x216 <LBB0_13+0x56>
+     1a2: ff ff                        	<unknown>
+     1a4: 00 00                        	addb	%al, (%eax)
+     1a6: 00 00                        	addb	%al, (%eax)
+     1a8: 71 67                        	jno	0x211 <LBB0_13+0x51>
+     1aa: 0b 00                        	orl	(%eax), %eax
+     1ac: 00 00                        	addb	%al, (%eax)
+     1ae: 00 00                        	addb	%al, (%eax)
+     1b0: 55                           	pushl	%ebp
+     1b1: 07                           	popl	%es
+     1b2: 01 00                        	addl	%eax, (%eax)
+     1b4: 00 00                        	addb	%al, (%eax)
+     1b6: 00 00                        	addb	%al, (%eax)
+     1b8: b7 01                        	movb	$1, %bh
+     1ba: 00 00                        	addb	%al, (%eax)
+     1bc: 00 00                        	addb	%al, (%eax)
+     1be: 00 00                        	addb	%al, (%eax)
+
+00000000000001c0 <LBB0_13>:
+     1c0: bf 67 00 00 00               	movl	$103, %edi
+     1c5: 00 00                        	addb	%al, (%eax)
+     1c7: 00 07                        	addb	%al, (%edi)
+     1c9: 07                           	popl	%es
+     1ca: 00 00                        	addb	%al, (%eax)
+     1cc: 30 00                        	xorb	%al, (%eax)
+     1ce: 00 00                        	addb	%al, (%eax)
+     1d0: 7b 74                        	jnp	0x246 <LBB0_13+0x86>
+     1d2: ee                           	outb	%al, %dx
+     1d3: ff 00                        	incl	(%eax)
+     1d5: 00 00                        	addb	%al, (%eax)
+     1d7: 00 bf 67 00 00 00            	addb	%bh, 103(%edi)
+     1dd: 00 00                        	addb	%al, (%eax)
+     1df: 00 07                        	addb	%al, (%edi)
+     1e1: 07                           	popl	%es
+     1e2: 00 00                        	addb	%al, (%eax)
+     1e4: 10 00                        	adcb	%al, (%eax)
+     1e6: 00 00                        	addb	%al, (%eax)
+     1e8: 7b 74                        	jnp	0x25e <LBB0_13+0x9e>
+     1ea: ce                           	into
+     1eb: ff 00                        	incl	(%eax)
+     1ed: 00 00                        	addb	%al, (%eax)
+     1ef: 00 bf 67 00 00 00            	addb	%bh, 103(%edi)
+     1f5: 00 00                        	addb	%al, (%eax)
+     1f7: 00 07                        	addb	%al, (%edi)
+     1f9: 07                           	popl	%es
+     1fa: 00 00                        	addb	%al, (%eax)
+     1fc: 50                           	pushl	%eax
+     1fd: 00 00                        	addb	%al, (%eax)
+     1ff: 00 7b 74                     	addb	%bh, 116(%ebx)
+     202: d6                           	salc
+     203: ff 00                        	incl	(%eax)
+     205: 00 00                        	addb	%al, (%eax)
+     207: 00 73 14                     	addb	%dh, 20(%ebx)
+     20a: 00 00                        	addb	%al, (%eax)
+     20c: 00 00                        	addb	%al, (%eax)
+     20e: 00 00                        	addb	%al, (%eax)
+     210: bf 61 00 00 00               	movl	$97, %edi
+     215: 00 00                        	addb	%al, (%eax)
+     217: 00 07                        	addb	%al, (%edi)
+     219: 01 00                        	addl	%eax, (%eax)
+     21b: 00 60 00                     	addb	%ah, (%eax)
+     21e: 00 00                        	addb	%al, (%eax)
+     220: 79 67                        	jns	0x289 <LBB0_14+0x19>
+     222: 58                           	popl	%eax
+     223: 00 00                        	addb	%al, (%eax)
+     225: 00 00                        	addb	%al, (%eax)
+     227: 00 7b 14                     	addb	%bh, 20(%ebx)
+     22a: e6 ff                        	outb	%al, $255
+     22c: 00 00                        	addb	%al, (%eax)
+     22e: 00 00                        	addb	%al, (%eax)
+     230: 7b 74                        	jnp	0x2a6 <LBB0_14+0x36>
+     232: de ff                        	fdivrp	%st, %st(7)
+     234: 00 00                        	addb	%al, (%eax)
+     236: 00 00                        	addb	%al, (%eax)
+     238: 0f 76 00                     	pcmpeqd	(%eax), %mm0
+     23b: 00 00                        	addb	%al, (%eax)
+     23d: 00 00                        	addb	%al, (%eax)
+     23f: 00 07                        	addb	%al, (%edi)
+     241: 06                           	pushl	%es
+     242: 00 00                        	addb	%al, (%eax)
+     244: 67 28 00                     	subb	%al, (%bx,%si)
+     247: 00 57 06                     	addb	%dl, 6(%edi)
+     24a: 00 00                        	addb	%al, (%eax)
+     24c: f8                           	clc
+     24d: ff ff                        	<unknown>
+     24f: ff 79 61                     	<unknown>
+     252: 00 00                        	addb	%al, (%eax)
+     254: 00 00                        	addb	%al, (%eax)
+     256: 00 00                        	addb	%al, (%eax)
+     258: 7b 14                        	jnp	0x26e <LBB0_13+0xae>
+     25a: f6 ff                        	idivb	%bh
+     25c: 00 00                        	addb	%al, (%eax)
+     25e: 00 00                        	addb	%al, (%eax)
+     260: bf 61 00 00 00               	movl	$97, %edi
+     265: 00 00                        	addb	%al, (%eax)
+     267: 00 05 00 16 00 00            	addb	%al, 5632
+     26d: 00 00                        	addb	%al, (%eax)
+     26f: 00 27                        	addb	%ah, (%edi)
+
+0000000000000270 <LBB0_14>:
+     270: 27                           	daa
+     271: 07                           	popl	%es
+     272: 00 00                        	addb	%al, (%eax)
+     274: 38 00                        	cmpb	%al, (%eax)
+     276: 00 00                        	addb	%al, (%eax)
+     278: bf a6 00 00 00               	movl	$166, %edi
+     27d: 00 00                        	addb	%al, (%eax)
+     27f: 00 07                        	addb	%al, (%edi)
+     281: 06                           	pushl	%es
+     282: 00 00                        	addb	%al, (%eax)
+     284: c0 fd ff                     	sarb	$255, %ch
+     287: ff 0f                        	decl	(%edi)
+     289: 76 00                        	jbe	0x28b <LBB0_14+0x1b>
+     28b: 00 00                        	addb	%al, (%eax)
+     28d: 00 00                        	addb	%al, (%eax)
+     28f: 00 71 67                     	addb	%dh, 103(%ecx)
+     292: 30 00                        	xorb	%al, (%eax)
+     294: 00 00                        	addb	%al, (%eax)
+     296: 00 00                        	addb	%al, (%eax)
+     298: 73 74                        	jae	0x30e <LBB0_14+0x9e>
+     29a: fe ff                        	<unknown>
+     29c: 00 00                        	addb	%al, (%eax)
+     29e: 00 00                        	addb	%al, (%eax)
+     2a0: 71 67                        	jno	0x309 <LBB0_14+0x99>
+     2a2: 31 00                        	xorl	%eax, (%eax)
+     2a4: 00 00                        	addb	%al, (%eax)
+     2a6: 00 00                        	addb	%al, (%eax)
+     2a8: 73 74                        	jae	0x31e <LBB0_14+0xae>
+     2aa: ff ff                        	<unknown>
+     2ac: 00 00                        	addb	%al, (%eax)
+     2ae: 00 00                        	addb	%al, (%eax)
+     2b0: 71 67                        	jno	0x319 <LBB0_14+0xa9>
+     2b2: 32 00                        	xorb	(%eax), %al
+     2b4: 00 00                        	addb	%al, (%eax)
+     2b6: 00 00                        	addb	%al, (%eax)
+     2b8: 73 74                        	jae	0x32e <LBB0_15+0xe>
+     2ba: 00 00                        	addb	%al, (%eax)
+     2bc: 00 00                        	addb	%al, (%eax)
+     2be: 00 00                        	addb	%al, (%eax)
+     2c0: 79 67                        	jns	0x329 <LBB0_15+0x9>
+     2c2: 00 00                        	addb	%al, (%eax)
+     2c4: 00 00                        	addb	%al, (%eax)
+     2c6: 00 00                        	addb	%al, (%eax)
+     2c8: 7b 74                        	jnp	0x33e <LBB0_15+0x1e>
+     2ca: ce                           	into
+     2cb: ff 00                        	incl	(%eax)
+     2cd: 00 00                        	addb	%al, (%eax)
+     2cf: 00 79 67                     	addb	%bh, 103(%ecx)
+     2d2: 20 00                        	andb	%al, (%eax)
+     2d4: 00 00                        	addb	%al, (%eax)
+     2d6: 00 00                        	addb	%al, (%eax)
+     2d8: 7b 74                        	jnp	0x34e <LBB0_15+0x2e>
+     2da: ee                           	outb	%al, %dx
+     2db: ff 00                        	incl	(%eax)
+     2dd: 00 00                        	addb	%al, (%eax)
+     2df: 00 79 67                     	addb	%bh, 103(%ecx)
+     2e2: 08 00                        	orb	%al, (%eax)
+     2e4: 00 00                        	addb	%al, (%eax)
+     2e6: 00 00                        	addb	%al, (%eax)
+     2e8: 7b 74                        	jnp	0x35e <LBB0_15+0x3e>
+     2ea: d6                           	salc
+     2eb: ff 00                        	incl	(%eax)
+     2ed: 00 00                        	addb	%al, (%eax)
+     2ef: 00 79 67                     	addb	%bh, 103(%ecx)
+     2f2: 10 00                        	adcb	%al, (%eax)
+     2f4: 00 00                        	addb	%al, (%eax)
+     2f6: 00 00                        	addb	%al, (%eax)
+     2f8: 7b 74                        	jnp	0x36e <LBB0_15+0x4e>
+     2fa: de ff                        	fdivrp	%st, %st(7)
+     2fc: 00 00                        	addb	%al, (%eax)
+     2fe: 00 00                        	addb	%al, (%eax)
+     300: 79 67                        	jns	0x369 <LBB0_15+0x49>
+     302: 18 00                        	sbbb	%al, (%eax)
+     304: 00 00                        	addb	%al, (%eax)
+     306: 00 00                        	addb	%al, (%eax)
+     308: 7b 74                        	jnp	0x37e <LBB0_15+0x5e>
+     30a: e6 ff                        	outb	%al, $255
+     30c: 00 00                        	addb	%al, (%eax)
+     30e: 00 00                        	addb	%al, (%eax)
+     310: 79 66                        	jns	0x378 <LBB0_15+0x58>
+     312: 28 00                        	subb	%al, (%eax)
+     314: 00 00                        	addb	%al, (%eax)
+     316: 00 00                        	addb	%al, (%eax)
+     318: 7b 64                        	jnp	0x37e <LBB0_15+0x5e>
+     31a: f6 ff                        	idivb	%bh
+     31c: 00 00                        	addb	%al, (%eax)
+     31e: 00 00                        	addb	%al, (%eax)
+
+0000000000000320 <LBB0_15>:
+     320: 07                           	popl	%es
+     321: 04 00                        	addb	$0, %al
+     323: 00 38                        	addb	%bh, (%eax)
+     325: 00 00                        	addb	%al, (%eax)
+     327: 00 07                        	addb	%al, (%edi)
+     329: 03 00                        	addl	(%eax), %eax
+     32b: 00 01                        	addb	%al, (%ecx)
+     32d: 00 00                        	addb	%al, (%eax)
+     32f: 00 5d 32                     	addb	%bl, 50(%ebp)
+     332: 19 00                        	sbbl	%eax, (%eax)
+     334: 00 00                        	addb	%al, (%eax)
+     336: 00 00                        	addb	%al, (%eax)
+     338: 55                           	pushl	%ebp
+     339: 02 34 00                     	addb	(%eax,%eax), %dh
+     33c: 0a 00                        	orb	(%eax), %al
+     33e: 00 00                        	addb	%al, (%eax)
+     340: 18 00                        	sbbb	%al, (%eax)
+		...
+     34a: 00 00                        	addb	%al, (%eax)
+     34c: 08 00                        	orb	%al, (%eax)
+     34e: 00 00                        	addb	%al, (%eax)
+     350: 71 a1                        	jno	0x2f3 <LBB0_14+0x83>
+     352: f0                           	lock
+     353: fd                           	std
+     354: 00 00                        	addb	%al, (%eax)
+     356: 00 00                        	addb	%al, (%eax)
+     358: 15 01 30 00 00               	adcl	$12289, %eax
+     35d: 00 00                        	addb	%al, (%eax)
+     35f: 00 71 a1                     	addb	%dh, -95(%ecx)
+     362: f1                           	<unknown>
+     363: fd                           	std
+     364: 00 00                        	addb	%al, (%eax)
+     366: 00 00                        	addb	%al, (%eax)
+     368: 15 01 2e 00 00               	adcl	$11777, %eax
+     36d: 00 00                        	addb	%al, (%eax)
+     36f: 00 b7 01 00 00 73            	addb	%dh, 1929379841(%edi)
+     375: 55                           	pushl	%ebp
+     376: 5b                           	popl	%ebx
+     377: 21 7b 1a                     	andl	%edi, 26(%ebx)
+     37a: a8 fd                        	testb	$-3, %al
+     37c: 00 00                        	addb	%al, (%eax)
+     37e: 00 00                        	addb	%al, (%eax)
+     380: 18 01                        	sbbb	%al, (%ecx)
+     382: 00 00                        	addb	%al, (%eax)
+     384: 8b 5e b8                     	movl	-72(%esi), %ebx
+     387: a3 00 00 00 00               	movl	%eax, 0
+     38c: 9b                           	wait
+     38d: 4b                           	decl	%ebx
+     38e: 6d                           	insl	%dx, %es:(%edi)
+     38f: 5c                           	popl	%esp
+     390: 7b 1a                        	jnp	0x3ac <LBB0_15+0x8c>
+     392: a0 fd 00 00 00               	movb	253, %al
+     397: 00 18                        	addb	%bl, (%eax)
+     399: 01 00                        	addl	%eax, (%eax)
+     39b: 00 28                        	addb	%ch, (%eax)
+     39d: 56                           	pushl	%esi
+     39e: 63 98 00 00 00 00            	arpl	%bx, (%eax)
+     3a4: 69 1d 5e b6 7b 1a 98 fd 00 00	imull	$64920, 444315230, %ebx
+     3ae: 00 00                        	addb	%al, (%eax)
+     3b0: 18 01                        	sbbb	%al, (%ecx)
+     3b2: 00 00                        	addb	%al, (%eax)
+     3b4: 06                           	pushl	%es
+     3b5: a7                           	cmpsl	%es:(%edi), (%esi)
+     3b6: d5 17                        	aad	$23
+     3b8: 00 00                        	addb	%al, (%eax)
+     3ba: 00 00                        	addb	%al, (%eax)
+     3bc: 18 c7                        	sbbb	%al, %bh
+     3be: 74 c9                        	je	0x389 <LBB0_15+0x69>
+     3c0: 7b 1a                        	jnp	0x3dc <LBB0_15+0xbc>
+     3c2: 90                           	nop
+     3c3: fd                           	std
+     3c4: 00 00                        	addb	%al, (%eax)
+     3c6: 00 00                        	addb	%al, (%eax)
+     3c8: 18 00                        	sbbb	%al, (%eax)
+		...
+     3d2: 00 00                        	addb	%al, (%eax)
+     3d4: 02 00                        	addb	(%eax), %al
+     3d6: 00 00                        	addb	%al, (%eax)
+     3d8: 79 a1                        	jns	0x37b <LBB0_15+0x5b>
+     3da: 80 ff 00                     	cmpb	$0, %bh
+     3dd: 00 00                        	addb	%al, (%eax)
+     3df: 00 71 12                     	addb	%dh, 18(%ecx)
+     3e2: 00 00                        	addb	%al, (%eax)
+     3e4: 00 00                        	addb	%al, (%eax)
+     3e6: 00 00                        	addb	%al, (%eax)
+     3e8: 55                           	pushl	%ebp
+     3e9: 02 1e                        	addb	(%esi), %bl
+     3eb: 00 06                        	addb	%al, (%esi)
+     3ed: 00 00                        	addb	%al, (%eax)
+     3ef: 00 b7 02 00 00 01            	addb	%dh, 16777218(%edi)
+     3f5: 00 00                        	addb	%al, (%eax)
+     3f7: 00 05 00 0d 00 00            	addb	%al, 3328
+     3fd: 00 00                        	addb	%al, (%eax)
+     3ff: 00 bf 16 00 00 00            	addb	%bh, 22(%edi)
+
+0000000000000400 <LBB0_3>:
+     400: bf 16 00 00 00               	movl	$22, %edi
+     405: 00 00                        	addb	%al, (%eax)
+     407: 00 71 67                     	addb	%dh, 103(%ecx)
+     40a: 08 00                        	orb	%al, (%eax)
+     40c: 00 00                        	addb	%al, (%eax)
+     40e: 00 00                        	addb	%al, (%eax)
+     410: 07                           	popl	%es
+     411: 01 00                        	addl	%eax, (%eax)
+     413: 00 08                        	addb	%cl, (%eax)
+     415: 00 00                        	addb	%al, (%eax)
+     417: 00 2d 35 a5 ff 00            	addb	%ch, 16753973
+     41d: 00 00                        	addb	%al, (%eax)
+     41f: 00 55 07                     	addb	%dl, 7(%ebp)
+     422: df ff                        	<unknown>
+     424: ff 00                        	incl	(%eax)
+     426: 00 00                        	addb	%al, (%eax)
+     428: 79 61                        	jns	0x48b <LBB0_22+0x23>
+     42a: 58                           	popl	%eax
+     42b: 00 00                        	addb	%al, (%eax)
+     42d: 00 00                        	addb	%al, (%eax)
+     42f: 00 0f                        	addb	%cl, (%edi)
+     431: 16                           	pushl	%ss
+     432: 00 00                        	addb	%al, (%eax)
+     434: 00 00                        	addb	%al, (%eax)
+     436: 00 00                        	addb	%al, (%eax)
+     438: 07                           	popl	%es
+     439: 06                           	pushl	%es
+     43a: 00 00                        	addb	%al, (%eax)
+     43c: 67 28 00                     	subb	%al, (%bx,%si)
+     43f: 00 57 06                     	addb	%dl, 6(%edi)
+     442: 00 00                        	addb	%al, (%eax)
+     444: f8                           	clc
+     445: ff ff                        	<unknown>
+     447: ff bf 61 00 00 00            	<unknown>
+     44d: 00 00                        	addb	%al, (%eax)
+     44f: 00 05 00 d9 ff 00            	addb	%al, 16767232
+     455: 00 00                        	addb	%al, (%eax)
+     457: 00 07                        	addb	%al, (%edi)
+
+0000000000000458 <LBB0_21>:
+     458: 07                           	popl	%es
+     459: 02 00                        	addb	(%eax), %al
+     45b: 00 01                        	addb	%al, (%ecx)
+     45d: 00 00                        	addb	%al, (%eax)
+     45f: 00 15 02 08 00 20            	addb	%dl, 536872962
+     465: 00 00                        	addb	%al, (%eax)
+     467: 00 bf 13 00 00 00            	addb	%bh, 19(%edi)
+
+0000000000000468 <LBB0_22>:
+     468: bf 13 00 00 00               	movl	$19, %edi
+     46d: 00 00                        	addb	%al, (%eax)
+     46f: 00 0f                        	addb	%cl, (%edi)
+     471: 23 00                        	andl	(%eax), %eax
+     473: 00 00                        	addb	%al, (%eax)
+     475: 00 00                        	addb	%al, (%eax)
+     477: 00 bf a4 00 00 00            	addb	%bh, 164(%edi)
+     47d: 00 00                        	addb	%al, (%eax)
+     47f: 00 07                        	addb	%al, (%edi)
+     481: 04 00                        	addb	$0, %al
+     483: 00 90 fd ff ff 0f            	addb	%dl, 268435453(%eax)
+     489: 24 00                        	andb	$0, %al
+     48b: 00 00                        	addb	%al, (%eax)
+     48d: 00 00                        	addb	%al, (%eax)
+     48f: 00 71 44                     	addb	%dh, 68(%ecx)
+     492: 00 00                        	addb	%al, (%eax)
+     494: 00 00                        	addb	%al, (%eax)
+     496: 00 00                        	addb	%al, (%eax)
+     498: 71 33                        	jno	0x4cd <LBB0_23+0x25>
+     49a: 00 00                        	addb	%al, (%eax)
+     49c: 00 00                        	addb	%al, (%eax)
+     49e: 00 00                        	addb	%al, (%eax)
+     4a0: 1d 43 f6 ff 00               	sbbl	$16774723, %eax
+     4a5: 00 00                        	addb	%al, (%eax)
+     4a7: 00 07                        	addb	%al, (%edi)
+
+00000000000004a8 <LBB0_23>:
+     4a8: 07                           	popl	%es
+     4a9: 02 00                        	addb	(%eax), %al
+     4ab: 00 ff                        	addb	%bh, %bh
+     4ad: ff ff                        	<unknown>
+     4af: ff b7 03 00 00 1f            	pushl	520093699(%edi)
+     4b5: 00 00                        	addb	%al, (%eax)
+     4b7: 00 2d 23 04 00 00            	addb	%ch, 1059
+     4bd: 00 00                        	addb	%al, (%eax)
+     4bf: 00 18                        	addb	%bl, (%eax)
+		...
+     4c9: 00 00                        	addb	%al, (%eax)
+     4cb: 00 05 00 00 00 79            	addb	%al, 2030043136
+     4d1: a2 90 ff 00 00               	movb	%al, 65424
+     4d6: 00 00                        	addb	%al, (%eax)
+     4d8: 15 02 01 00 28               	adcl	$671088898, %eax
+     4dd: 00 00                        	addb	%al, (%eax)
+     4df: 00 95 00 00 00 00            	addb	%dl, (%ebp)
+
+00000000000004e0 <LBB0_25>:
+     4e0: 95                           	xchgl	%ebp, %eax
+     4e1: 00 00                        	addb	%al, (%eax)
+     4e3: 00 00                        	addb	%al, (%eax)
+     4e5: 00 00                        	addb	%al, (%eax)
+     4e7: 00 71 a2                     	addb	%dh, -94(%ecx)
+
+00000000000004e8 <LBB0_26>:
+     4e8: 71 a2                        	jno	0x48c <LBB0_22+0x24>
+     4ea: ea ff 00 00 00 00 18         	ljmpl	$6144, $255
+		...
+     4f9: 00 00                        	addb	%al, (%eax)
+     4fb: 00 02                        	addb	%al, (%edx)
+     4fd: 00 00                        	addb	%al, (%eax)
+     4ff: 00 15 02 fb ff 00            	addb	%dl, 16775938
+     505: 00 00                        	addb	%al, (%eax)
+     507: 00 71 a2                     	addb	%dh, -94(%ecx)
+     50a: 62 fe                        	<unknown>
+     50c: 00 00                        	addb	%al, (%eax)
+     50e: 00 00                        	addb	%al, (%eax)
+     510: 18 00                        	sbbb	%al, (%eax)
+		...
+     51a: 00 00                        	addb	%al, (%eax)
+     51c: 02 00                        	addb	(%eax), %al
+     51e: 00 00                        	addb	%al, (%eax)
+     520: 15 02 f7 ff 00               	adcl	$16774914, %eax
+     525: 00 00                        	addb	%al, (%eax)
+     527: 00 79 a2                     	addb	%bh, -94(%ecx)
+     52a: b8 ff 00 00 00               	movl	$255, %eax
+     52f: 00 71 23                     	addb	%dh, 35(%ecx)
+     532: 00 00                        	addb	%al, (%eax)
+     534: 00 00                        	addb	%al, (%eax)
+     536: 00 00                        	addb	%al, (%eax)
+     538: 79 a5                        	jns	0x4df <LBB0_23+0x37>
+     53a: 18 fe                        	sbbb	%bh, %dh
+     53c: 00 00                        	addb	%al, (%eax)
+     53e: 00 00                        	addb	%al, (%eax)
+     540: 71 54                        	jno	0x596 <LBB0_31+0xe>
+     542: 00 00                        	addb	%al, (%eax)
+     544: 00 00                        	addb	%al, (%eax)
+     546: 00 00                        	addb	%al, (%eax)
+     548: 18 00                        	sbbb	%al, (%eax)
+		...
+     552: 00 00                        	addb	%al, (%eax)
+     554: 07                           	popl	%es
+     555: 00 00                        	addb	%al, (%eax)
+     557: 00 5d 34                     	addb	%bl, 52(%ebp)
+     55a: f0                           	lock
+     55b: ff 00                        	incl	(%eax)
+     55d: 00 00                        	addb	%al, (%eax)
+     55f: 00 79 a3                     	addb	%bh, -93(%ecx)
+     562: 98                           	cwtl
+     563: ff 00                        	incl	(%eax)
+     565: 00 00                        	addb	%al, (%eax)
+     567: 00 b7 04 00 00 01            	addb	%dh, 16777220(%edi)
+     56d: 00 00                        	addb	%al, (%eax)
+     56f: 00 05 00 02 00 00            	addb	%al, 512
+     575: 00 00                        	addb	%al, (%eax)
+     577: 00 07                        	addb	%al, (%edi)
+
+0000000000000578 <LBB0_30>:
+     578: 07                           	popl	%es
+     579: 04 00                        	addb	$0, %al
+     57b: 00 01                        	addb	%al, (%ecx)
+     57d: 00 00                        	addb	%al, (%eax)
+     57f: 00 15 04 07 00 20            	addb	%dl, 536872708
+     585: 00 00                        	addb	%al, (%eax)
+     587: 00 bf 50 00 00 00            	addb	%bh, 80(%edi)
+
+0000000000000588 <LBB0_31>:
+     588: bf 50 00 00 00               	movl	$80, %edi
+     58d: 00 00                        	addb	%al, (%eax)
+     58f: 00 0f                        	addb	%cl, (%edi)
+     591: 40                           	incl	%eax
+     592: 00 00                        	addb	%al, (%eax)
+     594: 00 00                        	addb	%al, (%eax)
+     596: 00 00                        	addb	%al, (%eax)
+     598: bf 26 00 00 00               	movl	$38, %edi
+     59d: 00 00                        	addb	%al, (%eax)
+     59f: 00 0f                        	addb	%cl, (%edi)
+     5a1: 46                           	incl	%esi
+     5a2: 00 00                        	addb	%al, (%eax)
+     5a4: 00 00                        	addb	%al, (%eax)
+     5a6: 00 00                        	addb	%al, (%eax)
+     5a8: 71 66                        	jno	0x610 <LBB0_32+0x50>
+     5aa: 00 00                        	addb	%al, (%eax)
+     5ac: 00 00                        	addb	%al, (%eax)
+     5ae: 00 00                        	addb	%al, (%eax)
+     5b0: 71 00                        	jno	0x5b2 <LBB0_31+0x2a>
+     5b2: 00 00                        	addb	%al, (%eax)
+     5b4: 00 00                        	addb	%al, (%eax)
+     5b6: 00 00                        	addb	%al, (%eax)
+     5b8: 1d 60 f7 ff 00               	sbbl	$16775008, %eax
+     5bd: 00 00                        	addb	%al, (%eax)
+     5bf: 00 07                        	addb	%al, (%edi)
+
+00000000000005c0 <LBB0_32>:
+     5c0: 07                           	popl	%es
+     5c1: 04 00                        	addb	$0, %al
+     5c3: 00 ff                        	addb	%bh, %bh
+     5c5: ff ff                        	<unknown>
+     5c7: ff b7 05 00 00 1f            	pushl	520093701(%edi)
+     5cd: 00 00                        	addb	%al, (%eax)
+     5cf: 00 18                        	addb	%bl, (%eax)
+		...
+     5d9: 00 00                        	addb	%al, (%eax)
+     5db: 00 07                        	addb	%al, (%edi)
+     5dd: 00 00                        	addb	%al, (%eax)
+     5df: 00 2d 45 df ff 00            	addb	%ch, 16768837
+     5e5: 00 00                        	addb	%al, (%eax)
+     5e7: 00 71 a4                     	addb	%dh, -92(%ecx)
+     5ea: 29 fe                        	subl	%edi, %esi
+     5ec: 00 00                        	addb	%al, (%eax)
+     5ee: 00 00                        	addb	%al, (%eax)
+     5f0: 18 00                        	sbbb	%al, (%eax)
+		...
+     5fa: 00 00                        	addb	%al, (%eax)
+     5fc: 02 00                        	addb	(%eax), %al
+     5fe: 00 00                        	addb	%al, (%eax)
+     600: 15 04 db ff 00               	adcl	$16767748, %eax
+     605: 00 00                        	addb	%al, (%eax)
+     607: 00 79 a4                     	addb	%bh, -92(%ecx)
+     60a: 08 fe                        	orb	%bh, %dh
+     60c: 00 00                        	addb	%al, (%eax)
+     60e: 00 00                        	addb	%al, (%eax)
+     610: 18 00                        	sbbb	%al, (%eax)
+		...
+     61a: 00 00                        	addb	%al, (%eax)
+     61c: 05 00 00 00 55               	addl	$1426063360, %eax
+     621: 04 d7                        	addb	$-41, %al
+     623: ff f0                        	pushl	%eax
+     625: 0c 00                        	orb	$0, %al
+     627: 00 79 a4                     	addb	%bh, -92(%ecx)
+     62a: 10 fe                        	adcb	%bh, %dh
+     62c: 00 00                        	addb	%al, (%eax)
+     62e: 00 00                        	addb	%al, (%eax)
+     630: 61                           	popal
+     631: 45                           	incl	%ebp
+     632: 00 00                        	addb	%al, (%eax)
+     634: 00 00                        	addb	%al, (%eax)
+     636: 00 00                        	addb	%al, (%eax)
+     638: 18 06                        	sbbb	%al, (%esi)
+     63a: 00 00                        	addb	%al, (%eax)
+     63c: d4 c3                        	aam	$-61
+     63e: b2 a1                        	movb	$-95, %dl
+		...
+     648: 18 00                        	sbbb	%al, (%eax)
+		...
+     652: 00 00                        	addb	%al, (%eax)
+     654: 04 00                        	addb	$0, %al
+     656: 00 00                        	addb	%al, (%eax)
+     658: 5d                           	popl	%ebp
+     659: 65 d0 ff                     	sarb	%bh
+     65c: 00 00                        	addb	%al, (%eax)
+     65e: 00 00                        	addb	%al, (%eax)
+     660: 61                           	popal
+     661: 45                           	incl	%ebp
+     662: 04 00                        	addb	$0, %al
+     664: 00 00                        	addb	%al, (%eax)
+     666: 00 00                        	addb	%al, (%eax)
+     668: 18 00                        	sbbb	%al, (%eax)
+		...
+     672: 00 00                        	addb	%al, (%eax)
+     674: 04 00                        	addb	$0, %al
+     676: 00 00                        	addb	%al, (%eax)
+     678: 55                           	pushl	%ebp
+     679: 05 cc ff 02 00               	addl	$196556, %eax
+     67e: 00 00                        	addb	%al, (%eax)
+     680: 61                           	popal
+     681: 45                           	incl	%ebp
+     682: 08 00                        	orb	%al, (%eax)
+     684: 00 00                        	addb	%al, (%eax)
+     686: 00 00                        	addb	%al, (%eax)
+     688: 18 00                        	sbbb	%al, (%eax)
+		...
+     692: 00 00                        	addb	%al, (%eax)
+     694: 04 00                        	addb	$0, %al
+     696: 00 00                        	addb	%al, (%eax)
+     698: 55                           	pushl	%ebp
+     699: 05 c8 ff 03 00               	addl	$262088, %eax
+     69e: 00 00                        	addb	%al, (%eax)
+     6a0: 61                           	popal
+     6a1: 45                           	incl	%ebp
+     6a2: 10 00                        	adcb	%al, (%eax)
+     6a4: 00 00                        	addb	%al, (%eax)
+     6a6: 00 00                        	addb	%al, (%eax)
+     6a8: 18 00                        	sbbb	%al, (%eax)
+		...
+     6b2: 00 00                        	addb	%al, (%eax)
+     6b4: 04 00                        	addb	$0, %al
+     6b6: 00 00                        	addb	%al, (%eax)
+     6b8: 55                           	pushl	%ebp
+     6b9: 05 c4 ff 01 00               	addl	$131012, %eax
+     6be: 00 00                        	addb	%al, (%eax)
+     6c0: 61                           	popal
+     6c1: 44                           	incl	%esp
+     6c2: 14 00                        	adcb	$0, %al
+     6c4: 00 00                        	addb	%al, (%eax)
+     6c6: 00 00                        	addb	%al, (%eax)
+     6c8: 87 04 00                     	xchgl	%eax, (%eax,%eax)
+     6cb: 00 00                        	addb	%al, (%eax)
+     6cd: 00 00                        	addb	%al, (%eax)
+     6cf: 00 bf 45 00 00 00            	addb	%bh, 69(%edi)
+     6d5: 00 00                        	addb	%al, (%eax)
+     6d7: 00 57 05                     	addb	%dl, 5(%edi)
+     6da: 00 00                        	addb	%al, (%eax)
+     6dc: ff 00                        	incl	(%eax)
+     6de: 00 00                        	addb	%al, (%eax)
+     6e0: 18 00                        	sbbb	%al, (%eax)
+		...
+     6ea: 00 00                        	addb	%al, (%eax)
+     6ec: 04 00                        	addb	$0, %al
+     6ee: 00 00                        	addb	%al, (%eax)
+     6f0: 25 05 bd ff 13               	andl	$335527173, %eax
+     6f5: 00 00                        	addb	%al, (%eax)
+     6f7: 00 79 a5                     	addb	%bh, -91(%ecx)
+     6fa: 30 ff                        	xorb	%bh, %bh
+     6fc: 00 00                        	addb	%al, (%eax)
+     6fe: 00 00                        	addb	%al, (%eax)
+     700: 71 56                        	jno	0x758 <LBB0_43+0x10>
+     702: 00 00                        	addb	%al, (%eax)
+     704: 00 00                        	addb	%al, (%eax)
+     706: 00 00                        	addb	%al, (%eax)
+     708: 18 00                        	sbbb	%al, (%eax)
+		...
+     712: 00 00                        	addb	%al, (%eax)
+     714: 07                           	popl	%es
+     715: 00 00                        	addb	%al, (%eax)
+     717: 00 55 06                     	addb	%dl, 6(%ebp)
+     71a: b8 ff 06 00 00               	movl	$1791, %eax
+     71f: 00 b7 06 00 00 00            	addb	%dh, 6(%edi)
+     725: 00 00                        	addb	%al, (%eax)
+     727: 00 07                        	addb	%al, (%edi)
+     729: 05 00 00 01 00               	addl	$65536, %eax
+     72e: 00 00                        	addb	%al, (%eax)
+     730: 05 00 02 00 00               	addl	$512, %eax
+     735: 00 00                        	addb	%al, (%eax)
+     737: 00 07                        	addb	%al, (%edi)
+
+0000000000000738 <LBB0_42>:
+     738: 07                           	popl	%es
+     739: 06                           	pushl	%es
+     73a: 00 00                        	addb	%al, (%eax)
+     73c: 01 00                        	addl	%eax, (%eax)
+     73e: 00 00                        	addb	%al, (%eax)
+     740: 15 06 08 00 1f               	adcl	$520095750, %eax
+     745: 00 00                        	addb	%al, (%eax)
+     747: 00 bf 50 00 00 00            	addb	%bh, 80(%edi)
+
+0000000000000748 <LBB0_43>:
+     748: bf 50 00 00 00               	movl	$80, %edi
+     74d: 00 00                        	addb	%al, (%eax)
+     74f: 00 0f                        	addb	%cl, (%edi)
+     751: 60                           	pushal
+     752: 00 00                        	addb	%al, (%eax)
+     754: 00 00                        	addb	%al, (%eax)
+     756: 00 00                        	addb	%al, (%eax)
+     758: 18 07                        	sbbb	%al, (%edi)
+     75a: 00 00                        	addb	%al, (%eax)
+     75c: a8 1e                        	testb	$30, %al
+		...
+     766: 00 00                        	addb	%al, (%eax)
+     768: 0f 67 00                     	packuswb	(%eax), %mm0
+     76b: 00 00                        	addb	%al, (%eax)
+     76d: 00 00                        	addb	%al, (%eax)
+     76f: 00 71 77                     	addb	%dh, 119(%ecx)
+     772: 01 00                        	addl	%eax, (%eax)
+     774: 00 00                        	addb	%al, (%eax)
+     776: 00 00                        	addb	%al, (%eax)
+     778: 71 00                        	jno	0x77a <LBB0_43+0x32>
+     77a: 00 00                        	addb	%al, (%eax)
+     77c: 00 00                        	addb	%al, (%eax)
+     77e: 00 00                        	addb	%al, (%eax)
+     780: 1d 70 f6 ff 00               	sbbl	$16774768, %eax
+     785: 00 00                        	addb	%al, (%eax)
+     787: 00 b7 05 00 00 1f            	addb	%dh, 520093701(%edi)
+
+0000000000000788 <LBB0_44>:
+     788: b7 05                        	movb	$5, %bh
+     78a: 00 00                        	addb	%al, (%eax)
+     78c: 1f                           	popl	%ds
+     78d: 00 00                        	addb	%al, (%eax)
+     78f: 00 18                        	addb	%bl, (%eax)
+		...
+     799: 00 00                        	addb	%al, (%eax)
+     79b: 00 07                        	addb	%al, (%edi)
+     79d: 00 00                        	addb	%al, (%eax)
+     79f: 00 2d 65 a7 ff 00            	addb	%ch, 16754533
+     7a5: 00 00                        	addb	%al, (%eax)
+     7a7: 00 79 a5                     	addb	%bh, -91(%ecx)
+     7aa: 20 ff                        	andb	%bh, %bh
+     7ac: 00 00                        	addb	%al, (%eax)
+     7ae: 00 00                        	addb	%al, (%eax)
+     7b0: 18 00                        	sbbb	%al, (%eax)
+		...
+     7ba: 00 00                        	addb	%al, (%eax)
+     7bc: 05 00 00 00 55               	addl	$1426063360, %eax
+     7c1: 05 a3 ff 52 00               	addl	$5439395, %eax
+     7c6: 00 00                        	addb	%al, (%eax)
+     7c8: bf 45 00 00 00               	movl	$69, %edi
+     7cd: 00 00                        	addb	%al, (%eax)
+     7cf: 00 57 05                     	addb	%dl, 5(%edi)
+     7d2: 00 00                        	addb	%al, (%eax)
+     7d4: ff 00                        	incl	(%eax)
+     7d6: 00 00                        	addb	%al, (%eax)
+     7d8: 79 a0                        	jns	0x77a <LBB0_43+0x32>
+     7da: 28 ff                        	subb	%bh, %bh
+     7dc: 00 00                        	addb	%al, (%eax)
+     7de: 00 00                        	addb	%al, (%eax)
+     7e0: 71 06                        	jno	0x7e8 <LBB0_44+0x60>
+     7e2: 2c 00                        	subb	$0, %al
+     7e4: 00 00                        	addb	%al, (%eax)
+     7e6: 00 00                        	addb	%al, (%eax)
+     7e8: 18 00                        	sbbb	%al, (%eax)
+		...
+     7f2: 00 00                        	addb	%al, (%eax)
+     7f4: 04 00                        	addb	$0, %al
+     7f6: 00 00                        	addb	%al, (%eax)
+     7f8: 7b 6a                        	jnp	0x864 <LBB0_50+0xc>
+     7fa: 38 fd                        	cmpb	%bh, %ch
+     7fc: 00 00                        	addb	%al, (%eax)
+     7fe: 00 00                        	addb	%al, (%eax)
+     800: 2d 56 9b ff 00               	subl	$16751446, %eax
+     805: 00 00                        	addb	%al, (%eax)
+     807: 00 79 a7                     	addb	%bh, -89(%ecx)
+     80a: 68 ff 00 00 00               	pushl	$255
+     80f: 00 71 78                     	addb	%dh, 120(%ecx)
+     812: 00 00                        	addb	%al, (%eax)
+     814: 00 00                        	addb	%al, (%eax)
+     816: 00 00                        	addb	%al, (%eax)
+     818: 18 00                        	sbbb	%al, (%eax)
+		...
+     822: 00 00                        	addb	%al, (%eax)
+     824: 07                           	popl	%es
+     825: 00 00                        	addb	%al, (%eax)
+     827: 00 55 08                     	addb	%dl, 8(%ebp)
+     82a: 96                           	xchgl	%esi, %eax
+     82b: ff 06                        	incl	(%esi)
+     82d: 00 00                        	addb	%al, (%eax)
+     82f: 00 b7 08 00 00 00            	addb	%dh, 8(%edi)
+     835: 00 00                        	addb	%al, (%eax)
+     837: 00 07                        	addb	%al, (%edi)
+     839: 07                           	popl	%es
+     83a: 00 00                        	addb	%al, (%eax)
+     83c: 01 00                        	addl	%eax, (%eax)
+     83e: 00 00                        	addb	%al, (%eax)
+     840: 05 00 02 00 00               	addl	$512, %eax
+     845: 00 00                        	addb	%al, (%eax)
+     847: 00 07                        	addb	%al, (%edi)
+
+0000000000000848 <LBB0_49>:
+     848: 07                           	popl	%es
+     849: 08 00                        	orb	%al, (%eax)
+     84b: 00 01                        	addb	%al, (%ecx)
+     84d: 00 00                        	addb	%al, (%eax)
+     84f: 00 15 08 08 00 1f            	addb	%dl, 520095752
+     855: 00 00                        	addb	%al, (%eax)
+     857: 00 bf 70 00 00 00            	addb	%bh, 112(%edi)
+
+0000000000000858 <LBB0_50>:
+     858: bf 70 00 00 00               	movl	$112, %edi
+     85d: 00 00                        	addb	%al, (%eax)
+     85f: 00 0f                        	addb	%cl, (%edi)
+     861: 80 00 00                     	addb	$0, (%eax)
+     864: 00 00                        	addb	%al, (%eax)
+     866: 00 00                        	addb	%al, (%eax)
+     868: 18 09                        	sbbb	%cl, (%ecx)
+     86a: 00 00                        	addb	%al, (%eax)
+     86c: a8 1e                        	testb	$30, %al
+		...
+     876: 00 00                        	addb	%al, (%eax)
+     878: 0f 89 00 00 00 00            	jns	0x87e <LBB0_50+0x26>
+     87e: 00 00                        	addb	%al, (%eax)
+     880: 71 99                        	jno	0x81b <LBB0_44+0x93>
+     882: 01 00                        	addl	%eax, (%eax)
+     884: 00 00                        	addb	%al, (%eax)
+     886: 00 00                        	addb	%al, (%eax)
+     888: 71 00                        	jno	0x88a <LBB0_50+0x32>
+     88a: 00 00                        	addb	%al, (%eax)
+     88c: 00 00                        	addb	%al, (%eax)
+     88e: 00 00                        	addb	%al, (%eax)
+     890: 1d 90 f6 ff 00               	sbbl	$16774800, %eax
+     895: 00 00                        	addb	%al, (%eax)
+     897: 00 b7 07 00 00 1f            	addb	%dh, 520093703(%edi)
+
+0000000000000898 <LBB0_51>:
+     898: b7 07                        	movb	$7, %bh
+     89a: 00 00                        	addb	%al, (%eax)
+     89c: 1f                           	popl	%ds
+     89d: 00 00                        	addb	%al, (%eax)
+     89f: 00 18                        	addb	%bl, (%eax)
+		...
+     8a9: 00 00                        	addb	%al, (%eax)
+     8ab: 00 07                        	addb	%al, (%edi)
+     8ad: 00 00                        	addb	%al, (%eax)
+     8af: 00 2d 87 85 ff 00            	addb	%ch, 16745863
+     8b5: 00 00                        	addb	%al, (%eax)
+     8b7: 00 79 a7                     	addb	%bh, -89(%ecx)
+     8ba: 58                           	popl	%eax
+     8bb: ff 00                        	incl	(%eax)
+     8bd: 00 00                        	addb	%al, (%eax)
+     8bf: 00 18                        	addb	%bl, (%eax)
+		...
+     8c9: 00 00                        	addb	%al, (%eax)
+     8cb: 00 05 00 00 00 55            	addb	%al, 1426063360
+     8d1: 07                           	popl	%es
+     8d2: 81 ff 52 00 00 00            	cmpl	$82, %edi
+     8d8: 79 a0                        	jns	0x87a <LBB0_50+0x22>
+     8da: 60                           	pushal
+     8db: ff 00                        	incl	(%eax)
+     8dd: 00 00                        	addb	%al, (%eax)
+     8df: 00 71 06                     	addb	%dh, 6(%ecx)
+     8e2: 2c 00                        	subb	$0, %al
+     8e4: 00 00                        	addb	%al, (%eax)
+     8e6: 00 00                        	addb	%al, (%eax)
+     8e8: bf 48 00 00 00               	movl	$72, %edi
+     8ed: 00 00                        	addb	%al, (%eax)
+     8ef: 00 57 08                     	addb	%dl, 8(%edi)
+     8f2: 00 00                        	addb	%al, (%eax)
+     8f4: ff 00                        	incl	(%eax)
+     8f6: 00 00                        	addb	%al, (%eax)
+     8f8: 18 00                        	sbbb	%al, (%eax)
+		...
+     902: 00 00                        	addb	%al, (%eax)
+     904: 04 00                        	addb	$0, %al
+     906: 00 00                        	addb	%al, (%eax)
+     908: 7b 6a                        	jnp	0x974 <LBB0_51+0xdc>
+     90a: 30 fd                        	xorb	%bh, %ch
+     90c: 00 00                        	addb	%al, (%eax)
+     90e: 00 00                        	addb	%al, (%eax)
+     910: 2d 86 79 ff 00               	subl	$16742790, %eax
+     915: 00 00                        	addb	%al, (%eax)
+     917: 00 79 a7                     	addb	%bh, -89(%ecx)
+     91a: 88 fe                        	movb	%bh, %dh
+     91c: 00 00                        	addb	%al, (%eax)
+     91e: 00 00                        	addb	%al, (%eax)
+     920: 71 76                        	jno	0x998 <LBB0_57>
+     922: 00 00                        	addb	%al, (%eax)
+     924: 00 00                        	addb	%al, (%eax)
+     926: 00 00                        	addb	%al, (%eax)
+     928: 79 a0                        	jns	0x8ca <LBB0_51+0x32>
+     92a: 30 fe                        	xorb	%bh, %dh
+     92c: 00 00                        	addb	%al, (%eax)
+     92e: 00 00                        	addb	%al, (%eax)
+     930: 7b 0a                        	jnp	0x93c <LBB0_51+0xa4>
+     932: 28 fd                        	subb	%bh, %ch
+     934: 00 00                        	addb	%al, (%eax)
+     936: 00 00                        	addb	%al, (%eax)
+     938: 71 08                        	jno	0x942 <LBB0_51+0xaa>
+     93a: 00 00                        	addb	%al, (%eax)
+     93c: 00 00                        	addb	%al, (%eax)
+     93e: 00 00                        	addb	%al, (%eax)
+     940: 18 00                        	sbbb	%al, (%eax)
+		...
+     94a: 00 00                        	addb	%al, (%eax)
+     94c: 07                           	popl	%es
+     94d: 00 00                        	addb	%al, (%eax)
+     94f: 00 7b 6a                     	addb	%bh, 106(%ebx)
+     952: 20 fd                        	andb	%bh, %ch
+     954: 00 00                        	addb	%al, (%eax)
+     956: 00 00                        	addb	%al, (%eax)
+     958: 5d                           	popl	%ebp
+     959: 86 70 ff                     	xchgb	%dh, -1(%eax)
+     95c: 00 00                        	addb	%al, (%eax)
+     95e: 00 00                        	addb	%al, (%eax)
+     960: b7 08                        	movb	$8, %bh
+     962: 00 00                        	addb	%al, (%eax)
+     964: 00 00                        	addb	%al, (%eax)
+     966: 00 00                        	addb	%al, (%eax)
+     968: 07                           	popl	%es
+     969: 07                           	popl	%es
+     96a: 00 00                        	addb	%al, (%eax)
+     96c: 01 00                        	addl	%eax, (%eax)
+     96e: 00 00                        	addb	%al, (%eax)
+     970: 79 a6                        	jns	0x918 <LBB0_51+0x80>
+     972: 28 fd                        	subb	%bh, %ch
+     974: 00 00                        	addb	%al, (%eax)
+     976: 00 00                        	addb	%al, (%eax)
+     978: 07                           	popl	%es
+     979: 06                           	pushl	%es
+     97a: 00 00                        	addb	%al, (%eax)
+     97c: 01 00                        	addl	%eax, (%eax)
+     97e: 00 00                        	addb	%al, (%eax)
+     980: 05 00 02 00 00               	addl	$512, %eax
+     985: 00 00                        	addb	%al, (%eax)
+     987: 00 07                        	addb	%al, (%edi)
+
+0000000000000988 <LBB0_56>:
+     988: 07                           	popl	%es
+     989: 08 00                        	orb	%al, (%eax)
+     98b: 00 01                        	addb	%al, (%ecx)
+     98d: 00 00                        	addb	%al, (%eax)
+     98f: 00 15 08 07 00 1f            	addb	%dl, 520095496
+     995: 00 00                        	addb	%al, (%eax)
+     997: 00 bf 79 00 00 00            	addb	%bh, 121(%edi)
+
+0000000000000998 <LBB0_57>:
+     998: bf 79 00 00 00               	movl	$121, %edi
+     99d: 00 00                        	addb	%al, (%eax)
+     99f: 00 0f                        	addb	%cl, (%edi)
+     9a1: 89 00                        	movl	%eax, (%eax)
+     9a3: 00 00                        	addb	%al, (%eax)
+     9a5: 00 00                        	addb	%al, (%eax)
+     9a7: 00 bf 60 00 00 00            	addb	%bh, 96(%edi)
+     9ad: 00 00                        	addb	%al, (%eax)
+     9af: 00 0f                        	addb	%cl, (%edi)
+     9b1: 80 00 00                     	addb	$0, (%eax)
+     9b4: 00 00                        	addb	%al, (%eax)
+     9b6: 00 00                        	addb	%al, (%eax)
+     9b8: 71 00                        	jno	0x9ba <LBB0_57+0x22>
+     9ba: 00 00                        	addb	%al, (%eax)
+     9bc: 00 00                        	addb	%al, (%eax)
+     9be: 00 00                        	addb	%al, (%eax)
+     9c0: 71 99                        	jno	0x95b <LBB0_51+0xc3>
+     9c2: 00 00                        	addb	%al, (%eax)
+     9c4: 00 00                        	addb	%al, (%eax)
+     9c6: 00 00                        	addb	%al, (%eax)
+     9c8: 1d 09 f7 ff 00               	sbbl	$16774921, %eax
+     9cd: 00 00                        	addb	%al, (%eax)
+     9cf: 00 b7 06 00 00 1f            	addb	%dh, 520093702(%edi)
+
+00000000000009d0 <LBB0_58>:
+     9d0: b7 06                        	movb	$6, %bh
+     9d2: 00 00                        	addb	%al, (%eax)
+     9d4: 1f                           	popl	%ds
+     9d5: 00 00                        	addb	%al, (%eax)
+     9d7: 00 18                        	addb	%bl, (%eax)
+		...
+     9e1: 00 00                        	addb	%al, (%eax)
+     9e3: 00 07                        	addb	%al, (%edi)
+     9e5: 00 00                        	addb	%al, (%eax)
+     9e7: 00 2d 86 5e ff 00            	addb	%ch, 16735878
+     9ed: 00 00                        	addb	%al, (%eax)
+     9ef: 00 79 a9                     	addb	%bh, -87(%ecx)
+     9f2: 78 fe                        	js	0x9f2 <LBB0_58+0x22>
+     9f4: 00 00                        	addb	%al, (%eax)
+     9f6: 00 00                        	addb	%al, (%eax)
+     9f8: b7 06                        	movb	$6, %bh
+     9fa: 00 00                        	addb	%al, (%eax)
+     9fc: 05 00 00 00 18               	addl	$402653184, %eax
+		...
+     a09: 00 00                        	addb	%al, (%eax)
+     a0b: 00 04 00                     	addb	%al, (%eax,%eax)
+     a0e: 00 00                        	addb	%al, (%eax)
+     a10: 2d 96 59 ff 00               	subl	$16734614, %eax
+     a15: 00 00                        	addb	%al, (%eax)
+     a17: 00 79 a0                     	addb	%bh, -96(%ecx)
+     a1a: 80 fe 00                     	cmpb	$0, %dh
+     a1d: 00 00                        	addb	%al, (%eax)
+     a1f: 00 bf 08 00 00 00            	addb	%bh, 8(%edi)
+     a25: 00 00                        	addb	%al, (%eax)
+     a27: 00 71 06                     	addb	%dh, 6(%ecx)
+     a2a: 00 00                        	addb	%al, (%eax)
+     a2c: 00 00                        	addb	%al, (%eax)
+     a2e: 00 00                        	addb	%al, (%eax)
+     a30: 18 00                        	sbbb	%al, (%eax)
+		...
+     a3a: 00 00                        	addb	%al, (%eax)
+     a3c: 04 00                        	addb	$0, %al
+     a3e: 00 00                        	addb	%al, (%eax)
+     a40: 55                           	pushl	%ebp
+     a41: 06                           	pushl	%es
+     a42: 53                           	pushl	%ebx
+     a43: ff 73 00                     	pushl	(%ebx)
+     a46: 00 00                        	addb	%al, (%eax)
+     a48: 71 86                        	jno	0x9d0 <LBB0_58>
+     a4a: 01 00                        	addl	%eax, (%eax)
+     a4c: 00 00                        	addb	%al, (%eax)
+     a4e: 00 00                        	addb	%al, (%eax)
+     a50: 18 00                        	sbbb	%al, (%eax)
+		...
+     a5a: 00 00                        	addb	%al, (%eax)
+     a5c: 04 00                        	addb	$0, %al
+     a5e: 00 00                        	addb	%al, (%eax)
+     a60: 15 06 01 00 65               	adcl	$1694499078, %eax
+     a65: 00 00                        	addb	%al, (%eax)
+     a67: 00 05 00 4e ff 00            	addb	%al, 16731648
+     a6d: 00 00                        	addb	%al, (%eax)
+     a6f: 00 71 86                     	addb	%dh, -122(%ecx)
+
+0000000000000a70 <LBB0_69>:
+     a70: 71 86                        	jno	0x9f8 <LBB0_58+0x28>
+     a72: 02 00                        	addb	(%eax), %al
+     a74: 00 00                        	addb	%al, (%eax)
+     a76: 00 00                        	addb	%al, (%eax)
+     a78: 18 00                        	sbbb	%al, (%eax)
+		...
+     a82: 00 00                        	addb	%al, (%eax)
+     a84: 04 00                        	addb	$0, %al
+     a86: 00 00                        	addb	%al, (%eax)
+     a88: 55                           	pushl	%ebp
+     a89: 06                           	pushl	%es
+     a8a: 4a                           	decl	%edx
+     a8b: ff 72 00                     	pushl	(%edx)
+     a8e: 00 00                        	addb	%al, (%eax)
+     a90: 71 86                        	jno	0xa18 <LBB0_58+0x48>
+     a92: 03 00                        	addl	(%eax), %eax
+     a94: 00 00                        	addb	%al, (%eax)
+     a96: 00 00                        	addb	%al, (%eax)
+     a98: 18 00                        	sbbb	%al, (%eax)
+		...
+     aa2: 00 00                        	addb	%al, (%eax)
+     aa4: 04 00                        	addb	$0, %al
+     aa6: 00 00                        	addb	%al, (%eax)
+     aa8: 55                           	pushl	%ebp
+     aa9: 06                           	pushl	%es
+     aaa: 46                           	incl	%esi
+     aab: ff 75 00                     	pushl	(%ebp)
+     aae: 00 00                        	addb	%al, (%eax)
+     ab0: 71 86                        	jno	0xa38 <LBB0_58+0x68>
+     ab2: 04 00                        	addb	$0, %al
+     ab4: 00 00                        	addb	%al, (%eax)
+     ab6: 00 00                        	addb	%al, (%eax)
+     ab8: 18 00                        	sbbb	%al, (%eax)
+		...
+     ac2: 00 00                        	addb	%al, (%eax)
+     ac4: 04 00                        	addb	$0, %al
+     ac6: 00 00                        	addb	%al, (%eax)
+     ac8: 55                           	pushl	%ebp
+     ac9: 06                           	pushl	%es
+     aca: 42                           	incl	%edx
+     acb: ff 6d 00                     	ljmpl	*(%ebp)
+     ace: 00 00                        	addb	%al, (%eax)
+     ad0: bf 96 00 00 00               	movl	$150, %edi
+     ad5: 00 00                        	addb	%al, (%eax)
+     ad7: 00 07                        	addb	%al, (%edi)
+     ad9: 06                           	pushl	%es
+     ada: 00 00                        	addb	%al, (%eax)
+     adc: fb                           	sti
+     add: ff ff                        	<unknown>
+     adf: ff b7 07 00 00 07            	pushl	117440519(%edi)
+     ae5: 00 00                        	addb	%al, (%eax)
+     ae7: 00 18                        	addb	%bl, (%eax)
+		...
+     af1: 00 00                        	addb	%al, (%eax)
+     af3: 00 04 00                     	addb	%al, (%eax,%eax)
+     af6: 00 00                        	addb	%al, (%eax)
+     af8: 2d 67 3c ff 00               	subl	$16727143, %eax
+     afd: 00 00                        	addb	%al, (%eax)
+     aff: 00 bf 87 00 00 00            	addb	%bh, 135(%edi)
+     b05: 00 00                        	addb	%al, (%eax)
+     b07: 00 0f                        	addb	%cl, (%edi)
+     b09: 97                           	xchgl	%edi, %eax
+     b0a: 00 00                        	addb	%al, (%eax)
+     b0c: 00 00                        	addb	%al, (%eax)
+     b0e: 00 00                        	addb	%al, (%eax)
+     b10: 71 76                        	jno	0xb88 <LBB0_69+0x118>
+     b12: f9                           	stc
+     b13: ff 00                        	incl	(%eax)
+     b15: 00 00                        	addb	%al, (%eax)
+     b17: 00 18                        	addb	%bl, (%eax)
+		...
+     b21: 00 00                        	addb	%al, (%eax)
+     b23: 00 04 00                     	addb	%al, (%eax,%eax)
+     b26: 00 00                        	addb	%al, (%eax)
+     b28: 55                           	pushl	%ebp
+     b29: 06                           	pushl	%es
+     b2a: 36 ff 70 00                  	pushl	%ss:(%eax)
+     b2e: 00 00                        	addb	%al, (%eax)
+     b30: 71 76                        	jno	0xba8 <LBB0_69+0x138>
+     b32: fa                           	cli
+     b33: ff 00                        	incl	(%eax)
+     b35: 00 00                        	addb	%al, (%eax)
+     b37: 00 18                        	addb	%bl, (%eax)
+		...
+     b41: 00 00                        	addb	%al, (%eax)
+     b43: 00 04 00                     	addb	%al, (%eax,%eax)
+     b46: 00 00                        	addb	%al, (%eax)
+     b48: 55                           	pushl	%ebp
+     b49: 06                           	pushl	%es
+     b4a: 32 ff                        	xorb	%bh, %bh
+     b4c: 61                           	popal
+     b4d: 00 00                        	addb	%al, (%eax)
+     b4f: 00 71 76                     	addb	%dh, 118(%ecx)
+     b52: fb                           	sti
+     b53: ff 00                        	incl	(%eax)
+     b55: 00 00                        	addb	%al, (%eax)
+     b57: 00 18                        	addb	%bl, (%eax)
+		...
+     b61: 00 00                        	addb	%al, (%eax)
+     b63: 00 04 00                     	addb	%al, (%eax,%eax)
+     b66: 00 00                        	addb	%al, (%eax)
+     b68: 55                           	pushl	%ebp
+     b69: 06                           	pushl	%es
+     b6a: 2e ff 64 00 00               	jmpl	*%cs:(%eax,%eax)
+     b6f: 00 71 76                     	addb	%dh, 118(%ecx)
+     b72: fc                           	cld
+     b73: ff 00                        	incl	(%eax)
+     b75: 00 00                        	addb	%al, (%eax)
+     b77: 00 18                        	addb	%bl, (%eax)
+		...
+     b81: 00 00                        	addb	%al, (%eax)
+     b83: 00 04 00                     	addb	%al, (%eax,%eax)
+     b86: 00 00                        	addb	%al, (%eax)
+     b88: 55                           	pushl	%ebp
+     b89: 06                           	pushl	%es
+     b8a: 2a ff                        	subb	%bh, %bh
+     b8c: 64 00 00                     	addb	%al, %fs:(%eax)
+     b8f: 00 71 76                     	addb	%dh, 118(%ecx)
+     b92: fd                           	std
+     b93: ff 00                        	incl	(%eax)
+     b95: 00 00                        	addb	%al, (%eax)
+     b97: 00 18                        	addb	%bl, (%eax)
+		...
+     ba1: 00 00                        	addb	%al, (%eax)
+     ba3: 00 04 00                     	addb	%al, (%eax,%eax)
+     ba6: 00 00                        	addb	%al, (%eax)
+     ba8: 55                           	pushl	%ebp
+     ba9: 06                           	pushl	%es
+     baa: 26 ff 69 00                  	ljmpl	*%es:(%ecx)
+     bae: 00 00                        	addb	%al, (%eax)
+     bb0: 71 76                        	jno	0xc28 <LBB0_73+0x30>
+     bb2: fe ff                        	<unknown>
+     bb4: 00 00                        	addb	%al, (%eax)
+     bb6: 00 00                        	addb	%al, (%eax)
+     bb8: 18 00                        	sbbb	%al, (%eax)
+		...
+     bc2: 00 00                        	addb	%al, (%eax)
+     bc4: 04 00                        	addb	$0, %al
+     bc6: 00 00                        	addb	%al, (%eax)
+     bc8: 55                           	pushl	%ebp
+     bc9: 06                           	pushl	%es
+     bca: 22 ff                        	andb	%bh, %bh
+     bcc: 6e                           	outsb	(%esi), %dx
+     bcd: 00 00                        	addb	%al, (%eax)
+     bcf: 00 71 76                     	addb	%dh, 118(%ecx)
+     bd2: ff ff                        	<unknown>
+     bd4: 00 00                        	addb	%al, (%eax)
+     bd6: 00 00                        	addb	%al, (%eax)
+     bd8: 18 00                        	sbbb	%al, (%eax)
+		...
+     be2: 00 00                        	addb	%al, (%eax)
+     be4: 04 00                        	addb	$0, %al
+     be6: 00 00                        	addb	%al, (%eax)
+     be8: 15 06 01 00 67               	adcl	$1728053510, %eax
+     bed: 00 00                        	addb	%al, (%eax)
+     bef: 00 05 00 1d ff 00            	addb	%al, 16719104
+     bf5: 00 00                        	addb	%al, (%eax)
+     bf7: 00 bf 96 00 00 00            	addb	%bh, 150(%edi)
+
+0000000000000bf8 <LBB0_73>:
+     bf8: bf 96 00 00 00               	movl	$150, %edi
+     bfd: 00 00                        	addb	%al, (%eax)
+     bff: 00 07                        	addb	%al, (%edi)
+     c01: 06                           	pushl	%es
+     c02: 00 00                        	addb	%al, (%eax)
+     c04: f4                           	hlt
+     c05: ff ff                        	<unknown>
+     c07: ff b7 07 00 00 08            	pushl	134217735(%edi)
+     c0d: 00 00                        	addb	%al, (%eax)
+     c0f: 00 18                        	addb	%bl, (%eax)
+		...
+     c19: 00 00                        	addb	%al, (%eax)
+     c1b: 00 05 00 00 00 2d            	addb	%al, 754974720
+     c21: 67 17                        	popl	%ss
+     c23: ff 00                        	incl	(%eax)
+     c25: 00 00                        	addb	%al, (%eax)
+     c27: 00 79 86                     	addb	%bh, -122(%ecx)
+     c2a: 05 00 00 00 00               	addl	$0, %eax
+     c2f: 00 57 06                     	addb	%dl, 6(%edi)
+     c32: 00 00                        	addb	%al, (%eax)
+     c34: 83 ff ff                     	cmpl	$-1, %edi
+     c37: ff 18                        	lcalll	*(%eax)
+		...
+     c41: 00 00                        	addb	%al, (%eax)
+     c43: 00 04 00                     	addb	%al, (%eax,%eax)
+     c46: 00 00                        	addb	%al, (%eax)
+     c48: 55                           	pushl	%ebp
+     c49: 06                           	pushl	%es
+     c4a: 12 ff                        	adcb	%bh, %bh
+     c4c: 03 00                        	addl	(%eax), %eax
+     c4e: 00 00                        	addb	%al, (%eax)
+     c50: 07                           	popl	%es
+     c51: 09 00                        	orl	%eax, (%eax)
+     c53: 00 ec                        	addb	%ch, %ah
+     c55: ff ff                        	<unknown>
+     c57: ff b7 06 00 00 70            	pushl	1879048198(%edi)
+     c5d: 01 00                        	addl	%eax, (%eax)
+     c5f: 00 18                        	addb	%bl, (%eax)
+		...
+     c69: 00 00                        	addb	%al, (%eax)
+     c6b: 00 05 00 00 00 2d            	addb	%al, 754974720
+     c71: 96                           	xchgl	%esi, %eax
+     c72: 0d ff 00 00 00               	orl	$255, %eax
+     c77: 00 79 a0                     	addb	%bh, -96(%ecx)
+     c7a: 68 fe 00 00 00               	pushl	$254
+     c7f: 00 7b 0a                     	addb	%bh, 10(%ebx)
+     c82: 18 fd                        	sbbb	%bh, %ch
+     c84: 00 00                        	addb	%al, (%eax)
+     c86: 00 00                        	addb	%al, (%eax)
+     c88: 71 06                        	jno	0xc90 <LBB0_73+0x98>
+     c8a: 00 00                        	addb	%al, (%eax)
+     c8c: 00 00                        	addb	%al, (%eax)
+     c8e: 00 00                        	addb	%al, (%eax)
+     c90: 71 87                        	jno	0xc19 <LBB0_73+0x21>
+     c92: 0d 00 00 00 00               	orl	$0, %eax
+     c97: 00 18                        	addb	%bl, (%eax)
+		...
+     ca1: 00 00                        	addb	%al, (%eax)
+     ca3: 00 04 00                     	addb	%al, (%eax,%eax)
+     ca6: 00 00                        	addb	%al, (%eax)
+     ca8: 5d                           	popl	%ebp
+     ca9: 67 06                        	pushl	%es
+     cab: ff 00                        	incl	(%eax)
+     cad: 00 00                        	addb	%al, (%eax)
+     caf: 00 b7 09 00 00 00            	addb	%dh, 9(%edi)
+     cb5: 00 00                        	addb	%al, (%eax)
+     cb7: 00 bf 80 00 00 00            	addb	%bh, 128(%edi)
+     cbd: 00 00                        	addb	%al, (%eax)
+     cbf: 00 07                        	addb	%al, (%edi)
+     cc1: 00 00                        	addb	%al, (%eax)
+     cc3: 00 0e                        	addb	%cl, (%esi)
+     cc5: 00 00                        	addb	%al, (%eax)
+     cc7: 00 79 a6                     	addb	%bh, -90(%ecx)
+     cca: 18 fd                        	sbbb	%bh, %ch
+     ccc: 00 00                        	addb	%al, (%eax)
+     cce: 00 00                        	addb	%al, (%eax)
+     cd0: 07                           	popl	%es
+     cd1: 06                           	pushl	%es
+     cd2: 00 00                        	addb	%al, (%eax)
+     cd4: 01 00                        	addl	%eax, (%eax)
+     cd6: 00 00                        	addb	%al, (%eax)
+     cd8: 7b 6a                        	jnp	0xd44 <LBB0_80+0x14>
+     cda: 18 fd                        	sbbb	%bh, %ch
+     cdc: 00 00                        	addb	%al, (%eax)
+     cde: 00 00                        	addb	%al, (%eax)
+     ce0: 05 00 02 00 00               	addl	$512, %eax
+     ce5: 00 00                        	addb	%al, (%eax)
+     ce7: 00 07                        	addb	%al, (%edi)
+
+0000000000000ce8 <LBB0_78>:
+     ce8: 07                           	popl	%es
+     ce9: 09 00                        	orl	%eax, (%eax)
+     ceb: 00 01                        	addb	%al, (%ecx)
+     ced: 00 00                        	addb	%al, (%eax)
+     cef: 00 15 09 07 00 1f            	addb	%dl, 520095497
+     cf5: 00 00                        	addb	%al, (%eax)
+     cf7: 00 bf 06 00 00 00            	addb	%bh, 6(%edi)
+
+0000000000000cf8 <LBB0_79>:
+     cf8: bf 06 00 00 00               	movl	$6, %edi
+     cfd: 00 00                        	addb	%al, (%eax)
+     cff: 00 0f                        	addb	%cl, (%edi)
+     d01: 96                           	xchgl	%esi, %eax
+     d02: 00 00                        	addb	%al, (%eax)
+     d04: 00 00                        	addb	%al, (%eax)
+     d06: 00 00                        	addb	%al, (%eax)
+     d08: 79 a7                        	jns	0xcb1 <LBB0_73+0xb9>
+     d0a: 18 fd                        	sbbb	%bh, %ch
+     d0c: 00 00                        	addb	%al, (%eax)
+     d0e: 00 00                        	addb	%al, (%eax)
+     d10: 0f 97 00                     	seta	(%eax)
+     d13: 00 00                        	addb	%al, (%eax)
+     d15: 00 00                        	addb	%al, (%eax)
+     d17: 00 71 77                     	addb	%dh, 119(%ecx)
+     d1a: 00 00                        	addb	%al, (%eax)
+     d1c: 00 00                        	addb	%al, (%eax)
+     d1e: 00 00                        	addb	%al, (%eax)
+     d20: 71 66                        	jno	0xd88 <LBB0_80+0x58>
+     d22: 00 00                        	addb	%al, (%eax)
+     d24: 00 00                        	addb	%al, (%eax)
+     d26: 00 00                        	addb	%al, (%eax)
+     d28: 1d 76 f7 ff 00               	sbbl	$16775030, %eax
+     d2d: 00 00                        	addb	%al, (%eax)
+     d2f: 00 b7 06 00 00 1f            	addb	%dh, 520093702(%edi)
+
+0000000000000d30 <LBB0_80>:
+     d30: b7 06                        	movb	$6, %bh
+     d32: 00 00                        	addb	%al, (%eax)
+     d34: 1f                           	popl	%ds
+     d35: 00 00                        	addb	%al, (%eax)
+     d37: 00 18                        	addb	%bl, (%eax)
+		...
+     d41: 00 00                        	addb	%al, (%eax)
+     d43: 00 04 00                     	addb	%al, (%eax,%eax)
+     d46: 00 00                        	addb	%al, (%eax)
+     d48: 2d 96 f2 fe 00               	subl	$16708246, %eax
+     d4d: 00 00                        	addb	%al, (%eax)
+     d4f: 00 79 a0                     	addb	%bh, -96(%ecx)
+     d52: 10 ff                        	adcb	%bh, %bh
+     d54: 00 00                        	addb	%al, (%eax)
+     d56: 00 00                        	addb	%al, (%eax)
+     d58: 7b 0a                        	jnp	0xd64 <LBB0_80+0x34>
+     d5a: 18 fd                        	sbbb	%bh, %ch
+     d5c: 00 00                        	addb	%al, (%eax)
+     d5e: 00 00                        	addb	%al, (%eax)
+     d60: 71 06                        	jno	0xd68 <LBB0_80+0x38>
+     d62: 00 00                        	addb	%al, (%eax)
+     d64: 00 00                        	addb	%al, (%eax)
+     d66: 00 00                        	addb	%al, (%eax)
+     d68: 71 87                        	jno	0xcf1 <LBB0_78+0x9>
+     d6a: 55                           	pushl	%ebp
+     d6b: 00 00                        	addb	%al, (%eax)
+     d6d: 00 00                        	addb	%al, (%eax)
+     d6f: 00 18                        	addb	%bl, (%eax)
+		...
+     d79: 00 00                        	addb	%al, (%eax)
+     d7b: 00 04 00                     	addb	%al, (%eax,%eax)
+     d7e: 00 00                        	addb	%al, (%eax)
+     d80: 5d                           	popl	%ebp
+     d81: 67 eb fe                     	jmp	0xd82 <LBB0_80+0x52>
+     d84: 00 00                        	addb	%al, (%eax)
+     d86: 00 00                        	addb	%al, (%eax)
+     d88: b7 09                        	movb	$9, %bh
+     d8a: 00 00                        	addb	%al, (%eax)
+     d8c: 00 00                        	addb	%al, (%eax)
+     d8e: 00 00                        	addb	%al, (%eax)
+     d90: bf 80 00 00 00               	movl	$128, %edi
+     d95: 00 00                        	addb	%al, (%eax)
+     d97: 00 07                        	addb	%al, (%edi)
+     d99: 00 00                        	addb	%al, (%eax)
+     d9b: 00 56 00                     	addb	%dl, (%esi)
+     d9e: 00 00                        	addb	%al, (%eax)
+     da0: 79 a6                        	jns	0xd48 <LBB0_80+0x18>
+     da2: 18 fd                        	sbbb	%bh, %ch
+     da4: 00 00                        	addb	%al, (%eax)
+     da6: 00 00                        	addb	%al, (%eax)
+     da8: 07                           	popl	%es
+     da9: 06                           	pushl	%es
+     daa: 00 00                        	addb	%al, (%eax)
+     dac: 01 00                        	addl	%eax, (%eax)
+     dae: 00 00                        	addb	%al, (%eax)
+     db0: 7b 6a                        	jnp	0xe1c <LBB0_85+0x14>
+     db2: 18 fd                        	sbbb	%bh, %ch
+     db4: 00 00                        	addb	%al, (%eax)
+     db6: 00 00                        	addb	%al, (%eax)
+     db8: 05 00 02 00 00               	addl	$512, %eax
+     dbd: 00 00                        	addb	%al, (%eax)
+     dbf: 00 07                        	addb	%al, (%edi)
+
+0000000000000dc0 <LBB0_83>:
+     dc0: 07                           	popl	%es
+     dc1: 09 00                        	orl	%eax, (%eax)
+     dc3: 00 01                        	addb	%al, (%ecx)
+     dc5: 00 00                        	addb	%al, (%eax)
+     dc7: 00 15 09 07 00 1f            	addb	%dl, 520095497
+     dcd: 00 00                        	addb	%al, (%eax)
+     dcf: 00 bf 06 00 00 00            	addb	%bh, 6(%edi)
+
+0000000000000dd0 <LBB0_84>:
+     dd0: bf 06 00 00 00               	movl	$6, %edi
+     dd5: 00 00                        	addb	%al, (%eax)
+     dd7: 00 0f                        	addb	%cl, (%edi)
+     dd9: 96                           	xchgl	%esi, %eax
+     dda: 00 00                        	addb	%al, (%eax)
+     ddc: 00 00                        	addb	%al, (%eax)
+     dde: 00 00                        	addb	%al, (%eax)
+     de0: 79 a7                        	jns	0xd89 <LBB0_80+0x59>
+     de2: 18 fd                        	sbbb	%bh, %ch
+     de4: 00 00                        	addb	%al, (%eax)
+     de6: 00 00                        	addb	%al, (%eax)
+     de8: 0f 97 00                     	seta	(%eax)
+     deb: 00 00                        	addb	%al, (%eax)
+     ded: 00 00                        	addb	%al, (%eax)
+     def: 00 71 77                     	addb	%dh, 119(%ecx)
+     df2: 00 00                        	addb	%al, (%eax)
+     df4: 00 00                        	addb	%al, (%eax)
+     df6: 00 00                        	addb	%al, (%eax)
+     df8: 71 66                        	jno	0xe60 <LBB0_85+0x58>
+     dfa: 00 00                        	addb	%al, (%eax)
+     dfc: 00 00                        	addb	%al, (%eax)
+     dfe: 00 00                        	addb	%al, (%eax)
+     e00: 1d 76 f7 ff 00               	sbbl	$16775030, %eax
+     e05: 00 00                        	addb	%al, (%eax)
+     e07: 00 b7 06 00 00 1f            	addb	%dh, 520093702(%edi)
+
+0000000000000e08 <LBB0_85>:
+     e08: b7 06                        	movb	$6, %bh
+     e0a: 00 00                        	addb	%al, (%eax)
+     e0c: 1f                           	popl	%ds
+     e0d: 00 00                        	addb	%al, (%eax)
+     e0f: 00 18                        	addb	%bl, (%eax)
+		...
+     e19: 00 00                        	addb	%al, (%eax)
+     e1b: 00 04 00                     	addb	%al, (%eax,%eax)
+     e1e: 00 00                        	addb	%al, (%eax)
+     e20: 2d 96 d7 fe 00               	subl	$16701334, %eax
+     e25: 00 00                        	addb	%al, (%eax)
+     e27: 00 79 a0                     	addb	%bh, -96(%ecx)
+     e2a: 48                           	decl	%eax
+     e2b: ff 00                        	incl	(%eax)
+     e2d: 00 00                        	addb	%al, (%eax)
+     e2f: 00 7b 0a                     	addb	%bh, 10(%ebx)
+     e32: 18 fd                        	sbbb	%bh, %ch
+     e34: 00 00                        	addb	%al, (%eax)
+     e36: 00 00                        	addb	%al, (%eax)
+     e38: 71 06                        	jno	0xe40 <LBB0_85+0x38>
+     e3a: 00 00                        	addb	%al, (%eax)
+     e3c: 00 00                        	addb	%al, (%eax)
+     e3e: 00 00                        	addb	%al, (%eax)
+     e40: 71 87                        	jno	0xdc9 <LBB0_83+0x9>
+     e42: 35 00 00 00 00               	xorl	$0, %eax
+     e47: 00 18                        	addb	%bl, (%eax)
+		...
+     e51: 00 00                        	addb	%al, (%eax)
+     e53: 00 04 00                     	addb	%al, (%eax,%eax)
+     e56: 00 00                        	addb	%al, (%eax)
+     e58: 5d                           	popl	%ebp
+     e59: 67 d0 fe                     	sarb	%dh
+     e5c: 00 00                        	addb	%al, (%eax)
+     e5e: 00 00                        	addb	%al, (%eax)
+     e60: b7 09                        	movb	$9, %bh
+     e62: 00 00                        	addb	%al, (%eax)
+     e64: 00 00                        	addb	%al, (%eax)
+     e66: 00 00                        	addb	%al, (%eax)
+     e68: bf 80 00 00 00               	movl	$128, %edi
+     e6d: 00 00                        	addb	%al, (%eax)
+     e6f: 00 07                        	addb	%al, (%edi)
+     e71: 00 00                        	addb	%al, (%eax)
+     e73: 00 36                        	addb	%dh, (%esi)
+     e75: 00 00                        	addb	%al, (%eax)
+     e77: 00 79 a6                     	addb	%bh, -90(%ecx)
+     e7a: 18 fd                        	sbbb	%bh, %ch
+     e7c: 00 00                        	addb	%al, (%eax)
+     e7e: 00 00                        	addb	%al, (%eax)
+     e80: 07                           	popl	%es
+     e81: 06                           	pushl	%es
+     e82: 00 00                        	addb	%al, (%eax)
+     e84: 01 00                        	addl	%eax, (%eax)
+     e86: 00 00                        	addb	%al, (%eax)
+     e88: 7b 6a                        	jnp	0xef4 <LBB0_90+0x14>
+     e8a: 18 fd                        	sbbb	%bh, %ch
+     e8c: 00 00                        	addb	%al, (%eax)
+     e8e: 00 00                        	addb	%al, (%eax)
+     e90: 05 00 02 00 00               	addl	$512, %eax
+     e95: 00 00                        	addb	%al, (%eax)
+     e97: 00 07                        	addb	%al, (%edi)
+
+0000000000000e98 <LBB0_88>:
+     e98: 07                           	popl	%es
+     e99: 09 00                        	orl	%eax, (%eax)
+     e9b: 00 01                        	addb	%al, (%ecx)
+     e9d: 00 00                        	addb	%al, (%eax)
+     e9f: 00 15 09 07 00 1f            	addb	%dl, 520095497
+     ea5: 00 00                        	addb	%al, (%eax)
+     ea7: 00 bf 06 00 00 00            	addb	%bh, 6(%edi)
+
+0000000000000ea8 <LBB0_89>:
+     ea8: bf 06 00 00 00               	movl	$6, %edi
+     ead: 00 00                        	addb	%al, (%eax)
+     eaf: 00 0f                        	addb	%cl, (%edi)
+     eb1: 96                           	xchgl	%esi, %eax
+     eb2: 00 00                        	addb	%al, (%eax)
+     eb4: 00 00                        	addb	%al, (%eax)
+     eb6: 00 00                        	addb	%al, (%eax)
+     eb8: 79 a7                        	jns	0xe61 <LBB0_85+0x59>
+     eba: 18 fd                        	sbbb	%bh, %ch
+     ebc: 00 00                        	addb	%al, (%eax)
+     ebe: 00 00                        	addb	%al, (%eax)
+     ec0: 0f 97 00                     	seta	(%eax)
+     ec3: 00 00                        	addb	%al, (%eax)
+     ec5: 00 00                        	addb	%al, (%eax)
+     ec7: 00 71 77                     	addb	%dh, 119(%ecx)
+     eca: 00 00                        	addb	%al, (%eax)
+     ecc: 00 00                        	addb	%al, (%eax)
+     ece: 00 00                        	addb	%al, (%eax)
+     ed0: 71 66                        	jno	0xf38 <LBB0_90+0x58>
+     ed2: 00 00                        	addb	%al, (%eax)
+     ed4: 00 00                        	addb	%al, (%eax)
+     ed6: 00 00                        	addb	%al, (%eax)
+     ed8: 1d 76 f7 ff 00               	sbbl	$16775030, %eax
+     edd: 00 00                        	addb	%al, (%eax)
+     edf: 00 b7 06 00 00 1f            	addb	%dh, 520093702(%edi)
+
+0000000000000ee0 <LBB0_90>:
+     ee0: b7 06                        	movb	$6, %bh
+     ee2: 00 00                        	addb	%al, (%eax)
+     ee4: 1f                           	popl	%ds
+     ee5: 00 00                        	addb	%al, (%eax)
+     ee7: 00 18                        	addb	%bl, (%eax)
+		...
+     ef1: 00 00                        	addb	%al, (%eax)
+     ef3: 00 04 00                     	addb	%al, (%eax,%eax)
+     ef6: 00 00                        	addb	%al, (%eax)
+     ef8: 2d 96 bc fe 00               	subl	$16694422, %eax
+     efd: 00 00                        	addb	%al, (%eax)
+     eff: 00 79 a0                     	addb	%bh, -96(%ecx)
+     f02: a0 fe 00 00 00               	movb	254, %al
+     f07: 00 7b 0a                     	addb	%bh, 10(%ebx)
+     f0a: 18 fd                        	sbbb	%bh, %ch
+     f0c: 00 00                        	addb	%al, (%eax)
+     f0e: 00 00                        	addb	%al, (%eax)
+     f10: 71 06                        	jno	0xf18 <LBB0_90+0x38>
+     f12: 00 00                        	addb	%al, (%eax)
+     f14: 00 00                        	addb	%al, (%eax)
+     f16: 00 00                        	addb	%al, (%eax)
+     f18: 71 87                        	jno	0xea1 <LBB0_88+0x9>
+     f1a: 1d 01 00 00 00               	sbbl	$1, %eax
+     f1f: 00 18                        	addb	%bl, (%eax)
+		...
+     f29: 00 00                        	addb	%al, (%eax)
+     f2b: 00 04 00                     	addb	%al, (%eax,%eax)
+     f2e: 00 00                        	addb	%al, (%eax)
+     f30: 5d                           	popl	%ebp
+     f31: 67 b5 fe                     	movb	$-2, %ch
+     f34: 00 00                        	addb	%al, (%eax)
+     f36: 00 00                        	addb	%al, (%eax)
+     f38: b7 09                        	movb	$9, %bh
+     f3a: 00 00                        	addb	%al, (%eax)
+     f3c: 00 00                        	addb	%al, (%eax)
+     f3e: 00 00                        	addb	%al, (%eax)
+     f40: bf 80 00 00 00               	movl	$128, %edi
+     f45: 00 00                        	addb	%al, (%eax)
+     f47: 00 07                        	addb	%al, (%edi)
+     f49: 00 00                        	addb	%al, (%eax)
+     f4b: 00 1e                        	addb	%bl, (%esi)
+     f4d: 01 00                        	addl	%eax, (%eax)
+     f4f: 00 79 a6                     	addb	%bh, -90(%ecx)
+     f52: 18 fd                        	sbbb	%bh, %ch
+     f54: 00 00                        	addb	%al, (%eax)
+     f56: 00 00                        	addb	%al, (%eax)
+     f58: 07                           	popl	%es
+     f59: 06                           	pushl	%es
+     f5a: 00 00                        	addb	%al, (%eax)
+     f5c: 01 00                        	addl	%eax, (%eax)
+     f5e: 00 00                        	addb	%al, (%eax)
+     f60: 7b 6a                        	jnp	0xfcc <LBB0_95+0x14>
+     f62: 18 fd                        	sbbb	%bh, %ch
+     f64: 00 00                        	addb	%al, (%eax)
+     f66: 00 00                        	addb	%al, (%eax)
+     f68: 05 00 02 00 00               	addl	$512, %eax
+     f6d: 00 00                        	addb	%al, (%eax)
+     f6f: 00 07                        	addb	%al, (%edi)
+
+0000000000000f70 <LBB0_93>:
+     f70: 07                           	popl	%es
+     f71: 09 00                        	orl	%eax, (%eax)
+     f73: 00 01                        	addb	%al, (%ecx)
+     f75: 00 00                        	addb	%al, (%eax)
+     f77: 00 15 09 07 00 1f            	addb	%dl, 520095497
+     f7d: 00 00                        	addb	%al, (%eax)
+     f7f: 00 bf 06 00 00 00            	addb	%bh, 6(%edi)
+
+0000000000000f80 <LBB0_94>:
+     f80: bf 06 00 00 00               	movl	$6, %edi
+     f85: 00 00                        	addb	%al, (%eax)
+     f87: 00 0f                        	addb	%cl, (%edi)
+     f89: 96                           	xchgl	%esi, %eax
+     f8a: 00 00                        	addb	%al, (%eax)
+     f8c: 00 00                        	addb	%al, (%eax)
+     f8e: 00 00                        	addb	%al, (%eax)
+     f90: 79 a7                        	jns	0xf39 <LBB0_90+0x59>
+     f92: 18 fd                        	sbbb	%bh, %ch
+     f94: 00 00                        	addb	%al, (%eax)
+     f96: 00 00                        	addb	%al, (%eax)
+     f98: 0f 97 00                     	seta	(%eax)
+     f9b: 00 00                        	addb	%al, (%eax)
+     f9d: 00 00                        	addb	%al, (%eax)
+     f9f: 00 71 77                     	addb	%dh, 119(%ecx)
+     fa2: 00 00                        	addb	%al, (%eax)
+     fa4: 00 00                        	addb	%al, (%eax)
+     fa6: 00 00                        	addb	%al, (%eax)
+     fa8: 71 66                        	jno	0x1010 <LBB0_95+0x58>
+     faa: 00 00                        	addb	%al, (%eax)
+     fac: 00 00                        	addb	%al, (%eax)
+     fae: 00 00                        	addb	%al, (%eax)
+     fb0: 1d 76 f7 ff 00               	sbbl	$16775030, %eax
+     fb5: 00 00                        	addb	%al, (%eax)
+     fb7: 00 b7 06 00 00 1f            	addb	%dh, 520093702(%edi)
+
+0000000000000fb8 <LBB0_95>:
+     fb8: b7 06                        	movb	$6, %bh
+     fba: 00 00                        	addb	%al, (%eax)
+     fbc: 1f                           	popl	%ds
+     fbd: 00 00                        	addb	%al, (%eax)
+     fbf: 00 18                        	addb	%bl, (%eax)
+		...
+     fc9: 00 00                        	addb	%al, (%eax)
+     fcb: 00 04 00                     	addb	%al, (%eax,%eax)
+     fce: 00 00                        	addb	%al, (%eax)
+     fd0: 2d 96 a1 fe 00               	subl	$16687510, %eax
+     fd5: 00 00                        	addb	%al, (%eax)
+     fd7: 00 79 a0                     	addb	%bh, -96(%ecx)
+     fda: d8 fe                        	fdivr	%st(6), %st
+     fdc: 00 00                        	addb	%al, (%eax)
+     fde: 00 00                        	addb	%al, (%eax)
+     fe0: 7b 0a                        	jnp	0xfec <LBB0_95+0x34>
+     fe2: 18 fd                        	sbbb	%bh, %ch
+     fe4: 00 00                        	addb	%al, (%eax)
+     fe6: 00 00                        	addb	%al, (%eax)
+     fe8: 71 06                        	jno	0xff0 <LBB0_95+0x38>
+     fea: 00 00                        	addb	%al, (%eax)
+     fec: 00 00                        	addb	%al, (%eax)
+     fee: 00 00                        	addb	%al, (%eax)
+     ff0: 71 87                        	jno	0xf79 <LBB0_93+0x9>
+     ff2: 3d 01 00 00 00               	cmpl	$1, %eax
+     ff7: 00 18                        	addb	%bl, (%eax)
+		...
+    1001: 00 00                        	addb	%al, (%eax)
+    1003: 00 04 00                     	addb	%al, (%eax,%eax)
+    1006: 00 00                        	addb	%al, (%eax)
+    1008: 5d                           	popl	%ebp
+    1009: 67 9a fe 00 00 00 00 b7      	lcalll	$-18688, $254
+    1011: 09 00                        	orl	%eax, (%eax)
+    1013: 00 00                        	addb	%al, (%eax)
+    1015: 00 00                        	addb	%al, (%eax)
+    1017: 00 bf 80 00 00 00            	addb	%bh, 128(%edi)
+    101d: 00 00                        	addb	%al, (%eax)
+    101f: 00 07                        	addb	%al, (%edi)
+    1021: 00 00                        	addb	%al, (%eax)
+    1023: 00 3e                        	addb	%bh, (%esi)
+    1025: 01 00                        	addl	%eax, (%eax)
+    1027: 00 79 a6                     	addb	%bh, -90(%ecx)
+    102a: 18 fd                        	sbbb	%bh, %ch
+    102c: 00 00                        	addb	%al, (%eax)
+    102e: 00 00                        	addb	%al, (%eax)
+    1030: 07                           	popl	%es
+    1031: 06                           	pushl	%es
+    1032: 00 00                        	addb	%al, (%eax)
+    1034: 01 00                        	addl	%eax, (%eax)
+    1036: 00 00                        	addb	%al, (%eax)
+    1038: 7b 6a                        	jnp	0x10a4 <LBB0_100+0x14>
+    103a: 18 fd                        	sbbb	%bh, %ch
+    103c: 00 00                        	addb	%al, (%eax)
+    103e: 00 00                        	addb	%al, (%eax)
+    1040: 05 00 02 00 00               	addl	$512, %eax
+    1045: 00 00                        	addb	%al, (%eax)
+    1047: 00 07                        	addb	%al, (%edi)
+
+0000000000001048 <LBB0_98>:
+    1048: 07                           	popl	%es
+    1049: 09 00                        	orl	%eax, (%eax)
+    104b: 00 01                        	addb	%al, (%ecx)
+    104d: 00 00                        	addb	%al, (%eax)
+    104f: 00 15 09 07 00 1f            	addb	%dl, 520095497
+    1055: 00 00                        	addb	%al, (%eax)
+    1057: 00 bf 06 00 00 00            	addb	%bh, 6(%edi)
+
+0000000000001058 <LBB0_99>:
+    1058: bf 06 00 00 00               	movl	$6, %edi
+    105d: 00 00                        	addb	%al, (%eax)
+    105f: 00 0f                        	addb	%cl, (%edi)
+    1061: 96                           	xchgl	%esi, %eax
+    1062: 00 00                        	addb	%al, (%eax)
+    1064: 00 00                        	addb	%al, (%eax)
+    1066: 00 00                        	addb	%al, (%eax)
+    1068: 79 a7                        	jns	0x1011 <LBB0_95+0x59>
+    106a: 18 fd                        	sbbb	%bh, %ch
+    106c: 00 00                        	addb	%al, (%eax)
+    106e: 00 00                        	addb	%al, (%eax)
+    1070: 0f 97 00                     	seta	(%eax)
+    1073: 00 00                        	addb	%al, (%eax)
+    1075: 00 00                        	addb	%al, (%eax)
+    1077: 00 71 77                     	addb	%dh, 119(%ecx)
+    107a: 00 00                        	addb	%al, (%eax)
+    107c: 00 00                        	addb	%al, (%eax)
+    107e: 00 00                        	addb	%al, (%eax)
+    1080: 71 66                        	jno	0x10e8 <LBB0_100+0x58>
+    1082: 00 00                        	addb	%al, (%eax)
+    1084: 00 00                        	addb	%al, (%eax)
+    1086: 00 00                        	addb	%al, (%eax)
+    1088: 1d 76 f7 ff 00               	sbbl	$16775030, %eax
+    108d: 00 00                        	addb	%al, (%eax)
+    108f: 00 b7 06 00 00 1f            	addb	%dh, 520093702(%edi)
+
+0000000000001090 <LBB0_100>:
+    1090: b7 06                        	movb	$6, %bh
+    1092: 00 00                        	addb	%al, (%eax)
+    1094: 1f                           	popl	%ds
+    1095: 00 00                        	addb	%al, (%eax)
+    1097: 00 18                        	addb	%bl, (%eax)
+		...
+    10a1: 00 00                        	addb	%al, (%eax)
+    10a3: 00 04 00                     	addb	%al, (%eax,%eax)
+    10a6: 00 00                        	addb	%al, (%eax)
+    10a8: 2d 96 86 fe 00               	subl	$16680598, %eax
+    10ad: 00 00                        	addb	%al, (%eax)
+    10af: 00 79 a9                     	addb	%bh, -87(%ecx)
+    10b2: c0 fe 00                     	sarb	$0, %dh
+    10b5: 00 00                        	addb	%al, (%eax)
+    10b7: 00 71 96                     	addb	%dh, -106(%ecx)
+    10ba: 00 00                        	addb	%al, (%eax)
+    10bc: 00 00                        	addb	%al, (%eax)
+    10be: 00 00                        	addb	%al, (%eax)
+    10c0: 18 00                        	sbbb	%al, (%eax)
+		...
+    10ca: 00 00                        	addb	%al, (%eax)
+    10cc: 07                           	popl	%es
+    10cd: 00 00                        	addb	%al, (%eax)
+    10cf: 00 79 a7                     	addb	%bh, -89(%ecx)
+    10d2: 20 fd                        	andb	%bh, %ch
+    10d4: 00 00                        	addb	%al, (%eax)
+    10d6: 00 00                        	addb	%al, (%eax)
+    10d8: 5d                           	popl	%ebp
+    10d9: 76 80                        	jbe	0x105b <LBB0_99+0x3>
+    10db: fe 00                        	incb	(%eax)
+    10dd: 00 00                        	addb	%al, (%eax)
+    10df: 00 79 80                     	addb	%bh, -128(%ecx)
+    10e2: 65 01 00                     	addl	%eax, %gs:(%eax)
+    10e5: 00 00                        	addb	%al, (%eax)
+    10e7: 00 7b 0a                     	addb	%bh, 10(%ebx)
+    10ea: 10 fd                        	adcb	%bh, %ch
+    10ec: 00 00                        	addb	%al, (%eax)
+    10ee: 00 00                        	addb	%al, (%eax)
+    10f0: 79 80                        	jns	0x1072 <LBB0_99+0x1a>
+    10f2: 5d                           	popl	%ebp
+    10f3: 01 00                        	addl	%eax, (%eax)
+    10f5: 00 00                        	addb	%al, (%eax)
+    10f7: 00 7b 0a                     	addb	%bh, 10(%ebx)
+    10fa: 18 fd                        	sbbb	%bh, %ch
+    10fc: 00 00                        	addb	%al, (%eax)
+    10fe: 00 00                        	addb	%al, (%eax)
+    1100: b7 08                        	movb	$8, %bh
+    1102: 00 00                        	addb	%al, (%eax)
+    1104: 00 00                        	addb	%al, (%eax)
+    1106: 00 00                        	addb	%al, (%eax)
+    1108: 07                           	popl	%es
+    1109: 09 00                        	orl	%eax, (%eax)
+    110b: 00 01                        	addb	%al, (%ecx)
+    110d: 00 00                        	addb	%al, (%eax)
+    110f: 00 79 a0                     	addb	%bh, -96(%ecx)
+    1112: 28 fd                        	subb	%bh, %ch
+    1114: 00 00                        	addb	%al, (%eax)
+    1116: 00 00                        	addb	%al, (%eax)
+    1118: 07                           	popl	%es
+    1119: 00 00                        	addb	%al, (%eax)
+    111b: 00 01                        	addb	%al, (%ecx)
+    111d: 00 00                        	addb	%al, (%eax)
+    111f: 00 05 00 02 00 00            	addb	%al, 512
+    1125: 00 00                        	addb	%al, (%eax)
+    1127: 00 07                        	addb	%al, (%edi)
+
+0000000000001128 <LBB0_103>:
+    1128: 07                           	popl	%es
+    1129: 08 00                        	orb	%al, (%eax)
+    112b: 00 01                        	addb	%al, (%ecx)
+    112d: 00 00                        	addb	%al, (%eax)
+    112f: 00 15 08 07 00 1f            	addb	%dl, 520095496
+    1135: 00 00                        	addb	%al, (%eax)
+    1137: 00 bf 96 00 00 00            	addb	%bh, 150(%edi)
+
+0000000000001138 <LBB0_104>:
+    1138: bf 96 00 00 00               	movl	$150, %edi
+    113d: 00 00                        	addb	%al, (%eax)
+    113f: 00 0f                        	addb	%cl, (%edi)
+    1141: 86 00                        	xchgb	%al, (%eax)
+    1143: 00 00                        	addb	%al, (%eax)
+    1145: 00 00                        	addb	%al, (%eax)
+    1147: 00 bf 07 00 00 00            	addb	%bh, 7(%edi)
+    114d: 00 00                        	addb	%al, (%eax)
+    114f: 00 0f                        	addb	%cl, (%edi)
+    1151: 87 00                        	xchgl	%eax, (%eax)
+    1153: 00 00                        	addb	%al, (%eax)
+    1155: 00 00                        	addb	%al, (%eax)
+    1157: 00 71 77                     	addb	%dh, 119(%ecx)
+    115a: 00 00                        	addb	%al, (%eax)
+    115c: 00 00                        	addb	%al, (%eax)
+    115e: 00 00                        	addb	%al, (%eax)
+    1160: 71 66                        	jno	0x11c8 <LBB0_105+0x58>
+    1162: 00 00                        	addb	%al, (%eax)
+    1164: 00 00                        	addb	%al, (%eax)
+    1166: 00 00                        	addb	%al, (%eax)
+    1168: 1d 76 f7 ff 00               	sbbl	$16775030, %eax
+    116d: 00 00                        	addb	%al, (%eax)
+    116f: 00 b7 06 00 00 1f            	addb	%dh, 520093702(%edi)
+
+0000000000001170 <LBB0_105>:
+    1170: b7 06                        	movb	$6, %bh
+    1172: 00 00                        	addb	%al, (%eax)
+    1174: 1f                           	popl	%ds
+    1175: 00 00                        	addb	%al, (%eax)
+    1177: 00 18                        	addb	%bl, (%eax)
+		...
+    1181: 00 00                        	addb	%al, (%eax)
+    1183: 00 07                        	addb	%al, (%edi)
+    1185: 00 00                        	addb	%al, (%eax)
+    1187: 00 2d 86 6a fe 00            	addb	%ch, 16673414
+    118d: 00 00                        	addb	%al, (%eax)
+    118f: 00 79 a7                     	addb	%bh, -89(%ecx)
+    1192: b0 fe                        	movb	$-2, %al
+    1194: 00 00                        	addb	%al, (%eax)
+    1196: 00 00                        	addb	%al, (%eax)
+    1198: b7 06                        	movb	$6, %bh
+    119a: 00 00                        	addb	%al, (%eax)
+    119c: 05 00 00 00 18               	addl	$402653184, %eax
+		...
+    11a9: 00 00                        	addb	%al, (%eax)
+    11ab: 00 04 00                     	addb	%al, (%eax,%eax)
+    11ae: 00 00                        	addb	%al, (%eax)
+    11b0: bf 78 00 00 00               	movl	$120, %edi
+    11b5: 00 00                        	addb	%al, (%eax)
+    11b7: 00 2d 76 64 fe 00            	addb	%ch, 16671862
+    11bd: 00 00                        	addb	%al, (%eax)
+    11bf: 00 79 a0                     	addb	%bh, -96(%ecx)
+    11c2: b8 fe 00 00 00               	movl	$254, %eax
+    11c7: 00 bf 09 00 00 00            	addb	%bh, 9(%edi)
+    11cd: 00 00                        	addb	%al, (%eax)
+    11cf: 00 71 06                     	addb	%dh, 6(%ecx)
+    11d2: 00 00                        	addb	%al, (%eax)
+    11d4: 00 00                        	addb	%al, (%eax)
+    11d6: 00 00                        	addb	%al, (%eax)
+    11d8: 18 00                        	sbbb	%al, (%eax)
+		...
+    11e2: 00 00                        	addb	%al, (%eax)
+    11e4: 04 00                        	addb	$0, %al
+    11e6: 00 00                        	addb	%al, (%eax)
+    11e8: 55                           	pushl	%ebp
+    11e9: 06                           	pushl	%es
+    11ea: 5e                           	popl	%esi
+    11eb: fe 73 00                     	<unknown>
+    11ee: 00 00                        	addb	%al, (%eax)
+    11f0: 71 96                        	jno	0x1188 <LBB0_105+0x18>
+    11f2: 01 00                        	addl	%eax, (%eax)
+    11f4: 00 00                        	addb	%al, (%eax)
+    11f6: 00 00                        	addb	%al, (%eax)
+    11f8: 18 00                        	sbbb	%al, (%eax)
+		...
+    1202: 00 00                        	addb	%al, (%eax)
+    1204: 04 00                        	addb	$0, %al
+    1206: 00 00                        	addb	%al, (%eax)
+    1208: 15 06 01 00 65               	adcl	$1694499078, %eax
+    120d: 00 00                        	addb	%al, (%eax)
+    120f: 00 05 00 59 fe 00            	addb	%al, 16668928
+    1215: 00 00                        	addb	%al, (%eax)
+    1217: 00 71 96                     	addb	%dh, -106(%ecx)
+
+0000000000001218 <LBB0_116>:
+    1218: 71 96                        	jno	0x11b0 <LBB0_105+0x40>
+    121a: 02 00                        	addb	(%eax), %al
+    121c: 00 00                        	addb	%al, (%eax)
+    121e: 00 00                        	addb	%al, (%eax)
+    1220: 18 00                        	sbbb	%al, (%eax)
+		...
+    122a: 00 00                        	addb	%al, (%eax)
+    122c: 04 00                        	addb	$0, %al
+    122e: 00 00                        	addb	%al, (%eax)
+    1230: 55                           	pushl	%ebp
+    1231: 06                           	pushl	%es
+    1232: 55                           	pushl	%ebp
+    1233: fe 72 00                     	<unknown>
+    1236: 00 00                        	addb	%al, (%eax)
+    1238: 71 96                        	jno	0x11d0 <LBB0_105+0x60>
+    123a: 03 00                        	addl	(%eax), %eax
+    123c: 00 00                        	addb	%al, (%eax)
+    123e: 00 00                        	addb	%al, (%eax)
+    1240: 18 00                        	sbbb	%al, (%eax)
+		...
+    124a: 00 00                        	addb	%al, (%eax)
+    124c: 04 00                        	addb	$0, %al
+    124e: 00 00                        	addb	%al, (%eax)
+    1250: 55                           	pushl	%ebp
+    1251: 06                           	pushl	%es
+    1252: 51                           	pushl	%ecx
+    1253: fe 75 00                     	<unknown>
+    1256: 00 00                        	addb	%al, (%eax)
+    1258: 71 96                        	jno	0x11f0 <LBB0_105+0x80>
+    125a: 04 00                        	addb	$0, %al
+    125c: 00 00                        	addb	%al, (%eax)
+    125e: 00 00                        	addb	%al, (%eax)
+    1260: 18 00                        	sbbb	%al, (%eax)
+		...
+    126a: 00 00                        	addb	%al, (%eax)
+    126c: 04 00                        	addb	$0, %al
+    126e: 00 00                        	addb	%al, (%eax)
+    1270: 55                           	pushl	%ebp
+    1271: 06                           	pushl	%es
+    1272: 4d                           	decl	%ebp
+    1273: fe 6d 00                     	<unknown>
+    1276: 00 00                        	addb	%al, (%eax)
+    1278: bf 86 00 00 00               	movl	$134, %edi
+    127d: 00 00                        	addb	%al, (%eax)
+    127f: 00 07                        	addb	%al, (%edi)
+    1281: 06                           	pushl	%es
+    1282: 00 00                        	addb	%al, (%eax)
+    1284: fb                           	sti
+    1285: ff ff                        	<unknown>
+    1287: ff b7 07 00 00 07            	pushl	117440519(%edi)
+    128d: 00 00                        	addb	%al, (%eax)
+    128f: 00 18                        	addb	%bl, (%eax)
+		...
+    1299: 00 00                        	addb	%al, (%eax)
+    129b: 00 04 00                     	addb	%al, (%eax,%eax)
+    129e: 00 00                        	addb	%al, (%eax)
+    12a0: 2d 67 47 fe 00               	subl	$16664423, %eax
+    12a5: 00 00                        	addb	%al, (%eax)
+    12a7: 00 bf 97 00 00 00            	addb	%bh, 151(%edi)
+    12ad: 00 00                        	addb	%al, (%eax)
+    12af: 00 0f                        	addb	%cl, (%edi)
+    12b1: 87 00                        	xchgl	%eax, (%eax)
+    12b3: 00 00                        	addb	%al, (%eax)
+    12b5: 00 00                        	addb	%al, (%eax)
+    12b7: 00 71 76                     	addb	%dh, 118(%ecx)
+    12ba: f9                           	stc
+    12bb: ff 00                        	incl	(%eax)
+    12bd: 00 00                        	addb	%al, (%eax)
+    12bf: 00 18                        	addb	%bl, (%eax)
+		...
+    12c9: 00 00                        	addb	%al, (%eax)
+    12cb: 00 04 00                     	addb	%al, (%eax,%eax)
+    12ce: 00 00                        	addb	%al, (%eax)
+    12d0: 55                           	pushl	%ebp
+    12d1: 06                           	pushl	%es
+    12d2: 41                           	incl	%ecx
+    12d3: fe 70 00                     	<unknown>
+    12d6: 00 00                        	addb	%al, (%eax)
+    12d8: 71 76                        	jno	0x1350 <LBB0_116+0x138>
+    12da: fa                           	cli
+    12db: ff 00                        	incl	(%eax)
+    12dd: 00 00                        	addb	%al, (%eax)
+    12df: 00 18                        	addb	%bl, (%eax)
+		...
+    12e9: 00 00                        	addb	%al, (%eax)
+    12eb: 00 04 00                     	addb	%al, (%eax,%eax)
+    12ee: 00 00                        	addb	%al, (%eax)
+    12f0: 55                           	pushl	%ebp
+    12f1: 06                           	pushl	%es
+    12f2: 3d fe 61 00 00               	cmpl	$25086, %eax
+    12f7: 00 71 76                     	addb	%dh, 118(%ecx)
+    12fa: fb                           	sti
+    12fb: ff 00                        	incl	(%eax)
+    12fd: 00 00                        	addb	%al, (%eax)
+    12ff: 00 18                        	addb	%bl, (%eax)
+		...
+    1309: 00 00                        	addb	%al, (%eax)
+    130b: 00 04 00                     	addb	%al, (%eax,%eax)
+    130e: 00 00                        	addb	%al, (%eax)
+    1310: 55                           	pushl	%ebp
+    1311: 06                           	pushl	%es
+    1312: 39 fe                        	cmpl	%edi, %esi
+    1314: 64 00 00                     	addb	%al, %fs:(%eax)
+    1317: 00 71 76                     	addb	%dh, 118(%ecx)
+    131a: fc                           	cld
+    131b: ff 00                        	incl	(%eax)
+    131d: 00 00                        	addb	%al, (%eax)
+    131f: 00 18                        	addb	%bl, (%eax)
+		...
+    1329: 00 00                        	addb	%al, (%eax)
+    132b: 00 04 00                     	addb	%al, (%eax,%eax)
+    132e: 00 00                        	addb	%al, (%eax)
+    1330: 55                           	pushl	%ebp
+    1331: 06                           	pushl	%es
+    1332: 35 fe 64 00 00               	xorl	$25854, %eax
+    1337: 00 71 76                     	addb	%dh, 118(%ecx)
+    133a: fd                           	std
+    133b: ff 00                        	incl	(%eax)
+    133d: 00 00                        	addb	%al, (%eax)
+    133f: 00 18                        	addb	%bl, (%eax)
+		...
+    1349: 00 00                        	addb	%al, (%eax)
+    134b: 00 04 00                     	addb	%al, (%eax,%eax)
+    134e: 00 00                        	addb	%al, (%eax)
+    1350: 55                           	pushl	%ebp
+    1351: 06                           	pushl	%es
+    1352: 31 fe                        	xorl	%edi, %esi
+    1354: 69 00 00 00 71 76            	imull	$1987117056, (%eax), %eax
+    135a: fe ff                        	<unknown>
+    135c: 00 00                        	addb	%al, (%eax)
+    135e: 00 00                        	addb	%al, (%eax)
+    1360: 18 00                        	sbbb	%al, (%eax)
+		...
+    136a: 00 00                        	addb	%al, (%eax)
+    136c: 04 00                        	addb	$0, %al
+    136e: 00 00                        	addb	%al, (%eax)
+    1370: 55                           	pushl	%ebp
+    1371: 06                           	pushl	%es
+    1372: 2d fe 6e 00 00               	subl	$28414, %eax
+    1377: 00 71 76                     	addb	%dh, 118(%ecx)
+    137a: ff ff                        	<unknown>
+    137c: 00 00                        	addb	%al, (%eax)
+    137e: 00 00                        	addb	%al, (%eax)
+    1380: 18 00                        	sbbb	%al, (%eax)
+		...
+    138a: 00 00                        	addb	%al, (%eax)
+    138c: 04 00                        	addb	$0, %al
+    138e: 00 00                        	addb	%al, (%eax)
+    1390: 15 06 01 00 67               	adcl	$1728053510, %eax
+    1395: 00 00                        	addb	%al, (%eax)
+    1397: 00 05 00 28 fe 00            	addb	%al, 16656384
+    139d: 00 00                        	addb	%al, (%eax)
+    139f: 00 bf 86 00 00 00            	addb	%bh, 134(%edi)
+
+00000000000013a0 <LBB0_120>:
+    13a0: bf 86 00 00 00               	movl	$134, %edi
+    13a5: 00 00                        	addb	%al, (%eax)
+    13a7: 00 07                        	addb	%al, (%edi)
+    13a9: 06                           	pushl	%es
+    13aa: 00 00                        	addb	%al, (%eax)
+    13ac: f4                           	hlt
+    13ad: ff ff                        	<unknown>
+    13af: ff b7 07 00 00 08            	pushl	134217735(%edi)
+    13b5: 00 00                        	addb	%al, (%eax)
+    13b7: 00 18                        	addb	%bl, (%eax)
+		...
+    13c1: 00 00                        	addb	%al, (%eax)
+    13c3: 00 05 00 00 00 2d            	addb	%al, 754974720
+    13c9: 67 22 fe                     	andb	%dh, %bh
+    13cc: 00 00                        	addb	%al, (%eax)
+    13ce: 00 00                        	addb	%al, (%eax)
+    13d0: 79 96                        	jns	0x1368 <LBB0_116+0x150>
+    13d2: 05 00 00 00 00               	addl	$0, %eax
+    13d7: 00 57 06                     	addb	%dl, 6(%edi)
+    13da: 00 00                        	addb	%al, (%eax)
+    13dc: a1 ff ff ff 18               	movl	419430399, %eax
+		...
+    13e9: 00 00                        	addb	%al, (%eax)
+    13eb: 00 04 00                     	addb	%al, (%eax,%eax)
+    13ee: 00 00                        	addb	%al, (%eax)
+    13f0: 55                           	pushl	%ebp
+    13f1: 06                           	pushl	%es
+    13f2: 1d fe 21 00 00               	sbbl	$8702, %eax
+    13f7: 00 bf 86 00 00 00            	addb	%bh, 134(%edi)
+    13fd: 00 00                        	addb	%al, (%eax)
+    13ff: 00 07                        	addb	%al, (%edi)
+    1401: 06                           	pushl	%es
+    1402: 00 00                        	addb	%al, (%eax)
+    1404: ec                           	inb	%dx, %al
+    1405: ff ff                        	<unknown>
+    1407: ff b7 07 00 00 20            	pushl	536870919(%edi)
+    140d: 00 00                        	addb	%al, (%eax)
+    140f: 00 18                        	addb	%bl, (%eax)
+		...
+    1419: 00 00                        	addb	%al, (%eax)
+    141b: 00 05 00 00 00 2d            	addb	%al, 754974720
+    1421: 67 17                        	popl	%ss
+    1423: fe 00                        	incb	(%eax)
+    1425: 00 00                        	addb	%al, (%eax)
+    1427: 00 79 96                     	addb	%bh, -106(%ecx)
+    142a: 25 00 00 00 00               	andl	$0, %eax
+    142f: 00 07                        	addb	%al, (%edi)
+    1431: 08 00                        	orb	%al, (%eax)
+    1433: 00 cc                        	addb	%cl, %ah
+    1435: ff ff                        	<unknown>
+    1437: ff 37                        	pushl	(%edi)
+    1439: 08 00                        	orb	%al, (%eax)
+    143b: 00 48 00                     	addb	%cl, (%eax)
+    143e: 00 00                        	addb	%al, (%eax)
+    1440: 18 00                        	sbbb	%al, (%eax)
+		...
+    144a: 00 00                        	addb	%al, (%eax)
+    144c: 04 00                        	addb	$0, %al
+    144e: 00 00                        	addb	%al, (%eax)
+    1450: 7b 6a                        	jnp	0x14bc <LBB0_127+0xc>
+    1452: 08 fd                        	orb	%bh, %ch
+    1454: 00 00                        	addb	%al, (%eax)
+    1456: 00 00                        	addb	%al, (%eax)
+    1458: bf 87 00 00 00               	movl	$135, %edi
+    145d: 00 00                        	addb	%al, (%eax)
+    145f: 00 2d 86 0f fe 00            	addb	%ch, 16650118
+    1465: 00 00                        	addb	%al, (%eax)
+    1467: 00 b7 00 00 00 00            	addb	%dh, (%edi)
+    146d: 00 00                        	addb	%al, (%eax)
+    146f: 00 7b 0a                     	addb	%bh, 10(%ebx)
+    1472: 00 fd                        	addb	%bh, %ch
+    1474: 00 00                        	addb	%al, (%eax)
+    1476: 00 00                        	addb	%al, (%eax)
+    1478: 79 a0                        	jns	0x141a <LBB0_120+0x7a>
+    147a: 08 fd                        	orb	%bh, %ch
+    147c: 00 00                        	addb	%al, (%eax)
+    147e: 00 00                        	addb	%al, (%eax)
+    1480: 15 00 16 00 00               	adcl	$5632, %eax
+    1485: 00 00                        	addb	%al, (%eax)
+    1487: 00 61 98                     	addb	%ah, -104(%ecx)
+    148a: 21 00                        	andl	%eax, (%eax)
+    148c: 00 00                        	addb	%al, (%eax)
+    148e: 00 00                        	addb	%al, (%eax)
+    1490: 18 00                        	sbbb	%al, (%eax)
+		...
+    149a: 00 00                        	addb	%al, (%eax)
+    149c: 04 00                        	addb	$0, %al
+    149e: 00 00                        	addb	%al, (%eax)
+    14a0: 3d 78 07 fe 00               	cmpl	$16648056, %eax
+    14a5: 00 00                        	addb	%al, (%eax)
+    14a7: 00 07                        	addb	%al, (%edi)
+    14a9: 09 00                        	orl	%eax, (%eax)
+    14ab: 00 2d 00 00 00 27            	addb	%ch, 654311424
+
+00000000000014b0 <LBB0_127>:
+    14b0: 27                           	daa
+    14b1: 08 00                        	orb	%al, (%eax)
+    14b3: 00 48 00                     	addb	%cl, (%eax)
+    14b6: 00 00                        	addb	%al, (%eax)
+    14b8: bf 90 00 00 00               	movl	$144, %edi
+    14bd: 00 00                        	addb	%al, (%eax)
+    14bf: 00 0f                        	addb	%cl, (%edi)
+    14c1: 80 00 00                     	addb	$0, (%eax)
+    14c4: 00 00                        	addb	%al, (%eax)
+    14c6: 00 00                        	addb	%al, (%eax)
+    14c8: 61                           	popal
+    14c9: 06                           	pushl	%es
+    14ca: 00 00                        	addb	%al, (%eax)
+    14cc: 00 00                        	addb	%al, (%eax)
+    14ce: 00 00                        	addb	%al, (%eax)
+    14d0: 15 06 04 00 01               	adcl	$16778246, %eax
+    14d5: 00 00                        	addb	%al, (%eax)
+    14d7: 00 18                        	addb	%bl, (%eax)
+		...
+    14e1: 00 00                        	addb	%al, (%eax)
+    14e3: 00 04 00                     	addb	%al, (%eax,%eax)
+    14e6: 00 00                        	addb	%al, (%eax)
+    14e8: 15 06 06 00 02               	adcl	$33555974, %eax
+    14ed: 00 00                        	addb	%al, (%eax)
+    14ef: 00 05 00 fd fd 00            	addb	%al, 16645376
+    14f5: 00 00                        	addb	%al, (%eax)
+    14f7: 00 61 08                     	addb	%ah, 8(%ecx)
+
+00000000000014f8 <LBB0_129>:
+    14f8: 61                           	popal
+    14f9: 08 1c 00                     	orb	%bl, (%eax,%eax)
+    14fc: 00 00                        	addb	%al, (%eax)
+    14fe: 00 00                        	addb	%al, (%eax)
+    1500: 18 00                        	sbbb	%al, (%eax)
+		...
+    150a: 00 00                        	addb	%al, (%eax)
+    150c: 04 00                        	addb	$0, %al
+    150e: 00 00                        	addb	%al, (%eax)
+    1510: 2d 87 f3 ff 00               	subl	$16774023, %eax
+    1515: 00 00                        	addb	%al, (%eax)
+    1517: 00 05 00 f8 fd 00            	addb	%al, 16644096
+    151d: 00 00                        	addb	%al, (%eax)
+    151f: 00 0f                        	addb	%cl, (%edi)
+
+0000000000001520 <LBB0_130>:
+    1520: 0f 89 00 00 00 00            	jns	0x1526 <LBB0_130+0x6>
+    1526: 00 00                        	addb	%al, (%eax)
+    1528: 79 90                        	jns	0x14ba <LBB0_127+0xa>
+    152a: 10 00                        	adcb	%al, (%eax)
+    152c: 00 00                        	addb	%al, (%eax)
+    152e: 00 00                        	addb	%al, (%eax)
+    1530: 7b 0a                        	jnp	0x153c <LBB0_131+0x4>
+    1532: 00 fd                        	addb	%bh, %ch
+    1534: 00 00                        	addb	%al, (%eax)
+    1536: 00 00                        	addb	%al, (%eax)
+
+0000000000001538 <LBB0_131>:
+    1538: 79 a9                        	jns	0x14e3 <LBB0_127+0x33>
+    153a: f8                           	clc
+    153b: fe 00                        	incb	(%eax)
+    153d: 00 00                        	addb	%al, (%eax)
+    153f: 00 71 96                     	addb	%dh, -106(%ecx)
+    1542: 00 00                        	addb	%al, (%eax)
+    1544: 00 00                        	addb	%al, (%eax)
+    1546: 00 00                        	addb	%al, (%eax)
+    1548: 18 00                        	sbbb	%al, (%eax)
+		...
+    1552: 00 00                        	addb	%al, (%eax)
+    1554: 07                           	popl	%es
+    1555: 00 00                        	addb	%al, (%eax)
+    1557: 00 79 a7                     	addb	%bh, -89(%ecx)
+    155a: 20 fd                        	andb	%bh, %ch
+    155c: 00 00                        	addb	%al, (%eax)
+    155e: 00 00                        	addb	%al, (%eax)
+    1560: 5d                           	popl	%ebp
+    1561: 76 ef                        	jbe	0x1552 <LBB0_131+0x1a>
+    1563: fd                           	std
+    1564: 00 00                        	addb	%al, (%eax)
+    1566: 00 00                        	addb	%al, (%eax)
+    1568: b7 08                        	movb	$8, %bh
+    156a: 00 00                        	addb	%al, (%eax)
+    156c: 00 00                        	addb	%al, (%eax)
+    156e: 00 00                        	addb	%al, (%eax)
+    1570: 07                           	popl	%es
+    1571: 09 00                        	orl	%eax, (%eax)
+    1573: 00 01                        	addb	%al, (%ecx)
+    1575: 00 00                        	addb	%al, (%eax)
+    1577: 00 79 a0                     	addb	%bh, -96(%ecx)
+    157a: 28 fd                        	subb	%bh, %ch
+    157c: 00 00                        	addb	%al, (%eax)
+    157e: 00 00                        	addb	%al, (%eax)
+    1580: 07                           	popl	%es
+    1581: 00 00                        	addb	%al, (%eax)
+    1583: 00 01                        	addb	%al, (%ecx)
+    1585: 00 00                        	addb	%al, (%eax)
+    1587: 00 7b 0a                     	addb	%bh, 10(%ebx)
+    158a: 28 fd                        	subb	%bh, %ch
+    158c: 00 00                        	addb	%al, (%eax)
+    158e: 00 00                        	addb	%al, (%eax)
+    1590: 05 00 02 00 00               	addl	$512, %eax
+    1595: 00 00                        	addb	%al, (%eax)
+    1597: 00 07                        	addb	%al, (%edi)
+
+0000000000001598 <LBB0_133>:
+    1598: 07                           	popl	%es
+    1599: 08 00                        	orb	%al, (%eax)
+    159b: 00 01                        	addb	%al, (%ecx)
+    159d: 00 00                        	addb	%al, (%eax)
+    159f: 00 15 08 07 00 1f            	addb	%dl, 520095496
+    15a5: 00 00                        	addb	%al, (%eax)
+    15a7: 00 bf 90 00 00 00            	addb	%bh, 144(%edi)
+
+00000000000015a8 <LBB0_134>:
+    15a8: bf 90 00 00 00               	movl	$144, %edi
+    15ad: 00 00                        	addb	%al, (%eax)
+    15af: 00 0f                        	addb	%cl, (%edi)
+    15b1: 80 00 00                     	addb	$0, (%eax)
+    15b4: 00 00                        	addb	%al, (%eax)
+    15b6: 00 00                        	addb	%al, (%eax)
+    15b8: 79 a6                        	jns	0x1560 <LBB0_131+0x28>
+    15ba: 28 fd                        	subb	%bh, %ch
+    15bc: 00 00                        	addb	%al, (%eax)
+    15be: 00 00                        	addb	%al, (%eax)
+    15c0: 0f 86 00 00 00 00            	jbe	0x15c6 <LBB0_134+0x1e>
+    15c6: 00 00                        	addb	%al, (%eax)
+    15c8: 71 66                        	jno	0x1630 <LBB0_135+0x50>
+    15ca: 00 00                        	addb	%al, (%eax)
+    15cc: 00 00                        	addb	%al, (%eax)
+    15ce: 00 00                        	addb	%al, (%eax)
+    15d0: 71 00                        	jno	0x15d2 <LBB0_134+0x2a>
+    15d2: 00 00                        	addb	%al, (%eax)
+    15d4: 00 00                        	addb	%al, (%eax)
+    15d6: 00 00                        	addb	%al, (%eax)
+    15d8: 1d 60 f7 ff 00               	sbbl	$16775008, %eax
+    15dd: 00 00                        	addb	%al, (%eax)
+    15df: 00 b7 06 00 00 1f            	addb	%dh, 520093702(%edi)
+
+00000000000015e0 <LBB0_135>:
+    15e0: b7 06                        	movb	$6, %bh
+    15e2: 00 00                        	addb	%al, (%eax)
+    15e4: 1f                           	popl	%ds
+    15e5: 00 00                        	addb	%al, (%eax)
+    15e7: 00 18                        	addb	%bl, (%eax)
+		...
+    15f1: 00 00                        	addb	%al, (%eax)
+    15f3: 00 07                        	addb	%al, (%edi)
+    15f5: 00 00                        	addb	%al, (%eax)
+    15f7: 00 2d 86 dc fd 00            	addb	%ch, 16637062
+    15fd: 00 00                        	addb	%al, (%eax)
+    15ff: 00 79 a7                     	addb	%bh, -89(%ecx)
+    1602: e8 fe 00 00 00               	calll	0x1705 <LBB0_146+0x75>
+    1607: 00 b7 06 00 00 05            	addb	%dh, 83886086(%edi)
+    160d: 00 00                        	addb	%al, (%eax)
+    160f: 00 18                        	addb	%bl, (%eax)
+		...
+    1619: 00 00                        	addb	%al, (%eax)
+    161b: 00 04 00                     	addb	%al, (%eax,%eax)
+    161e: 00 00                        	addb	%al, (%eax)
+    1620: bf 79 00 00 00               	movl	$121, %edi
+    1625: 00 00                        	addb	%al, (%eax)
+    1627: 00 2d 76 d6 fd 00            	addb	%ch, 16635510
+    162d: 00 00                        	addb	%al, (%eax)
+    162f: 00 79 a0                     	addb	%bh, -96(%ecx)
+    1632: f0                           	lock
+    1633: fe 00                        	incb	(%eax)
+    1635: 00 00                        	addb	%al, (%eax)
+    1637: 00 7b 0a                     	addb	%bh, 10(%ebx)
+    163a: 28 fd                        	subb	%bh, %ch
+    163c: 00 00                        	addb	%al, (%eax)
+    163e: 00 00                        	addb	%al, (%eax)
+    1640: 71 06                        	jno	0x1648 <LBB0_135+0x68>
+    1642: 00 00                        	addb	%al, (%eax)
+    1644: 00 00                        	addb	%al, (%eax)
+    1646: 00 00                        	addb	%al, (%eax)
+    1648: 18 00                        	sbbb	%al, (%eax)
+		...
+    1652: 00 00                        	addb	%al, (%eax)
+    1654: 04 00                        	addb	$0, %al
+    1656: 00 00                        	addb	%al, (%eax)
+    1658: 55                           	pushl	%ebp
+    1659: 06                           	pushl	%es
+    165a: d0 fd                        	sarb	%ch
+    165c: 73 00                        	jae	0x165e <LBB0_135+0x7e>
+    165e: 00 00                        	addb	%al, (%eax)
+    1660: 79 a0                        	jns	0x1602 <LBB0_135+0x22>
+    1662: 28 fd                        	subb	%bh, %ch
+    1664: 00 00                        	addb	%al, (%eax)
+    1666: 00 00                        	addb	%al, (%eax)
+    1668: 71 06                        	jno	0x1670 <LBB0_135+0x90>
+    166a: 01 00                        	addl	%eax, (%eax)
+    166c: 00 00                        	addb	%al, (%eax)
+    166e: 00 00                        	addb	%al, (%eax)
+    1670: 18 00                        	sbbb	%al, (%eax)
+		...
+    167a: 00 00                        	addb	%al, (%eax)
+    167c: 04 00                        	addb	$0, %al
+    167e: 00 00                        	addb	%al, (%eax)
+    1680: 15 06 01 00 65               	adcl	$1694499078, %eax
+    1685: 00 00                        	addb	%al, (%eax)
+    1687: 00 05 00 ca fd 00            	addb	%al, 16632320
+    168d: 00 00                        	addb	%al, (%eax)
+    168f: 00 79 a0                     	addb	%bh, -96(%ecx)
+
+0000000000001690 <LBB0_146>:
+    1690: 79 a0                        	jns	0x1632 <LBB0_135+0x52>
+    1692: 28 fd                        	subb	%bh, %ch
+    1694: 00 00                        	addb	%al, (%eax)
+    1696: 00 00                        	addb	%al, (%eax)
+    1698: 71 06                        	jno	0x16a0 <LBB0_146+0x10>
+    169a: 02 00                        	addb	(%eax), %al
+    169c: 00 00                        	addb	%al, (%eax)
+    169e: 00 00                        	addb	%al, (%eax)
+    16a0: 18 00                        	sbbb	%al, (%eax)
+		...
+    16aa: 00 00                        	addb	%al, (%eax)
+    16ac: 04 00                        	addb	$0, %al
+    16ae: 00 00                        	addb	%al, (%eax)
+    16b0: 55                           	pushl	%ebp
+    16b1: 06                           	pushl	%es
+    16b2: c5 fd 72 00                  	<unknown>
+    16b6: 00 00                        	addb	%al, (%eax)
+    16b8: 79 a0                        	jns	0x165a <LBB0_135+0x7a>
+    16ba: 28 fd                        	subb	%bh, %ch
+    16bc: 00 00                        	addb	%al, (%eax)
+    16be: 00 00                        	addb	%al, (%eax)
+    16c0: 71 06                        	jno	0x16c8 <LBB0_146+0x38>
+    16c2: 03 00                        	addl	(%eax), %eax
+    16c4: 00 00                        	addb	%al, (%eax)
+    16c6: 00 00                        	addb	%al, (%eax)
+    16c8: 18 00                        	sbbb	%al, (%eax)
+		...
+    16d2: 00 00                        	addb	%al, (%eax)
+    16d4: 04 00                        	addb	$0, %al
+    16d6: 00 00                        	addb	%al, (%eax)
+    16d8: 55                           	pushl	%ebp
+    16d9: 06                           	pushl	%es
+    16da: c0 fd 75                     	sarb	$117, %ch
+    16dd: 00 00                        	addb	%al, (%eax)
+    16df: 00 79 a0                     	addb	%bh, -96(%ecx)
+    16e2: 28 fd                        	subb	%bh, %ch
+    16e4: 00 00                        	addb	%al, (%eax)
+    16e6: 00 00                        	addb	%al, (%eax)
+    16e8: 71 06                        	jno	0x16f0 <LBB0_146+0x60>
+    16ea: 04 00                        	addb	$0, %al
+    16ec: 00 00                        	addb	%al, (%eax)
+    16ee: 00 00                        	addb	%al, (%eax)
+    16f0: 18 00                        	sbbb	%al, (%eax)
+		...
+    16fa: 00 00                        	addb	%al, (%eax)
+    16fc: 04 00                        	addb	$0, %al
+    16fe: 00 00                        	addb	%al, (%eax)
+    1700: 55                           	pushl	%ebp
+    1701: 06                           	pushl	%es
+    1702: bb fd 6d 00 00               	movl	$28157, %ebx
+    1707: 00 bf 96 00 00 00            	addb	%bh, 150(%edi)
+    170d: 00 00                        	addb	%al, (%eax)
+    170f: 00 07                        	addb	%al, (%edi)
+    1711: 06                           	pushl	%es
+    1712: 00 00                        	addb	%al, (%eax)
+    1714: fb                           	sti
+    1715: ff ff                        	<unknown>
+    1717: ff b7 07 00 00 07            	pushl	117440519(%edi)
+    171d: 00 00                        	addb	%al, (%eax)
+    171f: 00 18                        	addb	%bl, (%eax)
+		...
+    1729: 00 00                        	addb	%al, (%eax)
+    172b: 00 04 00                     	addb	%al, (%eax,%eax)
+    172e: 00 00                        	addb	%al, (%eax)
+    1730: 2d 67 b5 fd 00               	subl	$16627047, %eax
+    1735: 00 00                        	addb	%al, (%eax)
+    1737: 00 79 a8                     	addb	%bh, -88(%ecx)
+    173a: 28 fd                        	subb	%bh, %ch
+    173c: 00 00                        	addb	%al, (%eax)
+    173e: 00 00                        	addb	%al, (%eax)
+    1740: 0f 98 00                     	sets	(%eax)
+    1743: 00 00                        	addb	%al, (%eax)
+    1745: 00 00                        	addb	%al, (%eax)
+    1747: 00 71 86                     	addb	%dh, -122(%ecx)
+    174a: f9                           	stc
+    174b: ff 00                        	incl	(%eax)
+    174d: 00 00                        	addb	%al, (%eax)
+    174f: 00 18                        	addb	%bl, (%eax)
+		...
+    1759: 00 00                        	addb	%al, (%eax)
+    175b: 00 04 00                     	addb	%al, (%eax,%eax)
+    175e: 00 00                        	addb	%al, (%eax)
+    1760: 55                           	pushl	%ebp
+    1761: 06                           	pushl	%es
+    1762: af                           	scasl	%es:(%edi), %eax
+    1763: fd                           	std
+    1764: 70 00                        	jo	0x1766 <LBB0_146+0xd6>
+    1766: 00 00                        	addb	%al, (%eax)
+    1768: 71 86                        	jno	0x16f0 <LBB0_146+0x60>
+    176a: fa                           	cli
+    176b: ff 00                        	incl	(%eax)
+    176d: 00 00                        	addb	%al, (%eax)
+    176f: 00 18                        	addb	%bl, (%eax)
+		...
+    1779: 00 00                        	addb	%al, (%eax)
+    177b: 00 04 00                     	addb	%al, (%eax,%eax)
+    177e: 00 00                        	addb	%al, (%eax)
+    1780: 55                           	pushl	%ebp
+    1781: 06                           	pushl	%es
+    1782: ab                           	stosl	%eax, %es:(%edi)
+    1783: fd                           	std
+    1784: 61                           	popal
+    1785: 00 00                        	addb	%al, (%eax)
+    1787: 00 71 86                     	addb	%dh, -122(%ecx)
+    178a: fb                           	sti
+    178b: ff 00                        	incl	(%eax)
+    178d: 00 00                        	addb	%al, (%eax)
+    178f: 00 18                        	addb	%bl, (%eax)
+		...
+    1799: 00 00                        	addb	%al, (%eax)
+    179b: 00 04 00                     	addb	%al, (%eax,%eax)
+    179e: 00 00                        	addb	%al, (%eax)
+    17a0: 55                           	pushl	%ebp
+    17a1: 06                           	pushl	%es
+    17a2: a7                           	cmpsl	%es:(%edi), (%esi)
+    17a3: fd                           	std
+    17a4: 64 00 00                     	addb	%al, %fs:(%eax)
+    17a7: 00 71 86                     	addb	%dh, -122(%ecx)
+    17aa: fc                           	cld
+    17ab: ff 00                        	incl	(%eax)
+    17ad: 00 00                        	addb	%al, (%eax)
+    17af: 00 18                        	addb	%bl, (%eax)
+		...
+    17b9: 00 00                        	addb	%al, (%eax)
+    17bb: 00 04 00                     	addb	%al, (%eax,%eax)
+    17be: 00 00                        	addb	%al, (%eax)
+    17c0: 55                           	pushl	%ebp
+    17c1: 06                           	pushl	%es
+    17c2: a3 fd 64 00 00               	movl	%eax, 25853
+    17c7: 00 71 86                     	addb	%dh, -122(%ecx)
+    17ca: fd                           	std
+    17cb: ff 00                        	incl	(%eax)
+    17cd: 00 00                        	addb	%al, (%eax)
+    17cf: 00 18                        	addb	%bl, (%eax)
+		...
+    17d9: 00 00                        	addb	%al, (%eax)
+    17db: 00 04 00                     	addb	%al, (%eax,%eax)
+    17de: 00 00                        	addb	%al, (%eax)
+    17e0: 55                           	pushl	%ebp
+    17e1: 06                           	pushl	%es
+    17e2: 9f                           	lahf
+    17e3: fd                           	std
+    17e4: 69 00 00 00 71 86            	imull	$2255552512, (%eax), %eax
+    17ea: fe ff                        	<unknown>
+    17ec: 00 00                        	addb	%al, (%eax)
+    17ee: 00 00                        	addb	%al, (%eax)
+    17f0: 18 00                        	sbbb	%al, (%eax)
+		...
+    17fa: 00 00                        	addb	%al, (%eax)
+    17fc: 04 00                        	addb	$0, %al
+    17fe: 00 00                        	addb	%al, (%eax)
+    1800: 55                           	pushl	%ebp
+    1801: 06                           	pushl	%es
+    1802: 9b                           	wait
+    1803: fd                           	std
+    1804: 6e                           	outsb	(%esi), %dx
+    1805: 00 00                        	addb	%al, (%eax)
+    1807: 00 71 86                     	addb	%dh, -122(%ecx)
+    180a: ff ff                        	<unknown>
+    180c: 00 00                        	addb	%al, (%eax)
+    180e: 00 00                        	addb	%al, (%eax)
+    1810: 18 00                        	sbbb	%al, (%eax)
+		...
+    181a: 00 00                        	addb	%al, (%eax)
+    181c: 04 00                        	addb	$0, %al
+    181e: 00 00                        	addb	%al, (%eax)
+    1820: 15 06 01 00 67               	adcl	$1728053510, %eax
+    1825: 00 00                        	addb	%al, (%eax)
+    1827: 00 05 00 96 fd 00            	addb	%al, 16619008
+    182d: 00 00                        	addb	%al, (%eax)
+    182f: 00 bf 96 00 00 00            	addb	%bh, 150(%edi)
+
+0000000000001830 <LBB0_150>:
+    1830: bf 96 00 00 00               	movl	$150, %edi
+    1835: 00 00                        	addb	%al, (%eax)
+    1837: 00 07                        	addb	%al, (%edi)
+    1839: 06                           	pushl	%es
+    183a: 00 00                        	addb	%al, (%eax)
+    183c: f4                           	hlt
+    183d: ff ff                        	<unknown>
+    183f: ff b7 07 00 00 08            	pushl	134217735(%edi)
+    1845: 00 00                        	addb	%al, (%eax)
+    1847: 00 18                        	addb	%bl, (%eax)
+		...
+    1851: 00 00                        	addb	%al, (%eax)
+    1853: 00 05 00 00 00 2d            	addb	%al, 754974720
+    1859: 67 90                        	nop
+    185b: fd                           	std
+    185c: 00 00                        	addb	%al, (%eax)
+    185e: 00 00                        	addb	%al, (%eax)
+    1860: 79 a0                        	jns	0x1802 <LBB0_146+0x172>
+    1862: 28 fd                        	subb	%bh, %ch
+    1864: 00 00                        	addb	%al, (%eax)
+    1866: 00 00                        	addb	%al, (%eax)
+    1868: 79 06                        	jns	0x1870 <LBB0_150+0x40>
+    186a: 05 00 00 00 00               	addl	$0, %eax
+    186f: 00 57 06                     	addb	%dl, 6(%edi)
+    1872: 00 00                        	addb	%al, (%eax)
+    1874: c1 ff ff                     	sarl	$255, %edi
+    1877: ff 18                        	lcalll	*(%eax)
+		...
+    1881: 00 00                        	addb	%al, (%eax)
+    1883: 00 04 00                     	addb	%al, (%eax,%eax)
+    1886: 00 00                        	addb	%al, (%eax)
+    1888: 55                           	pushl	%ebp
+    1889: 06                           	pushl	%es
+    188a: 8a fd                        	movb	%ch, %bh
+    188c: 41                           	incl	%ecx
+    188d: 00 00                        	addb	%al, (%eax)
+    188f: 00 bf 96 00 00 00            	addb	%bh, 150(%edi)
+    1895: 00 00                        	addb	%al, (%eax)
+    1897: 00 07                        	addb	%al, (%edi)
+    1899: 06                           	pushl	%es
+    189a: 00 00                        	addb	%al, (%eax)
+    189c: ec                           	inb	%dx, %al
+    189d: ff ff                        	<unknown>
+    189f: ff b7 07 00 00 20            	pushl	536870919(%edi)
+    18a5: 00 00                        	addb	%al, (%eax)
+    18a7: 00 18                        	addb	%bl, (%eax)
+		...
+    18b1: 00 00                        	addb	%al, (%eax)
+    18b3: 00 05 00 00 00 2d            	addb	%al, 754974720
+    18b9: 67 84 fd                     	testb	%bh, %ch
+    18bc: 00 00                        	addb	%al, (%eax)
+    18be: 00 00                        	addb	%al, (%eax)
+    18c0: 79 a0                        	jns	0x1862 <LBB0_150+0x32>
+    18c2: 28 fd                        	subb	%bh, %ch
+    18c4: 00 00                        	addb	%al, (%eax)
+    18c6: 00 00                        	addb	%al, (%eax)
+    18c8: 79 08                        	jns	0x18d2 <LBB0_150+0xa2>
+    18ca: 25 00 00 00 00               	andl	$0, %eax
+    18cf: 00 07                        	addb	%al, (%edi)
+    18d1: 09 00                        	orl	%eax, (%eax)
+    18d3: 00 cc                        	addb	%cl, %ah
+    18d5: ff ff                        	<unknown>
+    18d7: ff 37                        	pushl	(%edi)
+    18d9: 09 00                        	orl	%eax, (%eax)
+    18db: 00 48 00                     	addb	%cl, (%eax)
+    18de: 00 00                        	addb	%al, (%eax)
+    18e0: 18 00                        	sbbb	%al, (%eax)
+		...
+    18ea: 00 00                        	addb	%al, (%eax)
+    18ec: 04 00                        	addb	$0, %al
+    18ee: 00 00                        	addb	%al, (%eax)
+    18f0: bf 96 00 00 00               	movl	$150, %edi
+    18f5: 00 00                        	addb	%al, (%eax)
+    18f7: 00 2d 98 7c fd 00            	addb	%ch, 16612504
+    18fd: 00 00                        	addb	%al, (%eax)
+    18ff: 00 b7 07 00 00 00            	addb	%dh, 7(%edi)
+    1905: 00 00                        	addb	%al, (%eax)
+    1907: 00 b7 09 00 00 00            	addb	%dh, 9(%edi)
+    190d: 00 00                        	addb	%al, (%eax)
+    190f: 00 b7 00 00 00 00            	addb	%dh, (%edi)
+    1915: 00 00                        	addb	%al, (%eax)
+    1917: 00 15 08 3e 00 00            	addb	%dl, 15880
+    191d: 00 00                        	addb	%al, (%eax)
+    191f: 00 79 a0                     	addb	%bh, -96(%ecx)
+    1922: 28 fd                        	subb	%bh, %ch
+    1924: 00 00                        	addb	%al, (%eax)
+    1926: 00 00                        	addb	%al, (%eax)
+    1928: 61                           	popal
+    1929: 08 21                        	orb	%ah, (%ecx)
+    192b: 00 00                        	addb	%al, (%eax)
+    192d: 00 00                        	addb	%al, (%eax)
+    192f: 00 18                        	addb	%bl, (%eax)
+		...
+    1939: 00 00                        	addb	%al, (%eax)
+    193b: 00 04 00                     	addb	%al, (%eax,%eax)
+    193e: 00 00                        	addb	%al, (%eax)
+    1940: 3d 68 73 fd 00               	cmpl	$16610152, %eax
+    1945: 00 00                        	addb	%al, (%eax)
+    1947: 00 79 a0                     	addb	%bh, -96(%ecx)
+    194a: 28 fd                        	subb	%bh, %ch
+    194c: 00 00                        	addb	%al, (%eax)
+    194e: 00 00                        	addb	%al, (%eax)
+    1950: 07                           	popl	%es
+    1951: 00 00                        	addb	%al, (%eax)
+    1953: 00 2d 00 00 00 7b            	addb	%ch, 2063597568
+    1959: 0a 28                        	orb	(%eax), %ch
+    195b: fd                           	std
+    195c: 00 00                        	addb	%al, (%eax)
+    195e: 00 00                        	addb	%al, (%eax)
+
+0000000000001960 <LBB0_157>:
+    1960: 27                           	daa
+    1961: 08 00                        	orb	%al, (%eax)
+    1963: 00 48 00                     	addb	%cl, (%eax)
+    1966: 00 00                        	addb	%al, (%eax)
+    1968: 79 a0                        	jns	0x190a <LBB0_150+0xda>
+    196a: 28 fd                        	subb	%bh, %ch
+    196c: 00 00                        	addb	%al, (%eax)
+    196e: 00 00                        	addb	%al, (%eax)
+    1970: 0f 80 00 00 00 00            	jo	0x1976 <LBB0_157+0x16>
+    1976: 00 00                        	addb	%al, (%eax)
+    1978: 61                           	popal
+    1979: 09 00                        	orl	%eax, (%eax)
+    197b: 00 00                        	addb	%al, (%eax)
+    197d: 00 00                        	addb	%al, (%eax)
+    197f: 00 15 09 04 00 01            	addb	%dl, 16778249
+    1985: 00 00                        	addb	%al, (%eax)
+    1987: 00 18                        	addb	%bl, (%eax)
+		...
+    1991: 00 00                        	addb	%al, (%eax)
+    1993: 00 04 00                     	addb	%al, (%eax,%eax)
+    1996: 00 00                        	addb	%al, (%eax)
+    1998: 15 09 06 00 02               	adcl	$33555977, %eax
+    199d: 00 00                        	addb	%al, (%eax)
+    199f: 00 05 00 67 fd 00            	addb	%al, 16606976
+    19a5: 00 00                        	addb	%al, (%eax)
+    19a7: 00 61 08                     	addb	%ah, 8(%ecx)
+
+00000000000019a8 <LBB0_159>:
+    19a8: 61                           	popal
+    19a9: 08 18                        	orb	%bl, (%eax)
+    19ab: 00 00                        	addb	%al, (%eax)
+    19ad: 00 00                        	addb	%al, (%eax)
+    19af: 00 18                        	addb	%bl, (%eax)
+		...
+    19b9: 00 00                        	addb	%al, (%eax)
+    19bb: 00 04 00                     	addb	%al, (%eax,%eax)
+    19be: 00 00                        	addb	%al, (%eax)
+    19c0: 2d 86 f3 ff 00               	subl	$16774022, %eax
+    19c5: 00 00                        	addb	%al, (%eax)
+    19c7: 00 05 00 62 fd 00            	addb	%al, 16605696
+    19cd: 00 00                        	addb	%al, (%eax)
+    19cf: 00 b7 07 00 00 00            	addb	%dh, 7(%edi)
+
+00000000000019d0 <LBB0_160>:
+    19d0: b7 07                        	movb	$7, %bh
+    19d2: 00 00                        	addb	%al, (%eax)
+    19d4: 00 00                        	addb	%al, (%eax)
+    19d6: 00 00                        	addb	%al, (%eax)
+    19d8: b7 09                        	movb	$9, %bh
+    19da: 00 00                        	addb	%al, (%eax)
+    19dc: 00 00                        	addb	%al, (%eax)
+    19de: 00 00                        	addb	%al, (%eax)
+    19e0: b7 00                        	movb	$0, %bh
+    19e2: 00 00                        	addb	%al, (%eax)
+    19e4: 00 00                        	addb	%al, (%eax)
+    19e6: 00 00                        	addb	%al, (%eax)
+    19e8: 79 a6                        	jns	0x1990 <LBB0_157+0x30>
+    19ea: 08 fd                        	orb	%bh, %ch
+    19ec: 00 00                        	addb	%al, (%eax)
+    19ee: 00 00                        	addb	%al, (%eax)
+    19f0: 15 06 23 00 00               	adcl	$8966, %eax
+    19f5: 00 00                        	addb	%al, (%eax)
+    19f7: 00 57 04                     	addb	%dl, 4(%edi)
+    19fa: 00 00                        	addb	%al, (%eax)
+    19fc: ff 00                        	incl	(%eax)
+    19fe: 00 00                        	addb	%al, (%eax)
+    1a00: 67 04 00                     	addb	$0, %al
+    1a03: 00 03                        	addb	%al, (%ebx)
+    1a05: 00 00                        	addb	%al, (%eax)
+    1a07: 00 18                        	addb	%bl, (%eax)
+    1a09: 06                           	pushl	%es
+    1a0a: 00 00                        	addb	%al, (%eax)
+    1a0c: 08 1e                        	orb	%bl, (%esi)
+		...
+    1a16: 00 00                        	addb	%al, (%eax)
+    1a18: 18 00                        	sbbb	%al, (%eax)
+    1a1a: 00 00                        	addb	%al, (%eax)
+    1a1c: 08 1e                        	orb	%bl, (%esi)
+		...
+    1a26: 00 00                        	addb	%al, (%eax)
+    1a28: 0f 40 00                     	cmovol	(%eax), %eax
+    1a2b: 00 00                        	addb	%al, (%eax)
+    1a2d: 00 00                        	addb	%al, (%eax)
+    1a2f: 00 79 00                     	addb	%bh, (%ecx)
+    1a32: 00 00                        	addb	%al, (%eax)
+    1a34: 00 00                        	addb	%al, (%eax)
+    1a36: 00 00                        	addb	%al, (%eax)
+    1a38: 79 a4                        	jns	0x19de <LBB0_160+0xe>
+    1a3a: 10 fd                        	adcb	%bh, %ch
+    1a3c: 00 00                        	addb	%al, (%eax)
+    1a3e: 00 00                        	addb	%al, (%eax)
+    1a40: 2f                           	das
+    1a41: 40                           	incl	%eax
+    1a42: 00 00                        	addb	%al, (%eax)
+    1a44: 00 00                        	addb	%al, (%eax)
+    1a46: 00 00                        	addb	%al, (%eax)
+    1a48: bf 54 00 00 00               	movl	$84, %edi
+    1a4d: 00 00                        	addb	%al, (%eax)
+    1a4f: 00 79 a7                     	addb	%bh, -89(%ecx)
+    1a52: 38 fd                        	cmpb	%bh, %ch
+    1a54: 00 00                        	addb	%al, (%eax)
+    1a56: 00 00                        	addb	%al, (%eax)
+    1a58: 1f                           	popl	%ds
+    1a59: 74 00                        	je	0x1a5b <LBB0_160+0x8b>
+    1a5b: 00 00                        	addb	%al, (%eax)
+    1a5d: 00 00                        	addb	%al, (%eax)
+    1a5f: 00 67 04                     	addb	%ah, 4(%edi)
+    1a62: 00 00                        	addb	%al, (%eax)
+    1a64: 03 00                        	addl	(%eax), %eax
+    1a66: 00 00                        	addb	%al, (%eax)
+    1a68: 18 07                        	sbbb	%al, (%edi)
+    1a6a: 00 00                        	addb	%al, (%eax)
+    1a6c: 08 1e                        	orb	%bl, (%esi)
+		...
+    1a76: 00 00                        	addb	%al, (%eax)
+    1a78: 0f 47 00                     	cmoval	(%eax), %eax
+    1a7b: 00 00                        	addb	%al, (%eax)
+    1a7d: 00 00                        	addb	%al, (%eax)
+    1a7f: 00 79 74                     	addb	%bh, 116(%ecx)
+    1a82: 00 00                        	addb	%al, (%eax)
+    1a84: 00 00                        	addb	%al, (%eax)
+    1a86: 00 00                        	addb	%al, (%eax)
+    1a88: 2f                           	das
+    1a89: 40                           	incl	%eax
+    1a8a: 00 00                        	addb	%al, (%eax)
+    1a8c: 00 00                        	addb	%al, (%eax)
+    1a8e: 00 00                        	addb	%al, (%eax)
+    1a90: 79 a4                        	jns	0x1a36 <LBB0_160+0x66>
+    1a92: 30 fd                        	xorb	%bh, %ch
+    1a94: 00 00                        	addb	%al, (%eax)
+    1a96: 00 00                        	addb	%al, (%eax)
+    1a98: 1f                           	popl	%ds
+    1a99: 45                           	incl	%ebp
+    1a9a: 00 00                        	addb	%al, (%eax)
+    1a9c: 00 00                        	addb	%al, (%eax)
+    1a9e: 00 00                        	addb	%al, (%eax)
+    1aa0: 67 05 00 00 03 00            	addl	$196608, %eax
+    1aa6: 00 00                        	addb	%al, (%eax)
+    1aa8: 0f 56 00                     	orps	(%eax), %xmm0
+    1aab: 00 00                        	addb	%al, (%eax)
+    1aad: 00 00                        	addb	%al, (%eax)
+    1aaf: 00 79 64                     	addb	%bh, 100(%ecx)
+    1ab2: 00 00                        	addb	%al, (%eax)
+    1ab4: 00 00                        	addb	%al, (%eax)
+    1ab6: 00 00                        	addb	%al, (%eax)
+    1ab8: 79 a5                        	jns	0x1a5f <LBB0_160+0x8f>
+    1aba: 18 fd                        	sbbb	%bh, %ch
+    1abc: 00 00                        	addb	%al, (%eax)
+    1abe: 00 00                        	addb	%al, (%eax)
+    1ac0: 2f                           	das
+    1ac1: 54                           	pushl	%esp
+    1ac2: 00 00                        	addb	%al, (%eax)
+    1ac4: 00 00                        	addb	%al, (%eax)
+    1ac6: 00 00                        	addb	%al, (%eax)
+    1ac8: 3f                           	aas
+    1ac9: 40                           	incl	%eax
+    1aca: 00 00                        	addb	%al, (%eax)
+    1acc: 00 00                        	addb	%al, (%eax)
+    1ace: 00 00                        	addb	%al, (%eax)
+    1ad0: 79 a4                        	jns	0x1a76 <LBB0_160+0xa6>
+    1ad2: 28 fd                        	subb	%bh, %ch
+    1ad4: 00 00                        	addb	%al, (%eax)
+    1ad6: 00 00                        	addb	%al, (%eax)
+    1ad8: 0f 84 00 00 00 00            	je	0x1ade <LBB0_160+0x10e>
+    1ade: 00 00                        	addb	%al, (%eax)
+    1ae0: 79 44                        	jns	0x1b26 <LBB0_162+0x16>
+    1ae2: 10 00                        	adcb	%al, (%eax)
+    1ae4: 00 00                        	addb	%al, (%eax)
+    1ae6: 00 00                        	addb	%al, (%eax)
+    1ae8: bf 09 00 00 00               	movl	$9, %edi
+    1aed: 00 00                        	addb	%al, (%eax)
+    1aef: 00 2f                        	addb	%ch, (%edi)
+    1af1: 49                           	decl	%ecx
+    1af2: 00 00                        	addb	%al, (%eax)
+    1af4: 00 00                        	addb	%al, (%eax)
+    1af6: 00 00                        	addb	%al, (%eax)
+    1af8: 79 a4                        	jns	0x1a9e <LBB0_160+0xce>
+    1afa: 00 fd                        	addb	%bh, %ch
+    1afc: 00 00                        	addb	%al, (%eax)
+    1afe: 00 00                        	addb	%al, (%eax)
+    1b00: 2f                           	das
+    1b01: 40                           	incl	%eax
+    1b02: 00 00                        	addb	%al, (%eax)
+    1b04: 00 00                        	addb	%al, (%eax)
+    1b06: 00 00                        	addb	%al, (%eax)
+    1b08: b7 07                        	movb	$7, %bh
+    1b0a: 00 00                        	addb	%al, (%eax)
+    1b0c: 01 00                        	addl	%eax, (%eax)
+    1b0e: 00 00                        	addb	%al, (%eax)
+
+0000000000001b10 <LBB0_162>:
+    1b10: b7 04                        	movb	$4, %bh
+    1b12: 00 00                        	addb	%al, (%eax)
+    1b14: 01 01                        	addl	%eax, (%ecx)
+    1b16: 00 00                        	addb	%al, (%eax)
+    1b18: 6b 4a 98 fd                  	imull	$-3, -104(%edx), %ecx
+    1b1c: 00 00                        	addb	%al, (%eax)
+    1b1e: 00 00                        	addb	%al, (%eax)
+    1b20: 79 a4                        	jns	0x1ac6 <LBB0_160+0xf6>
+    1b22: c0 fd 00                     	sarb	$0, %ch
+    1b25: 00 00                        	addb	%al, (%eax)
+    1b27: 00 7b 4a                     	addb	%bh, 74(%ebx)
+    1b2a: 90                           	nop
+    1b2b: fd                           	std
+    1b2c: 00 00                        	addb	%al, (%eax)
+    1b2e: 00 00                        	addb	%al, (%eax)
+    1b30: 7b 1a                        	jnp	0x1b4c <LBB0_162+0x3c>
+    1b32: b0 fd                        	movb	$-3, %al
+    1b34: 00 00                        	addb	%al, (%eax)
+    1b36: 00 00                        	addb	%al, (%eax)
+    1b38: b7 01                        	movb	$1, %bh
+    1b3a: 00 00                        	addb	%al, (%eax)
+    1b3c: 01 00                        	addl	%eax, (%eax)
+    1b3e: 00 00                        	addb	%al, (%eax)
+    1b40: 6b 1a a8                     	imull	$-88, (%edx), %ebx
+    1b43: fd                           	std
+    1b44: 00 00                        	addb	%al, (%eax)
+    1b46: 00 00                        	addb	%al, (%eax)
+    1b48: 79 a1                        	jns	0x1aeb <LBB0_160+0x11b>
+    1b4a: f8                           	clc
+    1b4b: fd                           	std
+    1b4c: 00 00                        	addb	%al, (%eax)
+    1b4e: 00 00                        	addb	%al, (%eax)
+    1b50: 7b 1a                        	jnp	0x1b6c <LBB0_162+0x5c>
+    1b52: a0 fd 00 00 00               	movb	253, %al
+    1b57: 00 bf 91 00 00 00            	addb	%bh, 145(%edi)
+    1b5d: 00 00                        	addb	%al, (%eax)
+    1b5f: 00 1f                        	addb	%bl, (%edi)
+    1b61: 01 00                        	addl	%eax, (%eax)
+    1b63: 00 00                        	addb	%al, (%eax)
+    1b65: 00 00                        	addb	%al, (%eax)
+    1b67: 00 2d 09 02 00 00            	addb	%ch, 521
+    1b6d: 00 00                        	addb	%al, (%eax)
+    1b6f: 00 bf 01 00 00 00            	addb	%bh, 1(%edi)
+    1b75: 00 00                        	addb	%al, (%eax)
+    1b77: 00 1f                        	addb	%bl, (%edi)
+    1b79: 91                           	xchgl	%ecx, %eax
+    1b7a: 00 00                        	addb	%al, (%eax)
+    1b7c: 00 00                        	addb	%al, (%eax)
+    1b7e: 00 00                        	addb	%al, (%eax)
+
+0000000000001b80 <LBB0_164>:
+    1b80: 0f 90 00                     	seto	(%eax)
+    1b83: 00 00                        	addb	%al, (%eax)
+    1b85: 00 00                        	addb	%al, (%eax)
+    1b87: 00 b7 04 00 00 00            	addb	%dh, 4(%edi)
+    1b8d: 00 00                        	addb	%al, (%eax)
+    1b8f: 00 6b 4a                     	addb	%ch, 74(%ebx)
+    1b92: b8 fd 00 00 00               	movl	$253, %eax
+    1b97: 00 77 00                     	addb	%dh, (%edi)
+    1b9a: 00 00                        	addb	%al, (%eax)
+    1b9c: 01 00                        	addl	%eax, (%eax)
+    1b9e: 00 00                        	addb	%al, (%eax)
+    1ba0: 7b 0a                        	jnp	0x1bac <LBB0_164+0x2c>
+    1ba2: 78 fd                        	js	0x1ba1 <LBB0_164+0x21>
+    1ba4: 00 00                        	addb	%al, (%eax)
+    1ba6: 00 00                        	addb	%al, (%eax)
+    1ba8: 63 7a 70                     	arpl	%di, 112(%edx)
+    1bab: fd                           	std
+    1bac: 00 00                        	addb	%al, (%eax)
+    1bae: 00 00                        	addb	%al, (%eax)
+    1bb0: 18 05 00 00 02 00            	sbbb	%al, 131072
+    1bb6: 00 00                        	addb	%al, (%eax)
+    1bb8: 00 00                        	addb	%al, (%eax)
+    1bba: 00 00                        	addb	%al, (%eax)
+    1bbc: 07                           	popl	%es
+    1bbd: 00 00                        	addb	%al, (%eax)
+    1bbf: 00 7b 5a                     	addb	%bh, 90(%ebx)
+    1bc2: 68 fd 00 00 00               	pushl	$253
+    1bc7: 00 77 01                     	addb	%dh, 1(%edi)
+    1bca: 00 00                        	addb	%al, (%eax)
+    1bcc: 01 00                        	addl	%eax, (%eax)
+    1bce: 00 00                        	addb	%al, (%eax)
+    1bd0: 7b 1a                        	jnp	0x1bec <LBB0_164+0x6c>
+    1bd2: 80 fd 00                     	cmpb	$0, %ch
+    1bd5: 00 00                        	addb	%al, (%eax)
+    1bd7: 00 63 4a                     	addb	%ah, 74(%ebx)
+    1bda: 74 fd                        	je	0x1bd9 <LBB0_164+0x59>
+    1bdc: 00 00                        	addb	%al, (%eax)
+    1bde: 00 00                        	addb	%al, (%eax)
+    1be0: 79 31                        	jns	0x1c13 <LBB0_164+0x93>
+    1be2: 00 00                        	addb	%al, (%eax)
+    1be4: 00 00                        	addb	%al, (%eax)
+    1be6: 00 00                        	addb	%al, (%eax)
+    1be8: 7b 1a                        	jnp	0x1c04 <LBB0_164+0x84>
+    1bea: 88 fd                        	movb	%bh, %ch
+    1bec: 00 00                        	addb	%al, (%eax)
+    1bee: 00 00                        	addb	%al, (%eax)
+    1bf0: b7 01                        	movb	$1, %bh
+    1bf2: 00 00                        	addb	%al, (%eax)
+    1bf4: 28 00                        	subb	%al, (%eax)
+    1bf6: 00 00                        	addb	%al, (%eax)
+    1bf8: 7b 1a                        	jnp	0x1c14 <LBB0_164+0x94>
+    1bfa: 60                           	pushal
+    1bfb: fd                           	std
+    1bfc: 00 00                        	addb	%al, (%eax)
+    1bfe: 00 00                        	addb	%al, (%eax)
+    1c00: bf a1 00 00 00               	movl	$161, %edi
+    1c05: 00 00                        	addb	%al, (%eax)
+    1c07: 00 07                        	addb	%al, (%edi)
+    1c09: 01 00                        	addl	%eax, (%eax)
+    1c0b: 00 68 fd                     	addb	%ch, -3(%eax)
+    1c0e: ff ff                        	<unknown>
+    1c10: 7b 1a                        	jnp	0x1c2c <LBB0_164+0xac>
+    1c12: 58                           	popl	%eax
+    1c13: fd                           	std
+    1c14: 00 00                        	addb	%al, (%eax)
+    1c16: 00 00                        	addb	%al, (%eax)
+    1c18: b7 01                        	movb	$1, %bh
+    1c1a: 00 00                        	addb	%al, (%eax)
+    1c1c: 03 00                        	addl	(%eax), %eax
+    1c1e: 00 00                        	addb	%al, (%eax)
+    1c20: 7b 1a                        	jnp	0x1c3c <LBB0_164+0xbc>
+    1c22: 50                           	pushl	%eax
+    1c23: fd                           	std
+    1c24: 00 00                        	addb	%al, (%eax)
+    1c26: 00 00                        	addb	%al, (%eax)
+    1c28: bf a1 00 00 00               	movl	$161, %edi
+    1c2d: 00 00                        	addb	%al, (%eax)
+    1c2f: 00 07                        	addb	%al, (%edi)
+    1c31: 01 00                        	addl	%eax, (%eax)
+    1c33: 00 90 fd ff ff 7b            	addb	%dl, 2080374781(%eax)
+    1c39: 1a 48 fd                     	sbbb	-3(%eax), %cl
+    1c3c: 00 00                        	addb	%al, (%eax)
+    1c3e: 00 00                        	addb	%al, (%eax)
+    1c40: 7b 2a                        	jnp	0x1c6c <LBB0_164+0xec>
+    1c42: 40                           	incl	%eax
+    1c43: fd                           	std
+    1c44: 00 00                        	addb	%al, (%eax)
+    1c46: 00 00                        	addb	%al, (%eax)
+    1c48: 7b 4a                        	jnp	0x1c94 <LBB0_164+0x114>
+    1c4a: f8                           	clc
+    1c4b: ff 00                        	incl	(%eax)
+    1c4d: 00 00                        	addb	%al, (%eax)
+    1c4f: 00 7b 4a                     	addb	%bh, 74(%ebx)
+    1c52: f0                           	lock
+    1c53: ff 00                        	incl	(%eax)
+    1c55: 00 00                        	addb	%al, (%eax)
+    1c57: 00 bf a1 00 00 00            	addb	%bh, 161(%edi)
+    1c5d: 00 00                        	addb	%al, (%eax)
+    1c5f: 00 07                        	addb	%al, (%edi)
+    1c61: 01 00                        	addl	%eax, (%eax)
+    1c63: 00 40 fd                     	addb	%al, -3(%eax)
+    1c66: ff ff                        	<unknown>
+    1c68: bf a2 00 00 00               	movl	$162, %edi
+    1c6d: 00 00                        	addb	%al, (%eax)
+    1c6f: 00 07                        	addb	%al, (%edi)
+    1c71: 02 00                        	addb	(%eax), %al
+    1c73: 00 c0                        	addb	%al, %al
+    1c75: fd                           	std
+    1c76: ff ff                        	<unknown>
+    1c78: bf a4 00 00 00               	movl	$164, %edi
+    1c7d: 00 00                        	addb	%al, (%eax)
+    1c7f: 00 07                        	addb	%al, (%edi)
+    1c81: 04 00                        	addb	$0, %al
+    1c83: 00 f0                        	addb	%dh, %al
+    1c85: ff ff                        	<unknown>
+    1c87: ff b7 03 00 00 0a            	pushl	167772163(%edi)
+    1c8d: 00 00                        	addb	%al, (%eax)
+    1c8f: 00 b7 05 00 00 00            	addb	%dh, 5(%edi)
+    1c95: 00 00                        	addb	%al, (%eax)
+    1c97: 00 85 10 00 00 ff            	addb	%al, -16777200(%ebp)
+    1c9d: ff ff                        	<unknown>
+    1c9f: ff 05 00 07 fd 00            	incl	16582400
+    1ca5: 00 00                        	addb	%al, (%eax)
+    1ca7: 00                           	<unknown>

@@ -54,9 +54,9 @@ const writeProgramsDataset = () => {
 };
 
 (async () => {
-    await writeProgramInfo('CLs66NQrh6MWYzkgxrC79tfepMt5neTTCgguzpYo1LCW');
+    // await writeProgramInfo('CLs66NQrh6MWYzkgxrC79tfepMt5neTTCgguzpYo1LCW');
     // await writeInstructions('CLs66NQrh6MWYzkgxrC79tfepMt5neTTCgguzpYo1LCW');
-    // const instructions = await getInstructionList('CLs66NQrh6MWYzkgxrC79tfepMt5neTTCgguzpYo1LCW');
-    // const instructionFrequency = getFrequency(instructions);
-    // console.log('instructionFrequency:', sortObjByValue(instructionFrequency));
+    const instructions = await getInstructionList('CLs66NQrh6MWYzkgxrC79tfepMt5neTTCgguzpYo1LCW');
+    const instructionFrequency = getFrequency(instructions);
+    console.log('instructionFrequency:', sortObjByValue(instructionFrequency));
 })();
